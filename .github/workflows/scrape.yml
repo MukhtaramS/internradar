@@ -1,0 +1,93 @@
+name: Scrape internships
+
+on:
+  schedule:
+    # Every 3 hours at :23. GitHub often starts scheduled runs late, so expect 5-8 runs a day.
+    - cron: "23 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests
+
+      - name: Work out the site address
+        # Uses the SITE_URL repository variable when set, otherwise the GitHub Pages address.
+        run: |
+          url="${{ vars.SITE_URL }}"
+          if [ -z "$url" ]; then
+            owner="$(echo "$GITHUB_REPOSITORY_OWNER" | tr '[:upper:]' '[:lower:]')"
+            url="https://${owner}.github.io/${GITHUB_REPOSITORY#*/}/"
+          fi
+          echo "SITE_URL=$url" >> "$GITHUB_ENV"
+
+      - name: Scrape, update data and site, send notifications
+        id: scrape
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ALL: ${{ secrets.TELEGRAM_CHAT_ALL }}
+          TELEGRAM_CHAT_SWITZERLAND: ${{ secrets.TELEGRAM_CHAT_SWITZERLAND }}
+          TELEGRAM_CHAT_LONDON: ${{ secrets.TELEGRAM_CHAT_LONDON }}
+          TELEGRAM_CHAT_QUANT: ${{ secrets.TELEGRAM_CHAT_QUANT }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python -m radar.main
+
+      - name: Commit data and site
+        run: |
+          git config user.name "internradar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "Listings: +${{ steps.scrape.outputs.added }} new, -${{ steps.scrape.outputs.closed }} closed"
+          git pull --rebase --autostash
+          git push
+
+      - name: Open an issue when a scraper breaks
+        if: steps.scrape.outputs.failed != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'EOF' > /tmp/issue.txt
+          import json
+          h = json.load(open("data/health.json"))
+          bad = {k: v for k, v in sorted(h.items()) if v["status"] == "failed"}
+          print("Scraper failing: " + ", ".join(bad))
+          for name, v in bad.items():
+              print("- **{}**: {}".format(name, v.get("error", "")))
+          print("\nListings for these companies are kept as they were until the scraper works again.")
+          EOF
+          TITLE="$(head -n 1 /tmp/issue.txt)"
+          gh label create scraper-health --color D93F0B --description "A company scraper is failing" 2>/dev/null || true
+          if ! gh issue list --state open --label scraper-health --json title -q '.[].title' | grep -qxF "$TITLE"; then
+            tail -n +2 /tmp/issue.txt | gh issue create --title "$TITLE" --label scraper-health --body-file - || true
+          fi

@@ -1,0 +1,51 @@
+# Where new internships are sent after each scrape.
+#
+# Every channel stays off until its secret exists, so add only the ones you want.
+# ${NAME} is read from the environment (GitHub repository secrets in Actions).
+#
+# Shared secrets
+#   Telegram:  TELEGRAM_BOT_TOKEN
+#   Email:     SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, EMAIL_FROM
+#   Links:     SITE_URL (the GitHub Pages address, used in summaries)
+#
+# filter (optional): every listed key must match. Keys and their values:
+#   countries:  ISO codes, e.g. [CH], [GB, IE]
+#   cities:     [London], [Zurich, Geneva]
+#   categories: faang | faang_plus | quant | europe_tech
+#   roles:      Software, Infrastructure, AI/ML, Data, Security, Hardware, Mobile,
+#               Frontend, QA/Test, Quant Research, Quant Trading
+#   companies:  [Jane Street, Optiver]
+#   degrees:    BS | MS | PhD  (only jobs whose title names the degree)
+#   kinds:      Internship | Placement | Working student | Thesis
+
+channels:
+  - name: Telegram, all internships
+    type: telegram
+    chat: ${TELEGRAM_CHAT_ALL}
+
+  - name: Telegram, Switzerland
+    type: telegram
+    chat: ${TELEGRAM_CHAT_SWITZERLAND}
+    filter: {countries: [CH]}
+
+  - name: Telegram, London
+    type: telegram
+    chat: ${TELEGRAM_CHAT_LONDON}
+    filter: {cities: [London]}
+
+  - name: Telegram, Quant & Trading
+    type: telegram
+    chat: ${TELEGRAM_CHAT_QUANT}
+    filter: {categories: [quant]}
+
+  - name: Email
+    type: email
+    to: ${EMAIL_TO}
+
+  - name: Discord
+    type: discord
+    webhook: ${DISCORD_WEBHOOK_URL}
+
+  - name: Slack
+    type: slack
+    webhook: ${SLACK_WEBHOOK_URL}

@@ -1,0 +1,521 @@
+# Starter company registry for the internship tracker.
+# Checked on 2026-11-05.
+#
+# Fields
+#   name        display name (also used as the company key)
+#   category    faang | faang_plus | quant | europe_tech
+#   enabled     false = keep the entry but skip it when scraping
+#   hubs        main European offices (for reference and the location filter)
+#   adapter     which scraper handles it (one adapter per careers platform):
+#                 greenhouse   GET boards-api.greenhouse.io/v1/boards/{token}/jobs
+#                 ashby        GET api.ashbyhq.com/posting-api/job-board/{org}
+#                 lever        GET api.lever.co/v0/postings/{org}
+#                 workday      POST {host}/wday/cxs/{tenant}/{site}/jobs
+#                 eightfold    GET {host}/api/apply/v2/jobs?domain={domain}
+#                 eightfold_pcsx  GET {host}/api/pcsx/search?domain={domain}
+#                 phenom       POST {host}/widgets
+#                 jibe         GET {host}/api/jobs?keywords=intern  (Radancy/iCIMS Jibe sites)
+#                 avature      server-rendered HTML at {host}/careers/SearchJobs/{query}
+#                 html         server-rendered job list at {url}; needs its own parser
+#                 custom       a one-off API; see notes
+#                 headless     site blocks plain HTTP clients; needs Playwright
+#                 unknown      not researched far enough yet
+#   status      how sure we are that the adapter works:
+#                 verified    probed on 2026-11-05 and returned live jobs (count in notes)
+#                 from_fit    copied from FaangInternTracker's working scraper config
+#                 seen_on_ti  tech-internships.eu lists jobs from it, so it can be done
+#                 research    still needs work before it can be scraped
+#   notes       anything worth knowing before writing or debugging the adapter
+
+companies:
+
+  # ---------------------------------------------------------------- FAANG ----
+
+  - name: Google
+    category: faang
+    hubs: [London, Zurich, Munich, Dublin, Warsaw]
+    adapter: custom
+    url: https://www.google.com/about/careers/applications/jobs/results
+    params: {q: intern, employment_type: INTERN}
+    status: from_fit
+    notes: Parse the AF_initDataCallback 'ds:1' JSON embedded in the HTML. Positional arrays; job[12][0] is the publish timestamp.
+
+  - name: Meta
+    category: faang
+    hubs: [London, Dublin, Paris, Zurich]
+    adapter: custom
+    url: https://www.metacareers.com/graphql
+    params: {doc_id: "27506805582236862", query: intern}
+    status: from_fit
+    notes: Scrape the LSD token from metacareers.com/jobsearch first; send Sec-Fetch-* headers. doc_id rotates with site deploys and breaks often.
+
+  - name: Apple
+    category: faang
+    hubs: [London, Munich, Zurich, Cork]
+    adapter: custom
+    url: https://jobs.apple.com/api/v1/search
+    params: {query: internship}
+    status: from_fit
+    notes: POST. The 'format' body field is required or the API silently returns nothing. 'intern' matches retail codes; use 'internship'.
+
+  - name: Amazon
+    category: faang
+    hubs: [London, Berlin, Dublin, Luxembourg, Gdansk]
+    adapter: custom
+    url: https://www.amazon.jobs/en/search.json
+    params: {passes: [{base_query: intern}, {"business_category[]": studentprograms}]}
+    status: from_fit
+    notes: Two passes, dedupe by id_icims. Normalise company name to "Amazon" (the feed carries legal-entity names).
+
+  - name: Microsoft
+    category: faang
+    hubs: [London, Dublin, Zurich, Prague]
+    adapter: eightfold_pcsx
+    host: apply.careers.microsoft.com
+    domain: microsoft.com
+    params: {queries: [intern, internship]}
+    status: from_fit
+    notes: 10 results per page max. Returns 429 under load; back off.
+
+  - name: Netflix
+    category: faang
+    hubs: [Amsterdam, London, Madrid]
+    adapter: eightfold
+    host: explore.jobs.netflix.net
+    domain: netflix.com
+    status: from_fit
+
+  # ----------------------------------------------------------- FAANG+ ----
+
+  - name: NVIDIA
+    category: faang_plus
+    hubs: [Munich, Zurich, London]
+    adapter: workday
+    host: nvidia.wd5.myworkdayjobs.com
+    site: NVIDIAExternalCareerSite
+    status: from_fit
+    notes: Workday rate-limits by returning 200 with an empty list; retry empty pages.
+
+  - name: OpenAI
+    category: faang_plus
+    hubs: [London, Dublin, Paris]
+    adapter: ashby
+    org: openai
+    status: from_fit
+
+  - name: Anthropic
+    category: faang_plus
+    hubs: [London, Dublin, Zurich]
+    adapter: greenhouse
+    token: anthropic
+    status: from_fit
+
+  - name: Stripe
+    category: faang_plus
+    hubs: [Dublin, London]
+    adapter: greenhouse
+    token: stripe
+    status: from_fit
+
+  - name: Databricks
+    category: faang_plus
+    hubs: [Amsterdam, Berlin, London]
+    adapter: greenhouse
+    token: databricks
+    status: from_fit
+
+  - name: Palantir
+    category: faang_plus
+    hubs: [London, Copenhagen]
+    adapter: lever
+    org: palantir
+    status: verified
+    notes: 309 jobs on 2026-11-05.
+
+  - name: Uber
+    category: faang_plus
+    hubs: [Amsterdam, London]
+    adapter: unknown
+    url: https://jobs.uber.com/en/jobs/
+    status: research
+    notes: Old API uber.com/api/loadSearchJobsResults returns 404 since Aug 2026. Careers moved to jobs.uber.com; tech-internships.eu scrapes it there.
+
+  - name: Airbnb
+    category: faang_plus
+    hubs: [Dublin, London]
+    adapter: greenhouse
+    token: airbnb
+    status: from_fit
+
+  - name: Snowflake
+    category: faang_plus
+    hubs: [Berlin, Warsaw, London]
+    adapter: phenom
+    host: careers.snowflake.com
+    job_url: https://careers.snowflake.com/us/en/job/{id}
+    body_overrides: {lang: en_us, country: us, all_fields: [category, country, state, city, type]}
+    status: from_fit
+    notes: tech-internships.eu links Snowflake jobs on jobs.ashbyhq.com, so an Ashby board may also exist.
+
+  - name: Datadog
+    category: faang_plus
+    hubs: [Paris, Dublin, Madrid]
+    adapter: greenhouse
+    token: datadog
+    status: verified
+    notes: 398 jobs on 2026-11-05.
+
+  - name: Cloudflare
+    category: faang_plus
+    hubs: [London, Lisbon]
+    adapter: greenhouse
+    token: cloudflare
+    status: from_fit
+
+  - name: Figma
+    category: faang_plus
+    hubs: [London]
+    adapter: greenhouse
+    token: figma
+    status: from_fit
+
+  - name: Coinbase
+    category: faang_plus
+    hubs: [London, Dublin]
+    adapter: greenhouse
+    token: coinbase
+    status: from_fit
+
+  - name: Bloomberg
+    category: faang_plus
+    hubs: [London, Frankfurt]
+    adapter: avature
+    host: bloomberg.avature.net
+    params: {query: intern}
+    status: from_fit
+    notes: 12 per page, paginate with ?jobOffset=N. No posted date.
+
+  - name: Spotify
+    category: faang_plus
+    hubs: [Stockholm, London]
+    adapter: lever
+    org: spotify
+    status: verified
+    notes: 86 jobs on 2026-11-05. FaangInternTracker's old api.lifeatspotify.com endpoint was failing in Oct 2026.
+
+  - name: Waymo
+    category: faang_plus
+    hubs: [London]
+    adapter: greenhouse
+    token: waymo
+    status: from_fit
+
+  - name: Scale AI
+    category: faang_plus
+    hubs: [London]
+    adapter: greenhouse
+    token: scaleai
+    status: from_fit
+
+  - name: Perplexity AI
+    category: faang_plus
+    hubs: [London, Berlin]
+    adapter: ashby
+    org: perplexity
+    status: from_fit
+
+  - name: TikTok
+    category: faang_plus
+    hubs: [London, Dublin]
+    adapter: headless
+    url: https://lifeattiktok.com/search
+    status: seen_on_ti
+    notes: Next.js app that loads jobs through server actions; the old careers.tiktok.com API returns 405. Covers ByteDance too.
+
+  - name: Tesla
+    category: faang_plus
+    hubs: [Berlin, Amsterdam]
+    adapter: headless
+    url: https://www.tesla.com/careers/search/
+    status: research
+    notes: Akamai bot protection; plain requests get 403.
+
+  # ------------------------------------------------------ Quant & Trading ----
+
+  - name: Jane Street
+    category: quant
+    hubs: [London, Amsterdam]
+    adapter: custom
+    url: https://www.janestreet.com/jobs/main.json
+    status: from_fit
+    notes: Internships are flagged by the 'availability' field, not the title. A Greenhouse board 'janestreet' also exists (219 jobs on 2026-11-05).
+
+  - name: Citadel
+    category: quant
+    hubs: [London, Paris, Dublin]
+    adapter: unknown
+    url: https://www.citadel.com/careers/open-opportunities/
+    status: seen_on_ti
+    notes: Plain requests get 403. Try full browser headers first, then headless.
+
+  - name: Citadel Securities
+    category: quant
+    hubs: [London, Dublin, Zurich]
+    adapter: headless
+    url: https://www.citadelsecurities.com/careers/open-opportunities/
+    status: seen_on_ti
+    notes: Whole site behind a Cloudflare browser challenge.
+
+  - name: Hudson River Trading
+    category: quant
+    hubs: [London]
+    adapter: greenhouse
+    token: wehrtyou
+    status: from_fit
+
+  - name: Jump Trading
+    category: quant
+    hubs: [London, Amsterdam]
+    adapter: greenhouse
+    token: jumptrading
+    status: verified
+    notes: 93 jobs on 2026-11-05.
+
+  - name: Optiver
+    category: quant
+    hubs: [Amsterdam, London]
+    adapter: custom
+    url: https://www.optiver.com/en/api/v1/jobs
+    status: verified
+    notes: The jobs page's "Load more" API, paged with ?from=N&size=M (160 jobs on 2026-11-07). Its Greenhouse board 'optiver' is empty.
+
+  - name: IMC
+    category: quant
+    hubs: [Amsterdam, Zug, London]
+    adapter: greenhouse
+    token: imc
+    status: verified
+    notes: 161 jobs on 2026-11-05.
+
+  - name: SIG
+    category: quant
+    hubs: [Dublin, London]
+    adapter: jibe
+    host: careers.sig.com
+    status: verified
+    notes: /api/jobs?keywords=intern returned 92 jobs on 2026-11-05. Same response shape as FaangInternTracker's GitHub adapter.
+
+  - name: Two Sigma
+    category: quant
+    hubs: [London]
+    adapter: unknown
+    url: https://careers.twosigma.com/
+    status: research
+    notes: Timed out for plain requests on 2026-11-05. tech-internships.eu does list its jobs.
+
+  - name: D. E. Shaw
+    category: quant
+    hubs: [London]
+    adapter: html
+    url: https://www.deshaw.com/careers
+    status: research
+    notes: Server-rendered; positions are linked as /careers/{slug}-{id}. Parser not written yet.
+
+  - name: DRW
+    category: quant
+    hubs: [London, Amsterdam]
+    adapter: greenhouse
+    token: drweng
+    status: verified
+    notes: 164 jobs on 2026-11-05.
+
+  - name: XTX Markets
+    category: quant
+    hubs: [London, Paris]
+    adapter: greenhouse
+    token: xtxmarketstechnologies
+    status: verified
+    notes: 7 jobs on 2026-11-05.
+
+  - name: G-Research
+    category: quant
+    hubs: [London]
+    adapter: html
+    url: https://www.gresearch.com/vacancies/
+    status: research
+    notes: WordPress; each vacancy at /vacancies/{slug}/. Check for a sitemap or WP REST endpoint before parsing HTML.
+
+  - name: Tower Research Capital
+    category: quant
+    hubs: [London]
+    adapter: greenhouse
+    token: towerresearchcapital
+    status: verified
+    notes: 91 jobs on 2026-11-05.
+
+  - name: Squarepoint Capital
+    category: quant
+    hubs: [London]
+    adapter: greenhouse
+    token: squarepointcapital
+    status: verified
+    notes: 90 jobs on 2026-11-05.
+
+  - name: Millennium
+    category: quant
+    hubs: [London, Paris]
+    adapter: eightfold
+    host: mlp.eightfold.ai
+    domain: mlp.com
+    search: ""
+    status: verified
+    notes: Its search ignores "intern", so all ~230 jobs are fetched and filtered by title.
+
+  - name: Qube Research & Technologies
+    category: quant
+    hubs: [London, Paris]
+    adapter: greenhouse
+    token: quberesearchandtechnologies
+    status: verified
+    notes: 209 jobs on 2026-11-05.
+
+  - name: Marshall Wace
+    category: quant
+    hubs: [London]
+    adapter: unknown
+    url: https://www.mwam.com/join-us/internships/
+    status: research
+    notes: No careers platform found on its site; its Greenhouse board 'marshallwace' is empty.
+
+  - name: GSA Capital
+    category: quant
+    hubs: [London]
+    adapter: greenhouse
+    token: gsacapital
+    status: verified
+    notes: 13 jobs on 2026-11-05 (embedded on gsacapital.com).
+
+  - name: Maven Securities
+    category: quant
+    hubs: [London, Amsterdam]
+    adapter: html
+    url: https://www.mavensecurities.com/jobs/
+    status: research
+    notes: WordPress site. Check for a WP REST endpoint before parsing HTML.
+
+  - name: Da Vinci
+    category: quant
+    hubs: [Amsterdam]
+    adapter: greenhouse
+    token: davinciderivatives
+    status: verified
+    notes: 16 jobs on 2026-11-05.
+
+  - name: Flow Traders
+    category: quant
+    hubs: [Amsterdam]
+    adapter: greenhouse
+    token: flowtraders
+    status: verified
+    notes: 44 jobs on 2026-11-05.
+
+  # ------------------------------------------- Top European tech (optional) ----
+
+  - name: Adyen
+    category: europe_tech
+    enabled: false
+    hubs: [Amsterdam, London, Madrid]
+    adapter: greenhouse
+    token: adyen
+    status: verified
+    notes: 252 jobs on 2026-11-05.
+
+  - name: Monzo
+    category: europe_tech
+    enabled: false
+    hubs: [London]
+    adapter: greenhouse
+    token: monzo
+    status: verified
+    notes: 59 jobs on 2026-11-05.
+
+  - name: Helsing
+    category: europe_tech
+    enabled: false
+    hubs: [Munich, London, Paris]
+    adapter: greenhouse
+    token: helsing
+    status: verified
+    notes: 159 jobs on 2026-11-05.
+
+  - name: N26
+    category: europe_tech
+    enabled: false
+    hubs: [Berlin, Barcelona]
+    adapter: greenhouse
+    token: n26
+    status: verified
+    notes: 34 jobs on 2026-11-05.
+
+  - name: DeepL
+    category: europe_tech
+    enabled: false
+    hubs: [Cologne, Berlin, London]
+    adapter: ashby
+    org: deepl
+    status: verified
+    notes: 9 jobs on 2026-11-05.
+
+  - name: ElevenLabs
+    category: europe_tech
+    enabled: false
+    hubs: [London, Warsaw]
+    adapter: ashby
+    org: elevenlabs
+    status: verified
+    notes: 141 jobs on 2026-11-05.
+
+  - name: Mistral AI
+    category: europe_tech
+    enabled: false
+    hubs: [Paris, London]
+    adapter: ashby
+    org: mistral.ai
+    status: verified
+    notes: 233 jobs on 2026-11-05.
+
+  - name: Wise
+    category: europe_tech
+    enabled: false
+    hubs: [London, Tallinn, Budapest]
+    adapter: custom
+    url: https://wise.jobs/vacanciessitemap.xml
+    status: from_fit
+    notes: Read the sitemap, keep intern-looking URLs, then read the JSON-LD JobPosting on each page.
+
+  - name: Booking.com
+    category: europe_tech
+    enabled: false
+    hubs: [Amsterdam, Manchester]
+    adapter: jibe
+    host: jobs.booking.com
+    status: verified
+    notes: /api/jobs?keywords=intern answered on 2026-11-05 (iCIMS Jibe).
+
+  - name: Klarna
+    category: europe_tech
+    enabled: false
+    hubs: [Stockholm, Berlin, London]
+    adapter: unknown
+    url: https://jobs.deel.com/job-boards/klarna
+    status: research
+    notes: Job board hosted on Deel; no known public JSON API yet.
+
+  - name: Revolut
+    category: europe_tech
+    enabled: false
+    hubs: [London, Krakow, Lisbon]
+    adapter: headless
+    url: https://www.revolut.com/careers/
+    status: research
+    notes: Every non-browser client gets a security-check page (403).

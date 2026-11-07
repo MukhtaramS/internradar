@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>InternRadar — Tech & Quant Internships in Europe</title>
+<meta name="description" content="Software, AI and quant internships at FAANG, top tech and trading firms across Europe. Filter by country and city, including Switzerland and London. Updated several times a day from official careers sites.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213d'/%3E%3Ccircle cx='32' cy='34' r='18' fill='none' stroke='%23f2b33d' stroke-width='4'/%3E%3Ccircle cx='32' cy='34' r='8' fill='none' stroke='%23f2b33d' stroke-width='4'/%3E%3Cpath d='M32 34 L48 18' stroke='%23ffffff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="alternate" type="application/atom+xml" title="All internships" href="feeds/all.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./" aria-label="InternRadar home">
+      <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><rect width="64" height="64" rx="14" class="brand-bg"/><circle cx="32" cy="34" r="18" fill="none" class="brand-ring" stroke-width="4"/><circle cx="32" cy="34" r="8" fill="none" class="brand-ring" stroke-width="4"/><path d="M32 34 L48 18" class="brand-hand" stroke-width="4" stroke-linecap="round"/></svg>
+      <span>InternRadar</span>
+    </a>
+    <nav class="tabs" aria-label="Sections">
+      <button type="button" class="tab active" data-view="jobs" id="tab-jobs">Internships</button>
+      <button type="button" class="tab" data-view="companies" id="tab-companies">Companies</button>
+      <button type="button" class="tab" data-view="alerts" id="tab-alerts">Get alerts</button>
+    </nav>
+    <div class="top-actions">
+      <a id="repo-link" class="icon-link" href="#" target="_blank" rel="noopener" hidden>GitHub</a>
+      <button type="button" id="theme-btn" class="icon-btn" title="Switch light / dark theme" aria-label="Switch theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ======================== Internships ======================== -->
+  <section id="view-jobs" class="view">
+    <div class="hero">
+      <h1>Tech &amp; quant internships in Europe</h1>
+      <p id="hero-line" class="hero-line">Loading listings…</p>
+      <div class="search-row">
+        <label class="search" for="q">
+          <span aria-hidden="true">⌕</span>
+          <input id="q" type="search" placeholder="Search title, company or city   ( / )" autocomplete="off">
+        </label>
+        <select id="sort" aria-label="Sort">
+          <option value="posted">Newest posted</option>
+          <option value="added">Newest found</option>
+          <option value="company">Company A–Z</option>
+        </select>
+      </div>
+      <div class="presets" id="presets" aria-label="Quick filters"></div>
+    </div>
+
+    <div class="board">
+      <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false">Filters <span id="fcount" class="pill" hidden></span></button>
+      <aside id="sidebar" class="sidebar" aria-label="Filters">
+        <div class="fgroup" data-group="cat"><h2>Company type</h2><div class="opts" id="f-cat"></div></div>
+        <div class="fgroup" data-group="country"><h2>Country</h2><div class="opts" id="f-country"></div></div>
+        <div class="fgroup" data-group="city"><h2>City</h2><div class="opts" id="f-city"></div></div>
+        <div class="fgroup" data-group="role"><h2>Role</h2><div class="opts" id="f-role"></div></div>
+        <div class="fgroup" data-group="degree"><h2>Degree</h2><p class="hint">Listings that name no degree are open to all, so they always show.</p><div class="opts" id="f-degree"></div></div>
+        <div class="fgroup" data-group="kind"><h2>Type</h2><div class="opts" id="f-kind"></div></div>
+        <div class="fgroup">
+          <h2>Posted</h2>
+          <div class="opts" id="f-age">
+            <label class="opt"><input type="radio" name="age" value="" checked><span>Any time</span></label>
+            <label class="opt"><input type="radio" name="age" value="1"><span>Last 24 hours</span></label>
+            <label class="opt"><input type="radio" name="age" value="7"><span>Last 7 days</span></label>
+            <label class="opt"><input type="radio" name="age" value="30"><span>Last 30 days</span></label>
+          </div>
+        </div>
+        <div class="fgroup">
+          <h2>Mine</h2>
+          <div class="opts"><label class="opt"><input type="checkbox" id="f-saved"><span>Saved only</span><em id="n-saved"></em></label></div>
+        </div>
+        <div class="fgroup" data-group="company"><h2>Company</h2><input id="co-search" class="mini-search" type="search" placeholder="Find a company" autocomplete="off"><div class="opts scroll" id="f-company"></div></div>
+        <button type="button" class="reset" id="reset">Clear all filters</button>
+      </aside>
+
+      <div class="results">
+        <div class="results-head">
+          <span id="count" class="count">–</span>
+          <div id="chips" class="chips"></div>
+        </div>
+        <ol id="list" class="list"><li class="empty">Loading internships…</li></ol>
+        <button type="button" id="more" class="more" hidden>Show more</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Companies ========================= -->
+  <section id="view-companies" class="view" hidden>
+    <div class="page-head">
+      <h1>Companies we track</h1>
+      <p>Every company is read straight from its own careers site several times a day. <b>Typical days open</b> is how long a listing usually stays up before it closes, and <b>Peak month</b> is when we saw the most new listings, so you know when to watch.</p>
+    </div>
+    <div class="co-filters" id="co-cats"></div>
+    <div class="table-wrap"><table class="co-table">
+      <thead><tr><th>Company</th><th>Type</th><th>European hubs</th><th class="n">Open now</th><th class="n">Seen so far</th><th class="n">Typical days open</th><th>Peak month</th><th>Status</th></tr></thead>
+      <tbody id="co-body"></tbody>
+    </table></div>
+  </section>
+
+  <!-- ========================== Alerts =========================== -->
+  <section id="view-alerts" class="view" hidden>
+    <div class="page-head">
+      <h1>Get new internships as they appear</h1>
+      <p>Pick whichever suits you. Nothing here needs an account with us.</p>
+    </div>
+    <div class="alert-grid">
+      <article class="alert-card">
+        <h2>Telegram</h2>
+        <p>Instant posts for every new listing. Join the channel that matches what you want.</p>
+        <ul id="tg-list" class="link-list"></ul>
+        <p id="tg-empty" class="muted" hidden>Telegram channels are not set up yet.</p>
+      </article>
+      <article class="alert-card">
+        <h2>Feeds (RSS / Atom)</h2>
+        <p>Follow any of these in a feed reader such as Feedly or Inoreader. Each one updates with every scrape.</p>
+        <ul id="feed-list" class="link-list cols"></ul>
+      </article>
+      <article class="alert-card">
+        <h2>Email</h2>
+        <p>Paste a feed address from the list into a free feed-to-email service such as <a href="https://feedrabbit.com" target="_blank" rel="noopener">Feedrabbit</a> or <a href="https://blogtrottr.com" target="_blank" rel="noopener">Blogtrottr</a>, and you get an email whenever something new appears. Pick the Switzerland or London feed to get only those.</p>
+      </article>
+      <article class="alert-card">
+        <h2>Discord, Slack and more</h2>
+        <p>Add a feed to Discord with a feed bot such as MonitoRSS, or to Slack with its built-in <code>/feed subscribe</code> command. IFTTT and Zapier can forward a feed anywhere else.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Listings come from each company's official careers site and link to the real application page. Saved jobs stay in your browser only. <span id="updated"></span></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

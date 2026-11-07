@@ -1,0 +1,5498 @@
+{
+ "jobs": {
+  "amazon:10418355": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, IRL"
+   ],
+   "posted": "2026-05-13",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern",
+   "uid": "amazon:10418355",
+   "url": "https://www.amazon.jobs/en/jobs/10418355/2027-software-dev-engineer-intern"
+  },
+  "amazon:10554586": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, GBR"
+   ],
+   "posted": "2026-09-21",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - United Kingdom",
+   "uid": "amazon:10554586",
+   "url": "https://www.amazon.jobs/en/jobs/10554586/2027-software-dev-engineer-intern-united-kingdom"
+  },
+  "amazon:10554652": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Iasi"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "RO"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Iasi, ROU"
+   ],
+   "posted": "2026-09-21",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Iași, Romania",
+   "uid": "amazon:10554652",
+   "url": "https://www.amazon.jobs/en/jobs/10554652/2027-software-dev-engineer-intern-ia-i-romania"
+  },
+  "amazon:10554701": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, DEU"
+   ],
+   "posted": "2026-09-21",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Germany",
+   "uid": "amazon:10554701",
+   "url": "https://www.amazon.jobs/en/jobs/10554701/2027-software-dev-engineer-intern-germany"
+  },
+  "amazon:10554706": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Luxembourg"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "LU"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Luxembourg, LUX"
+   ],
+   "posted": "2026-09-21",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Luxembourg",
+   "uid": "amazon:10554706",
+   "url": "https://www.amazon.jobs/en/jobs/10554706/2027-software-dev-engineer-intern-luxembourg"
+  },
+  "amazon:10555855": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Madrid"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Madrid, ESP"
+   ],
+   "posted": "2026-09-22",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Spain",
+   "uid": "amazon:10555855",
+   "url": "https://www.amazon.jobs/en/jobs/10555855/2027-software-dev-engineer-intern-spain"
+  },
+  "amazon:10555867": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Turin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "IT"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Turin, ITA"
+   ],
+   "posted": "2026-09-22",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Italy",
+   "uid": "amazon:10555867",
+   "url": "https://www.amazon.jobs/en/jobs/10555867/2027-software-dev-engineer-intern-italy"
+  },
+  "amazon:10555873": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Gdansk"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Gdansk, POL"
+   ],
+   "posted": "2026-09-22",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Poland",
+   "uid": "amazon:10555873",
+   "url": "https://www.amazon.jobs/en/jobs/10555873/2027-software-dev-engineer-intern-poland"
+  },
+  "amazon:10557454": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Luxembourg"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "LU"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Luxembourg, LUX"
+   ],
+   "posted": "2026-09-23",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Intern Luxembourg",
+   "uid": "amazon:10557454",
+   "url": "https://www.amazon.jobs/en/jobs/10557454/business-intelligence-intern-luxembourg"
+  },
+  "amazon:10567687": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, GBR"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Intern London",
+   "uid": "amazon:10567687",
+   "url": "https://www.amazon.jobs/en/jobs/10567687/business-intelligence-intern-london"
+  },
+  "amazon:10567688": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, DEU"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Engineer Intern Germany",
+   "uid": "amazon:10567688",
+   "url": "https://www.amazon.jobs/en/jobs/10567688/business-intelligence-engineer-intern-germany"
+  },
+  "amazon:10567694": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, GBR"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+   "uid": "amazon:10567694",
+   "url": "https://www.amazon.jobs/en/jobs/10567694/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+  },
+  "amazon:10567744": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Madrid"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Madrid, ESP"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+   "uid": "amazon:10567744",
+   "url": "https://www.amazon.jobs/en/jobs/10567744/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+  },
+  "amazon:10568017": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, NLD"
+   ],
+   "posted": "2026-10-05",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Netherlands",
+   "uid": "amazon:10568017",
+   "url": "https://www.amazon.jobs/en/jobs/10568017/2027-software-dev-engineer-intern-netherlands"
+  },
+  "amazon:10571025": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, IRL"
+   ],
+   "posted": "2026-10-06",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Network Development Engineer Intern",
+   "uid": "amazon:10571025",
+   "url": "https://www.amazon.jobs/en/jobs/10571025/network-development-engineer-intern"
+  },
+  "amazon:10571716": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, DEU"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "System Engineer internship 2027 (6 months), ESC Managed Operations",
+   "uid": "amazon:10571716",
+   "url": "https://www.amazon.jobs/en/jobs/10571716/system-engineer-internship-2027-6-months-esc-managed-operations"
+  },
+  "amazon:10571718": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Madrid"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Madrid, ESP"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "System Engineer internship 2027 (6 months), ESC Managed Operations",
+   "uid": "amazon:10571718",
+   "url": "https://www.amazon.jobs/en/jobs/10571718/system-engineer-internship-2027-6-months-esc-managed-operations"
+  },
+  "amazon:10571720": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, IRL"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "System Engineer internship 2027 (6 months), ESC Managed Operations",
+   "uid": "amazon:10571720",
+   "url": "https://www.amazon.jobs/en/jobs/10571720/system-engineer-internship-2027-6-months-esc-managed-operations"
+  },
+  "amazon:10574920": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Luxembourg"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "LU"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Luxembourg, LUX"
+   ],
+   "posted": "2026-10-09",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+   "uid": "amazon:10574920",
+   "url": "https://www.amazon.jobs/en/jobs/10574920/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+  },
+  "amazon:10574996": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, DEU"
+   ],
+   "posted": "2026-10-09",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+   "uid": "amazon:10574996",
+   "url": "https://www.amazon.jobs/en/jobs/10574996/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+  },
+  "amazon:10579683": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Istanbul"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "TR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Istanbul, TUR"
+   ],
+   "posted": "2026-10-15",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Engineer Internship Turkey",
+   "uid": "amazon:10579683",
+   "url": "https://www.amazon.jobs/en/jobs/10579683/business-intelligence-engineer-internship-turkey"
+  },
+  "amazon:10579727": {
+   "active": true,
+   "category": "faang",
+   "cities": [],
+   "company": "Amazon",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Clichy, FRA"
+   ],
+   "posted": "2026-10-15",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Engineer Internship France",
+   "uid": "amazon:10579727",
+   "url": "https://www.amazon.jobs/en/jobs/10579727/business-intelligence-engineer-internship-france"
+  },
+  "amazon:10579728": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Milan"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "IT"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Milan, ITA"
+   ],
+   "posted": "2026-10-15",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Intern Italy",
+   "uid": "amazon:10579728",
+   "url": "https://www.amazon.jobs/en/jobs/10579728/business-intelligence-intern-italy"
+  },
+  "amazon:10582415": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Madrid"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Madrid, ESP"
+   ],
+   "posted": "2026-10-19",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Intern Spain",
+   "uid": "amazon:10582415",
+   "url": "https://www.amazon.jobs/en/jobs/10582415/business-intelligence-intern-spain"
+  },
+  "amazon:10585292": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Bucharest"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "RO"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Bucharest, ROU"
+   ],
+   "posted": "2026-10-21",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+   "uid": "amazon:10585292",
+   "url": "https://www.amazon.jobs/en/jobs/10585292/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+  },
+  "amazon:10587678": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Turin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "IT"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Turin, ITA"
+   ],
+   "posted": "2026-10-23",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+   "uid": "amazon:10587678",
+   "url": "https://www.amazon.jobs/en/jobs/10587678/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+  },
+  "amazon:10588762": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, GBR"
+   ],
+   "posted": "2026-10-26",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern (Machine Learning) - UK",
+   "uid": "amazon:10588762",
+   "url": "https://www.amazon.jobs/en/jobs/10588762/2027-software-dev-engineer-intern-machine-learning-uk"
+  },
+  "amazon:10588998": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, GBR"
+   ],
+   "posted": "2026-10-26",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern (Embedded Systems) - UK",
+   "uid": "amazon:10588998",
+   "url": "https://www.amazon.jobs/en/jobs/10588998/2027-software-dev-engineer-intern-embedded-systems-uk"
+  },
+  "amazon:10595274": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, CHE"
+   ],
+   "posted": "2026-11-03",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "SLAM / Computer Vision Intern, RIVR",
+   "uid": "amazon:10595274",
+   "url": "https://www.amazon.jobs/en/jobs/10595274/slam-computer-vision-intern-rivr"
+  },
+  "amazon:10596377": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Bucharest"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "RO"
+   ],
+   "degrees": [
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Bucharest, ROU"
+   ],
+   "posted": "2026-11-04",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "2027 Applied Scientist Internship – Masters, Amazon University Talent Acquisition",
+   "uid": "amazon:10596377",
+   "url": "https://www.amazon.jobs/en/jobs/10596377/2027-applied-scientist-internship-masters-amazon-university-talent-acquisition"
+  },
+  "amazon:3130528": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Dresden"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dresden, DEU"
+   ],
+   "posted": "2025-11-21",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Software Dev Engineer Internship - Embedded Development (Linux)",
+   "uid": "amazon:3130528",
+   "url": "https://www.amazon.jobs/en/jobs/3130528/software-dev-engineer-internship-embedded-development-linux"
+  },
+  "amazon:3134271": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, DEU"
+   ],
+   "posted": "2025-12-01",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Software Dev Engineer internship - Embedded Development",
+   "uid": "amazon:3134271",
+   "url": "https://www.amazon.jobs/en/jobs/3134271/software-dev-engineer-internship-embedded-development"
+  },
+  "apple:200679650": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge",
+    "London"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Cambridge, United Kingdom",
+    "London, United Kingdom",
+    "Saint Albans, United Kingdom"
+   ],
+   "posted": "2026-08-24",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "GPU Internships - RTL Design, RTL Power Optimisation & Physical Design",
+   "uid": "apple:200679650",
+   "url": "https://jobs.apple.com/en-us/details/200679650/gpu-internships-rtl-design-rtl-power-optimisation-physical-design"
+  },
+  "apple:200679652": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge",
+    "London"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Cambridge, United Kingdom",
+    "London, United Kingdom",
+    "Saint Albans, United Kingdom"
+   ],
+   "posted": "2026-08-24",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "GPU Design Verification Internship",
+   "uid": "apple:200679652",
+   "url": "https://jobs.apple.com/en-us/details/200679652/gpu-design-verification-internship"
+  },
+  "apple:200682229": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "PHY Cellular Firmware Engineer Internship",
+   "uid": "apple:200682229",
+   "url": "https://jobs.apple.com/en-us/details/200682229/phy-cellular-firmware-engineer-internship"
+  },
+  "apple:200682357": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge",
+    "London"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Cambridge, United Kingdom",
+    "London, United Kingdom",
+    "Saint Albans, United Kingdom"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "GPU Internships - Architecture Validation, Performance Modelling & Platform Architecture",
+   "uid": "apple:200682357",
+   "url": "https://jobs.apple.com/en-us/details/200682357/gpu-internships-architecture-validation-performance-modelling-platform-architecture"
+  },
+  "apple:200682404": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Circuit Design Intern (m/f/d)",
+   "uid": "apple:200682404",
+   "url": "https://jobs.apple.com/en-us/details/200682404/circuit-design-intern-m-f-d"
+  },
+  "apple:200682664": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-30",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Formal Verification Intern",
+   "uid": "apple:200682664",
+   "url": "https://jobs.apple.com/en-us/details/200682664/formal-verification-intern"
+  },
+  "apple:200683293": {
+   "active": true,
+   "category": "faang",
+   "cities": [],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Swindon, United Kingdom"
+   ],
+   "posted": "2026-09-15",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "PMU Design Verification Intern",
+   "uid": "apple:200683293",
+   "url": "https://jobs.apple.com/en-us/details/200683293/pmu-design-verification-intern"
+  },
+  "apple:200683768": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Apple",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-09-16",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Machine Learning Research",
+   "uid": "apple:200683768",
+   "url": "https://jobs.apple.com/en-us/details/200683768/internship-machine-learning-research"
+  },
+  "apple:200684438": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-09-17",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "SoC Physical Design Intern (m/f/d)",
+   "uid": "apple:200684438",
+   "url": "https://jobs.apple.com/en-us/details/200684438/soc-physical-design-intern-m-f-d"
+  },
+  "apple:200685035": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": "2026-10-13",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Machine Learning (Foundation Models)",
+   "uid": "apple:200685035",
+   "url": "https://jobs.apple.com/en-us/details/200685035/internship-machine-learning-foundation-models"
+  },
+  "apple:200686117": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-09-28",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Analog Design Automation and Functional Verification Intern",
+   "uid": "apple:200686117",
+   "url": "https://jobs.apple.com/en-us/details/200686117/analog-design-automation-and-functional-verification-intern"
+  },
+  "apple:200686742": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-01",
+   "remote": false,
+   "role": "QA/Test",
+   "season": null,
+   "title": "AMS Lab Validation Intern",
+   "uid": "apple:200686742",
+   "url": "https://jobs.apple.com/en-us/details/200686742/ams-lab-validation-intern"
+  },
+  "apple:200687209": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-11-05",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Software Engineering - AI-Augmented Static Code Analysis",
+   "uid": "apple:200687209",
+   "url": "https://jobs.apple.com/en-us/details/200687209/internship-software-engineering-ai-augmented-static-code-analysis"
+  },
+  "apple:200687446": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-08",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Internship - Cellular Protocol",
+   "uid": "apple:200687446",
+   "url": "https://jobs.apple.com/en-us/details/200687446/internship-cellular-protocol"
+  },
+  "apple:200687726": {
+   "active": true,
+   "category": "faang",
+   "cities": [],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Nabern, Germany"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "PMU Silicon Validation Intern (m/f/d)",
+   "uid": "apple:200687726",
+   "url": "https://jobs.apple.com/en-us/details/200687726/pmu-silicon-validation-intern-m-f-d"
+  },
+  "apple:200687727": {
+   "active": true,
+   "category": "faang",
+   "cities": [],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Nabern, Germany"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "PMU Digital Design Verification Intern (m/f/d)",
+   "uid": "apple:200687727",
+   "url": "https://jobs.apple.com/en-us/details/200687727/pmu-digital-design-verification-intern-m-f-d"
+  },
+  "apple:200688136": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-12",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Internship - Modem Functional Test - Wireless Technologies & Ecosystems",
+   "uid": "apple:200688136",
+   "url": "https://jobs.apple.com/en-us/details/200688136/internship-modem-functional-test-wireless-technologies-ecosystems"
+  },
+  "apple:200689039": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Linz"
+   ],
+   "company": "Apple",
+   "countries": [
+    "AT"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Linz, Austria"
+   ],
+   "posted": "2026-10-14",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "RF System Validation Internship",
+   "uid": "apple:200689039",
+   "url": "https://jobs.apple.com/en-us/details/200689039/rf-system-validation-internship"
+  },
+  "apple:200689695": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Apple",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-10-17",
+   "remote": false,
+   "role": "Security",
+   "season": null,
+   "title": "AI/ML Internship: Self-Improving AI Agents for Cybersecurity, SEAR",
+   "uid": "apple:200689695",
+   "url": "https://jobs.apple.com/en-us/details/200689695/ai-ml-internship-self-improving-ai-agents-for-cybersecurity-sear"
+  },
+  "apple:200689711": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-19",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Software Engineering - AI-Assisted Baseband Debugging Evaluation, WTE",
+   "uid": "apple:200689711",
+   "url": "https://jobs.apple.com/en-us/details/200689711/internship-software-engineering-ai-assisted-baseband-debugging-evaluation-wte"
+  },
+  "apple:200689729": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-19",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Internship - Software Engineering - On-Demand Agent Provisioning in Cellular Test",
+   "uid": "apple:200689729",
+   "url": "https://jobs.apple.com/en-us/details/200689729/internship-software-engineering-on-demand-agent-provisioning-in-cellular-test"
+  },
+  "apple:200690125": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Cambridge, United Kingdom"
+   ],
+   "posted": "2026-10-29",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Machine Learning Research - Speech-to-Speech Translation",
+   "uid": "apple:200690125",
+   "url": "https://jobs.apple.com/en-us/details/200690125/internship-machine-learning-research-speech-to-speech-translation"
+  },
+  "apple:200690139": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-20",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Internship - Software Engineering",
+   "uid": "apple:200690139",
+   "url": "https://jobs.apple.com/en-us/details/200690139/internship-software-engineering"
+  },
+  "apple:200690377": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-20",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern – Human-Centric Generative AI",
+   "uid": "apple:200690377",
+   "url": "https://jobs.apple.com/en-us/details/200690377/research-scientist-intern-human-centric-generative-ai"
+  },
+  "apple:200690378": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany"
+   ],
+   "posted": "2026-10-20",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Cellular Baseband Design Verification Intern",
+   "uid": "apple:200690378",
+   "url": "https://jobs.apple.com/en-us/details/200690378/cellular-baseband-design-verification-intern"
+  },
+  "apple:200691892": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-10-30",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Intern, Site Reliability Engineer, iCloud",
+   "uid": "apple:200691892",
+   "url": "https://jobs.apple.com/en-us/details/200691892/intern-site-reliability-engineer-icloud"
+  },
+  "apple:200692236": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Aachen"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Aachen, Germany"
+   ],
+   "posted": "2026-10-29",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Machine Learning Research - Speech-to-Speech Translation",
+   "uid": "apple:200692236",
+   "url": "https://jobs.apple.com/en-us/details/200692236/internship-machine-learning-research-speech-to-speech-translation"
+  },
+  "apple:200692619": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-10-30",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Technical Internship - Apple Wallet, Payments & Commerce",
+   "uid": "apple:200692619",
+   "url": "https://jobs.apple.com/en-us/details/200692619/technical-internship-apple-wallet-payments-commerce"
+  },
+  "apple:200692642": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Barcelona"
+   ],
+   "company": "Apple",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Barcelona, Spain"
+   ],
+   "posted": "2026-11-02",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship -  Machine Learning Research (recurrent models | generative models |  interpretability)",
+   "uid": "apple:200692642",
+   "url": "https://jobs.apple.com/en-us/details/200692642/internship-machine-learning-research-recurrent-models-generative-models-interpretability"
+  },
+  "apple:200692868": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": "2026-11-02",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "AI Research Intern - Foundation Models & Multimodal Intelligence",
+   "uid": "apple:200692868",
+   "url": "https://jobs.apple.com/en-us/details/200692868/ai-research-intern-foundation-models-multimodal-intelligence"
+  },
+  "apple:200692892": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Copenhagen"
+   ],
+   "company": "Apple",
+   "countries": [
+    "DK"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Copenhagen, Denmark"
+   ],
+   "posted": "2026-11-04",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Research Intern, Speech & Language Processing",
+   "uid": "apple:200692892",
+   "url": "https://jobs.apple.com/en-us/details/200692892/internship-research-intern-speech-language-processing"
+  },
+  "apple:200693660": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Apple",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-11-05",
+   "remote": false,
+   "role": "Security",
+   "season": null,
+   "title": "Cellular Baseband Security Research Intern",
+   "uid": "apple:200693660",
+   "url": "https://jobs.apple.com/en-us/details/200693660/cellular-baseband-security-research-intern"
+  },
+  "apple:200693685": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Apple",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": "2026-11-06",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Reasoning and agentic capabilities of LLMs",
+   "uid": "apple:200693685",
+   "url": "https://jobs.apple.com/en-us/details/200693685/internship-reasoning-and-agentic-capabilities-of-llms"
+  },
+  "da-vinci:4196845101": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Da Vinci",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, North Holland, Netherlands"
+   ],
+   "posted": "2023-07-19",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": null,
+   "title": "Quant Trading Intern",
+   "uid": "da-vinci:4196845101",
+   "url": "https://job-boards.eu.greenhouse.io/davinciderivatives/jobs/4196845101"
+  },
+  "databricks:6866531002": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Databricks",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, Germany"
+   ],
+   "posted": "2023-09-01",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern (2027 Start) - Berlin",
+   "uid": "databricks:6866531002",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866531002"
+  },
+  "databricks:6866534002": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Databricks",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands"
+   ],
+   "posted": "2023-09-01",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern (2027 Start) - Amsterdam",
+   "uid": "databricks:6866534002",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866534002"
+  },
+  "databricks:7640764002": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Belgrade"
+   ],
+   "company": "Databricks",
+   "countries": [
+    "RS"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Belgrade, Serbia"
+   ],
+   "posted": "2024-09-27",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern (2027 Start) - Belgrade",
+   "uid": "databricks:7640764002",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7640764002"
+  },
+  "databricks:8133710002": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Aarhus"
+   ],
+   "company": "Databricks",
+   "countries": [
+    "DK"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Aarhus, Denmark"
+   ],
+   "posted": "2025-08-29",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern (2027 Start) - Aarhus",
+   "uid": "databricks:8133710002",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8133710002"
+  },
+  "databricks:8847738002": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Databricks",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern (2027 Start) - London",
+   "uid": "databricks:8847738002",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8847738002"
+  },
+  "datadog:8114161": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Madrid"
+   ],
+   "company": "Datadog",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Madrid, Spain"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineering Intern",
+   "uid": "datadog:8114161",
+   "url": "https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161"
+  },
+  "datadog:8114186": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Datadog",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineering Intern",
+   "uid": "datadog:8114186",
+   "url": "https://careers.datadoghq.com/detail/8114186/?gh_jid=8114186"
+  },
+  "datadog:8181440": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Datadog",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Applied Science Intern",
+   "uid": "datadog:8181440",
+   "url": "https://careers.datadoghq.com/detail/8181440/?gh_jid=8181440"
+  },
+  "drw:7942281": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "DRW",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Developer Intern",
+   "uid": "drw:7942281",
+   "url": "https://job-boards.greenhouse.io/drweng/jobs/7942281"
+  },
+  "drw:7957243": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "DRW",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": null,
+   "title": "Quantitative Trading Analyst Intern",
+   "uid": "drw:7957243",
+   "url": "https://job-boards.greenhouse.io/drweng/jobs/7957243"
+  },
+  "drw:7957756": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "DRW",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Research",
+   "season": null,
+   "title": "Quantitative Research Intern",
+   "uid": "drw:7957756",
+   "url": "https://job-boards.greenhouse.io/drweng/jobs/7957756"
+  },
+  "drw:8020364": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "DRW",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Developer Intern",
+   "uid": "drw:8020364",
+   "url": "https://job-boards.greenhouse.io/drweng/jobs/8020364"
+  },
+  "drw:8070392": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "DRW",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-07-16",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "FPGA Intern",
+   "uid": "drw:8070392",
+   "url": "https://job-boards.greenhouse.io/drweng/jobs/8070392"
+  },
+  "figma:6152695004": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Figma",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, England"
+   ],
+   "posted": "2026-09-14",
+   "remote": false,
+   "role": "Software",
+   "season": "Summer 2027",
+   "title": "Software Engineer Intern (London, United Kingdom) (Summer 2027)",
+   "uid": "figma:6152695004",
+   "url": "https://boards.greenhouse.io/figma/jobs/6152695004?gh_jid=6152695004"
+  },
+  "flow-traders:8260920": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Flow Traders",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam"
+   ],
+   "posted": "2026-10-07",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer",
+   "title": "Summer Trading Internship",
+   "uid": "flow-traders:8260920",
+   "url": "https://job-boards.greenhouse.io/flowtraders/jobs/8260920"
+  },
+  "google:107087730147500742": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Krakow",
+    "Warsaw"
+   ],
+   "company": "Google",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Kraków, Poland",
+    "Warsaw, Poland"
+   ],
+   "posted": "2026-08-17",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering PhD Intern, 2027",
+   "uid": "google:107087730147500742",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/107087730147500742"
+  },
+  "google:111285665542349510": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich",
+    "Paris",
+    "Zurich"
+   ],
+   "company": "Google",
+   "countries": [
+    "CH",
+    "DE",
+    "FR"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Munich, Germany",
+    "Paris, France",
+    "Zürich, Switzerland"
+   ],
+   "posted": "2026-08-17",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "Research Scientist PhD Intern, 2027",
+   "uid": "google:111285665542349510",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/111285665542349510"
+  },
+  "google:112940936274551494": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Google",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "BS",
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": "2026-10-12",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Product Deployment Engineer BS/MS, Intern - 2027 (English)",
+   "uid": "google:112940936274551494",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/112940936274551494"
+  },
+  "google:118991686201156294": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Amsterdam",
+    "Hamburg",
+    "Madrid"
+   ],
+   "company": "Google",
+   "countries": [
+    "DE",
+    "ES",
+    "NL"
+   ],
+   "degrees": [
+    "BS",
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands",
+    "Hamburg, Germany",
+    "Madrid, Spain"
+   ],
+   "posted": "2026-10-12",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Product Deployment Engineer BS/MS, Intern - 2027 (English)",
+   "uid": "google:118991686201156294",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/118991686201156294"
+  },
+  "google:135156989620560582": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Google",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "BS",
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Forward Deployed Engineering Intern, BS/MS, 2027",
+   "uid": "google:135156989620560582",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/135156989620560582"
+  },
+  "google:73321728058499782": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Google",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": "2026-08-17",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "Data Science PhD Intern, 2027",
+   "uid": "google:73321728058499782",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/73321728058499782"
+  },
+  "google:74389446190867142": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "Google",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Warsaw, Poland"
+   ],
+   "posted": "2026-09-03",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "Data Science PhD Intern, 2027",
+   "uid": "google:74389446190867142",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/74389446190867142"
+  },
+  "google:77684590197514950": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Google",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zürich, Switzerland"
+   ],
+   "posted": "2026-08-17",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "Data Science PhD Intern, 2027",
+   "uid": "google:77684590197514950",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/77684590197514950"
+  },
+  "google:80037545080955590": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Google",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": "2026-08-17",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering PhD Intern, 2027",
+   "uid": "google:80037545080955590",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/80037545080955590"
+  },
+  "google:84561862556820166": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Google",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zürich, Switzerland"
+   ],
+   "posted": "2026-10-02",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "Data Scientist Product MS Intern, 2027",
+   "uid": "google:84561862556820166",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/84561862556820166"
+  },
+  "google:86733690079453894": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Amsterdam",
+    "Berlin",
+    "Grenoble",
+    "London",
+    "Munich",
+    "Paris",
+    "Stockholm",
+    "Zurich"
+   ],
+   "company": "Google",
+   "countries": [
+    "CH",
+    "DE",
+    "FR",
+    "GB",
+    "NL",
+    "SE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Accra, Ghana",
+    "Amsterdam, Netherlands",
+    "Berlin, Germany",
+    "Grenoble, France",
+    "London, UK",
+    "Munich, Germany",
+    "Paris, France",
+    "Stockholm, Sweden",
+    "Zürich, Switzerland"
+   ],
+   "posted": "2026-10-05",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "Student Researcher, 2027",
+   "uid": "google:86733690079453894",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/86733690079453894"
+  },
+  "google:93078491720753862": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Google",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zürich, Switzerland"
+   ],
+   "posted": "2026-08-18",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering PhD Intern, 2027",
+   "uid": "google:93078491720753862",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/93078491720753862"
+  },
+  "gsa-capital:8570668002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "GSA Capital",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-05-29",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Developer - Intern",
+   "uid": "gsa-capital:8570668002",
+   "url": "https://www.gsacapital.com/careers/gh/?gh_jid=8570668002"
+  },
+  "hudson-river-trading:7964062": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Hudson River Trading",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom; New York, NY, United States; Singapore"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer 2027",
+   "title": "Algorithm Development (Quant Research & Trading) Internship – Summer 2027",
+   "uid": "hudson-river-trading:7964062",
+   "url": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=7964062"
+  },
+  "hudson-river-trading:8052083": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Hudson River Trading",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Austin, TX, United States; Chicago, Illinois, United States; London, United Kingdom; New York, NY, United States; Singapore"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Software",
+   "season": "Summer 2027",
+   "title": "Software Engineering Internship (C++ or Python) – Summer 2027",
+   "uid": "hudson-river-trading:8052083",
+   "url": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=8052083"
+  },
+  "hudson-river-trading:8059837": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Hudson River Trading",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom; New York, NY, United States; Singapore"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer 2027",
+   "title": "Algorithm Development (Quant Research & Trading) PhD Internship – Summer 2027",
+   "uid": "hudson-river-trading:8059837",
+   "url": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=8059837"
+  },
+  "hudson-river-trading:8257369": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Hudson River Trading",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom; New York, NY, United States"
+   ],
+   "posted": "2026-10-05",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "Data Scientist Intern - 2027",
+   "uid": "hudson-river-trading:8257369",
+   "url": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=8257369"
+  },
+  "imc:4667854101": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "IMC",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands"
+   ],
+   "posted": "2026-05-07",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineer Intern",
+   "uid": "imc:4667854101",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4667854101"
+  },
+  "imc:4753890101": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "IMC",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Working student",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands"
+   ],
+   "posted": "2026-01-21",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": null,
+   "title": "Trader Assistant (Working Student)",
+   "uid": "imc:4753890101",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4753890101"
+  },
+  "imc:4912874101": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "IMC",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands"
+   ],
+   "posted": "2026-07-06",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "Deep Learning Research Intern - Summer 2027 - Amsterdam",
+   "uid": "imc:4912874101",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4912874101"
+  },
+  "imc:4936262101": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "IMC",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands"
+   ],
+   "posted": "2026-07-31",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": null,
+   "title": "Quantitative Trader Intern",
+   "uid": "imc:4936262101",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4936262101"
+  },
+  "imc:4939846101": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "IMC",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam, Netherlands"
+   ],
+   "posted": "2026-07-31",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": null,
+   "title": "Trader Intern",
+   "uid": "imc:4939846101",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4939846101"
+  },
+  "jane-street:5866838002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Infrastructure",
+   "season": "Summer",
+   "title": "Tools & Compilers Research and Development (Summer Internship)",
+   "uid": "jane-street:5866838002",
+   "url": "https://www.janestreet.com/join-jane-street/position/5866838002/"
+  },
+  "jane-street:8474407002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer",
+   "title": "Quantitative Trader (Summer Internship)",
+   "uid": "jane-street:8474407002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8474407002/"
+  },
+  "jane-street:8474416002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer",
+   "title": "Quantitative Researcher (Summer Internship)",
+   "uid": "jane-street:8474416002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8474416002/"
+  },
+  "jane-street:8589868002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Software",
+   "season": "Summer",
+   "title": "Software Engineer (Summer Internship)",
+   "uid": "jane-street:8589868002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8589868002/"
+  },
+  "jane-street:8594416002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer",
+   "title": "Machine Learning Researcher (Summer Internship)",
+   "uid": "jane-street:8594416002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8594416002/"
+  },
+  "jane-street:8626146002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Infrastructure",
+   "season": "Summer",
+   "title": "Linux Engineer (Summer Internship)",
+   "uid": "jane-street:8626146002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8626146002/"
+  },
+  "jane-street:8648474002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer",
+   "title": "Machine Learning Engineer (Summer Internship)",
+   "uid": "jane-street:8648474002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8648474002/"
+  },
+  "jane-street:8651274002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Software",
+   "season": "Summer",
+   "title": "IT Operations Engineer (Summer Internship)",
+   "uid": "jane-street:8651274002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8651274002/"
+  },
+  "jane-street:8651323002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Hardware",
+   "season": "Summer",
+   "title": "Hardware Engineer (FPGA/ASIC) (Summer Internship)",
+   "uid": "jane-street:8651323002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8651323002/"
+  },
+  "jane-street:8700980002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Software",
+   "season": "Summer",
+   "title": "Trading Desk Operations Engineer (Summer Internship)",
+   "uid": "jane-street:8700980002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8700980002/"
+  },
+  "jane-street:8755768002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jane Street",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Software",
+   "season": "Summer",
+   "title": "Windows Engineer (Summer Internship)",
+   "uid": "jane-street:8755768002",
+   "url": "https://www.janestreet.com/join-jane-street/position/8755768002/"
+  },
+  "jump-trading:7974943": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jump Trading",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Campus UI Software Engineer (Intern)",
+   "uid": "jump-trading:7974943",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7974943"
+  },
+  "jump-trading:7976964": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Jump Trading",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Campus AI Researcher, PhD/Postdoc (Intern)",
+   "uid": "jump-trading:7976964",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=7976964"
+  },
+  "jump-trading:8000323": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam",
+    "London"
+   ],
+   "company": "Jump Trading",
+   "countries": [
+    "GB",
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London; Amsterdam"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Campus Systems Engineer (Intern)",
+   "uid": "jump-trading:8000323",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8000323"
+  },
+  "jump-trading:8010307": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam",
+    "London"
+   ],
+   "company": "Jump Trading",
+   "countries": [
+    "GB",
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London; Amsterdam"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Research",
+   "season": null,
+   "title": "Campus Quantitative Researcher (Intern)",
+   "uid": "jump-trading:8010307",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8010307"
+  },
+  "jump-trading:8050772": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam",
+    "London"
+   ],
+   "company": "Jump Trading",
+   "countries": [
+    "GB",
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London; Amsterdam"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": null,
+   "title": "Campus Quantitative Trader (Intern)",
+   "uid": "jump-trading:8050772",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8050772"
+  },
+  "jump-trading:8059384": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London",
+    "Paris"
+   ],
+   "company": "Jump Trading",
+   "countries": [
+    "FR",
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London; Paris"
+   ],
+   "posted": "2026-07-13",
+   "remote": false,
+   "role": "Quant Research",
+   "season": null,
+   "title": "Campus Quantitative Researcher (M1/M2 Intern)",
+   "uid": "jump-trading:8059384",
+   "url": "https://www.jumptrading.com/hr/job?gh_jid=8059384"
+  },
+  "meta:1050177734644029": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Muse RL and Agents Team (PhD)",
+   "uid": "meta:1050177734644029",
+   "url": "https://www.metacareers.com/jobs/1050177734644029"
+  },
+  "meta:1126525590244595": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, AI Core Machine Learning (MSc)",
+   "uid": "meta:1126525590244595",
+   "url": "https://www.metacareers.com/jobs/1126525590244595"
+  },
+  "meta:1139996808441103": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London",
+    "Zurich"
+   ],
+   "company": "Meta",
+   "countries": [
+    "CH",
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK",
+    "Zurich, Switzerland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Generative AI (PhD) (multiple locations)",
+   "uid": "meta:1139996808441103",
+   "url": "https://www.metacareers.com/jobs/1139996808441103"
+  },
+  "meta:1165781989214784": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Meta",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern -GenAI, VLM, FlowMatching, Spatial Understanding (PhD)",
+   "uid": "meta:1165781989214784",
+   "url": "https://www.metacareers.com/jobs/1165781989214784"
+  },
+  "meta:1418948513778654": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, AI Core Machine Learning (PhD)",
+   "uid": "meta:1418948513778654",
+   "url": "https://www.metacareers.com/jobs/1418948513778654"
+  },
+  "meta:1420325362923811": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Meta",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Robotics - Meta Reality Labs Research (PhD)",
+   "uid": "meta:1420325362923811",
+   "url": "https://www.metacareers.com/jobs/1420325362923811"
+  },
+  "meta:1442284501111979": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Production Engineer Intern",
+   "uid": "meta:1442284501111979",
+   "url": "https://www.metacareers.com/jobs/1442284501111979"
+  },
+  "meta:1463189352436520": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Intern, Neuro-AI - Brain & AI Team (PhD)",
+   "uid": "meta:1463189352436520",
+   "url": "https://www.metacareers.com/jobs/1463189352436520"
+  },
+  "meta:1464655882214150": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern - Omnilingual - FAIR",
+   "uid": "meta:1464655882214150",
+   "url": "https://www.metacareers.com/jobs/1464655882214150"
+  },
+  "meta:1647286810370437": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Muse RL and Agents Team (MSc)",
+   "uid": "meta:1647286810370437",
+   "url": "https://www.metacareers.com/jobs/1647286810370437"
+  },
+  "meta:1775227420261809": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern - Content Seal - FAIR",
+   "uid": "meta:1775227420261809",
+   "url": "https://www.metacareers.com/jobs/1775227420261809"
+  },
+  "meta:1811645993254851": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, AI Research - Speech & Audio (PhD)",
+   "uid": "meta:1811645993254851",
+   "url": "https://www.metacareers.com/jobs/1811645993254851"
+  },
+  "meta:1847186939636437": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, AI Core Machine Learning (PhD)",
+   "uid": "meta:1847186939636437",
+   "url": "https://www.metacareers.com/jobs/1847186939636437"
+  },
+  "meta:1886039392386822": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, FAIR - Multimodal Foundations (PhD)",
+   "uid": "meta:1886039392386822",
+   "url": "https://www.metacareers.com/jobs/1886039392386822"
+  },
+  "meta:1886852912490515": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Meta",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Human Sensing for Wearables, AR and VR (PhD)",
+   "uid": "meta:1886852912490515",
+   "url": "https://www.metacareers.com/jobs/1886852912490515"
+  },
+  "meta:2082008865811696": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London",
+    "Zurich"
+   ],
+   "company": "Meta",
+   "countries": [
+    "CH",
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK",
+    "Zurich, Switzerland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Muse RL and Agents Team (PhD)",
+   "uid": "meta:2082008865811696",
+   "url": "https://www.metacareers.com/jobs/2082008865811696"
+  },
+  "meta:2281070982817094": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern – Robotics, World Models & Embodied AI (PhD)",
+   "uid": "meta:2281070982817094",
+   "url": "https://www.metacareers.com/jobs/2281070982817094"
+  },
+  "meta:2288012098648243": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Cambridge, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Audio, Machine Learning and Computer Vision (PhD)",
+   "uid": "meta:2288012098648243",
+   "url": "https://www.metacareers.com/jobs/2288012098648243"
+  },
+  "meta:848358355026771": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Meta",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Robotics Foundation Models Post-Training (PhD)",
+   "uid": "meta:848358355026771",
+   "url": "https://www.metacareers.com/jobs/848358355026771"
+  },
+  "meta:969100159096154": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Meta",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, AI Core Machine Learning (PhD)",
+   "uid": "meta:969100159096154",
+   "url": "https://www.metacareers.com/jobs/969100159096154"
+  },
+  "meta:994737396214791": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Intern - Self-Improving Agentic Systems and AI Research Agents",
+   "uid": "meta:994737396214791",
+   "url": "https://www.metacareers.com/jobs/994737396214791"
+  },
+  "microsoft:1970393556998782": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Brussels"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "BE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Belgium, Brussels Region, Brussels"
+   ],
+   "posted": "2026-09-15",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Copilot & AI Solution Engineer Intern",
+   "uid": "microsoft:1970393556998782",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556998782"
+  },
+  "microsoft:1970393557042487": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Reading"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "United Kingdom, Berkshire, Reading"
+   ],
+   "posted": "2026-11-04",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Applied Science PhD Internship",
+   "uid": "microsoft:1970393557042487",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557042487"
+  },
+  "microsoft:1970393557043468": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Munich"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Germany, Bavaria, Munich"
+   ],
+   "posted": "2026-10-20",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Intern: Audio and Speech Processing",
+   "uid": "microsoft:1970393557043468",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043468"
+  },
+  "microsoft:1970393557050083": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "United Kingdom, Cambridgeshire, Cambridge"
+   ],
+   "posted": "2026-10-29",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Microsoft Research Cambridge Internship Program - Machine Intelligence",
+   "uid": "microsoft:1970393557050083",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557050083"
+  },
+  "microsoft:1970393557050102": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "United Kingdom, Cambridgeshire, Cambridge"
+   ],
+   "posted": "2026-10-30",
+   "remote": false,
+   "role": "Security",
+   "season": null,
+   "title": "Cambridge Internship Program Azure Research, Security and Privacy",
+   "uid": "microsoft:1970393557050102",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557050102"
+  },
+  "nvidia:JR2024606": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "PhD Research Intern, Autonomous Systems and Physical AI Research - 2027",
+   "uid": "nvidia:JR2024606",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/PhD-Research-Intern--Autonomous-Systems-and-Physical-AI-Research---2027_JR2024606-1"
+  },
+  "nvidia:JR2026517": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Poland, Warsaw"
+   ],
+   "posted": "2026-10-31",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Image and Data Processing Libraries Intern",
+   "uid": "nvidia:JR2026517",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Poland-Warsaw/Image-and-Data-Processing-Libraries-Intern_JR2026517"
+  },
+  "nvidia:JR2026569": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Berlin",
+    "Warsaw"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "DE",
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Germany, Berlin",
+    "Poland, Warsaw"
+   ],
+   "posted": "2026-10-31",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Image and Data Processing Libraries Intern",
+   "uid": "nvidia:JR2026569",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Poland-Warsaw/Image-and-Data-Processing-Libraries-Intern_JR2026569"
+  },
+  "nvidia:JR2026775": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Munich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "DE",
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "France, Courbevoie",
+    "Germany, Munich",
+    "Germany, Wuerselen"
+   ],
+   "posted": "2026-10-31",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Developer Technology Engineering Intern - Compute Performance",
+   "uid": "nvidia:JR2026775",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/Developer-Technology-Engineering-Intern---Compute-Performance_JR2026775"
+  },
+  "nvidia:JR2027025": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-10-20",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "AI Compiler Formal Verification Intern",
+   "uid": "nvidia:JR2027025",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/AI-Compiler-Formal-Verification-Intern_JR2027025"
+  },
+  "nvidia:JR2027294": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-10-09",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "PhD Research Intern, Robotics - Summer 2027",
+   "uid": "nvidia:JR2027294",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/PhD-Research-Intern--Robotics---Summer-2027_JR2027294"
+  },
+  "nvidia:JR2027531": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-10-09",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "Robotics Simulation and Evaluation PhD Intern - Summer 2027",
+   "uid": "nvidia:JR2027531",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/Robotics-Simulation-and-Evaluation-PhD-Intern---Summer-2027_JR2027531"
+  },
+  "nvidia:JR2027826": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Poland, Warsaw"
+   ],
+   "posted": "2026-10-31",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": "2027",
+   "title": "Developer Tools DevOps Engineering Intern - 2027",
+   "uid": "nvidia:JR2027826",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Poland-Warsaw/Developer-Tools-DevOps-Engineering-Intern---2027_JR2027826"
+  },
+  "nvidia:JR2027829": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [],
+   "company": "NVIDIA",
+   "countries": [
+    "DE",
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "France, Remote",
+    "Germany, Remote"
+   ],
+   "posted": "2026-11-02",
+   "remote": true,
+   "role": "Data",
+   "season": "2027",
+   "title": "Relational Foundation Model Intern, Modern Data Stack – 2027",
+   "uid": "nvidia:JR2027829",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Remote/Relational-Foundation-Model-Intern--Modern-Data-Stack---2027_JR2027829"
+  },
+  "nvidia:JR2027948": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Bristol",
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH",
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich",
+    "UK, Bristol"
+   ],
+   "posted": "2026-10-14",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "Data Processing Developer Technology Intern - 2027",
+   "uid": "nvidia:JR2027948",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/UK-Bristol/Data-Processing-Developer-Technology-Intern---2027_JR2027948"
+  },
+  "nvidia:JR2027949": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Bristol",
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH",
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich",
+    "UK, Bristol"
+   ],
+   "posted": "2026-10-15",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Developer Technology Engineering Intern - Compute Performance",
+   "uid": "nvidia:JR2027949",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/Developer-Technology-Engineering-Intern---Compute-Performance_JR2027949"
+  },
+  "nvidia:JR2028210": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Munich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "DE",
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "France, Courbevoie",
+    "Germany, Munich",
+    "Germany, Wuerselen"
+   ],
+   "posted": "2026-10-31",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Developer Technology Engineering Intern - Compute Performance",
+   "uid": "nvidia:JR2028210",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/Developer-Technology-Engineering-Intern---Compute-Performance_JR2028210"
+  },
+  "nvidia:JR2028597": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-10-26",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "GenAI Algorithms Intern – Model Optimization for Inference",
+   "uid": "nvidia:JR2028597",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/GenAI-Algorithms-Intern---Model-Optimization-for-Inference_JR2028597"
+  },
+  "nvidia:JR2029066": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-11-05",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern, Physics Simulation - 2027",
+   "uid": "nvidia:JR2029066",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/Software-Engineering-Intern--Physics-Simulation---2027_JR2029066"
+  },
+  "nvidia:JR2029069": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-11-03",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "AI Compiler Intern, CUDA Tile IR - Summer 2027",
+   "uid": "nvidia:JR2029069",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/AI-Compiler-Intern--CUDA-Tile-IR---Summer-2027_JR2029069"
+  },
+  "nvidia:JR2029184": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Munich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Germany, Munich"
+   ],
+   "posted": "2026-11-04",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineering Intern - 2027",
+   "uid": "nvidia:JR2029184",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/Software-Engineering-Intern---2027_JR2029184"
+  },
+  "optiver:fpga-internship-2027-start": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Optiver",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Hardware",
+   "season": "2027",
+   "title": "FPGA Internship (2027 Start)",
+   "uid": "optiver:fpga-internship-2027-start",
+   "url": "https://www.optiver.com/join-us/jobs/technology/amsterdam/fpga-internship-2027-start/"
+  },
+  "optiver:quantitative-research-internship-2027-start": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Optiver",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Quant Research",
+   "season": "2027",
+   "title": "Quantitative Research Internship (2027 Start)",
+   "uid": "optiver:quantitative-research-internship-2027-start",
+   "url": "https://www.optiver.com/join-us/jobs/quantitative-research-and-machine-learning/amsterdam/quantitative-research-internship-2027-start/"
+  },
+  "optiver:quantitative-trading-internship-2027-start": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Optiver",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "2027",
+   "title": "Quantitative Trading Internship (2027 Start)",
+   "uid": "optiver:quantitative-trading-internship-2027-start",
+   "url": "https://www.optiver.com/join-us/jobs/trading/amsterdam/quantitative-trading-internship-2027-start/"
+  },
+  "optiver:software-engineer-internship-2027-start": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Amsterdam"
+   ],
+   "company": "Optiver",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Amsterdam"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineer Internship (2027 Start)",
+   "uid": "optiver:software-engineer-internship-2027-start",
+   "url": "https://www.optiver.com/join-us/jobs/technology/amsterdam/software-engineer-internship-2027-start/"
+  },
+  "palantir:1b6f1d82-d459-4dea-8bc2-8d2ffe6f881a": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Palantir",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, France, FR"
+   ],
+   "posted": "2026-05-06",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Forward Deployed Software Engineer, Internship",
+   "uid": "palantir:1b6f1d82-d459-4dea-8bc2-8d2ffe6f881a",
+   "url": "https://jobs.lever.co/palantir/1b6f1d82-d459-4dea-8bc2-8d2ffe6f881a"
+  },
+  "palantir:26e23f5d-083b-45aa-b223-1a6e43d960bf": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Palantir",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom, GB"
+   ],
+   "posted": "2021-07-01",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Forward Deployed Software Engineer, Internship - UK Government",
+   "uid": "palantir:26e23f5d-083b-45aa-b223-1a6e43d960bf",
+   "url": "https://jobs.lever.co/palantir/26e23f5d-083b-45aa-b223-1a6e43d960bf"
+  },
+  "palantir:3e59369e-1392-42f2-8d03-86648e87e963": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Palantir",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom, GB"
+   ],
+   "posted": "2026-10-19",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineer, Internship - Query Engines",
+   "uid": "palantir:3e59369e-1392-42f2-8d03-86648e87e963",
+   "url": "https://jobs.lever.co/palantir/3e59369e-1392-42f2-8d03-86648e87e963"
+  },
+  "palantir:40840cef-bbd7-4557-bb21-cbdcf4be616e": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Palantir",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom, GB"
+   ],
+   "posted": "2026-11-05",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Software Engineer, Internship - Sovereign AI Systems",
+   "uid": "palantir:40840cef-bbd7-4557-bb21-cbdcf4be616e",
+   "url": "https://jobs.lever.co/palantir/40840cef-bbd7-4557-bb21-cbdcf4be616e"
+  },
+  "palantir:76a60923-bb49-40f5-b061-7c7eb1299602": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Palantir",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom, GB"
+   ],
+   "posted": "2021-07-01",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineer, Internship",
+   "uid": "palantir:76a60923-bb49-40f5-b061-7c7eb1299602",
+   "url": "https://jobs.lever.co/palantir/76a60923-bb49-40f5-b061-7c7eb1299602"
+  },
+  "palantir:fd3603a9-7016-45c6-9c8d-04c9279ab85e": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Palantir",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom, GB"
+   ],
+   "posted": "2025-06-26",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Software Engineer, Internship - Infrastructure",
+   "uid": "palantir:fd3603a9-7016-45c6-9c8d-04c9279ab85e",
+   "url": "https://jobs.lever.co/palantir/fd3603a9-7016-45c6-9c8d-04c9279ab85e"
+  },
+  "perplexity-ai:71168628-1998-47d3-87a9-be7bc56a430d": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Perplexity AI",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-04-08",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Search Machine Learning Engineer",
+   "uid": "perplexity-ai:71168628-1998-47d3-87a9-be7bc56a430d",
+   "url": "https://jobs.ashbyhq.com/Perplexity/71168628-1998-47d3-87a9-be7bc56a430d"
+  },
+  "perplexity-ai:9246cf02-26fd-4ae8-90c5-639c6e85e9e2": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Belgrade"
+   ],
+   "company": "Perplexity AI",
+   "countries": [
+    "RS"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Belgrade, Serbia"
+   ],
+   "posted": "2026-01-13",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Search Machine Learning Engineer",
+   "uid": "perplexity-ai:9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+   "url": "https://jobs.ashbyhq.com/Perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2"
+  },
+  "perplexity-ai:b9e1ff15-d52a-46d5-abf0-26460f2a116c": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Perplexity AI",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, Germany"
+   ],
+   "posted": "2026-09-02",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Internship - Machine Learning Research Engineer",
+   "uid": "perplexity-ai:b9e1ff15-d52a-46d5-abf0-26460f2a116c",
+   "url": "https://jobs.ashbyhq.com/Perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c"
+  },
+  "perplexity-ai:be94e89b-89d5-4f2a-a58b-7929c8d97f92": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Belgrade"
+   ],
+   "company": "Perplexity AI",
+   "countries": [
+    "RS"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Belgrade, Serbia"
+   ],
+   "posted": "2026-07-01",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Internship - Search Backend Infra Engineer",
+   "uid": "perplexity-ai:be94e89b-89d5-4f2a-a58b-7929c8d97f92",
+   "url": "https://jobs.ashbyhq.com/Perplexity/be94e89b-89d5-4f2a-a58b-7929c8d97f92"
+  },
+  "qube-research-technologies:8623972002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Qube Research & Technologies",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris, London"
+   ],
+   "posted": "2026-09-09",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "2027 - Internship, Data Engineering",
+   "uid": "qube-research-technologies:8623972002",
+   "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8623972002"
+  },
+  "qube-research-technologies:8773084002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Qube Research & Technologies",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, Paris, Wrocław, Zurich, Dubai, Aarhus, Amsterdam"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 - Internship, Software Engineering and Quantitative Development",
+   "uid": "qube-research-technologies:8773084002",
+   "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8773084002"
+  },
+  "qube-research-technologies:8773447002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Qube Research & Technologies",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "MS",
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, Paris"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": "2027",
+   "title": "2027 – Graduate or Internship, Infrastructure Engineer",
+   "uid": "qube-research-technologies:8773447002",
+   "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8773447002"
+  },
+  "qube-research-technologies:8785833002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Aarhus"
+   ],
+   "company": "Qube Research & Technologies",
+   "countries": [
+    "DK"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Aarhus, Budapest, Dubai, London, Paris, Zurich"
+   ],
+   "posted": "2026-09-08",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "2027",
+   "title": "2027 - Internship, Quantitative Research and Trading",
+   "uid": "qube-research-technologies:8785833002",
+   "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8785833002"
+  },
+  "qube-research-technologies:8926633002": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Qube Research & Technologies",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-11-02",
+   "remote": false,
+   "role": "Data",
+   "season": "2027",
+   "title": "2027 - Internship, Business Data Analytics",
+   "uid": "qube-research-technologies:8926633002",
+   "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8926633002"
+  },
+  "scale-ai:4730846005": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Scale AI",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": "2026-09-14",
+   "remote": false,
+   "role": "Software",
+   "season": "Summer 2027",
+   "title": "Software Engineering Intern (Summer 2027)",
+   "uid": "scale-ai:4730846005",
+   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730846005"
+  },
+  "sig:10839": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "SIG",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, Ireland"
+   ],
+   "posted": "2026-07-15",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer 2027",
+   "title": "Quantitative Trading Internship: Summer 2027",
+   "uid": "sig:10839",
+   "url": "https://careers.sig.com/jobs/10839?lang=en-us"
+  },
+  "sig:10841": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "SIG",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, Ireland"
+   ],
+   "posted": "2026-07-15",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer 2027",
+   "title": "Quantitative Systematic Trading Internship: Summer 2027",
+   "uid": "sig:10841",
+   "url": "https://careers.sig.com/jobs/10841?lang=en-us"
+  },
+  "sig:10843": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "SIG",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, Ireland"
+   ],
+   "posted": "2026-07-15",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer 2027",
+   "title": "Quantitative Research Internship: Summer 2027",
+   "uid": "sig:10843",
+   "url": "https://careers.sig.com/jobs/10843?lang=en-us"
+  },
+  "sig:11005": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "SIG",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-07-15",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer 2027",
+   "title": "Quantitative Trading Internship: Summer 2027",
+   "uid": "sig:11005",
+   "url": "https://careers.sig.com/jobs/11005?lang=en-us"
+  },
+  "sig:11006": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "SIG",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-07-15",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer 2027",
+   "title": "Quantitative Systematic Trading Internship: Summer 2027",
+   "uid": "sig:11006",
+   "url": "https://careers.sig.com/jobs/11006?lang=en-us"
+  },
+  "sig:11007": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "SIG",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-07-15",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer 2027",
+   "title": "Quantitative Research Internship: Summer 2027",
+   "uid": "sig:11007",
+   "url": "https://careers.sig.com/jobs/11007?lang=en-us"
+  },
+  "sig:11271": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "SIG",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Placement",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, Ireland"
+   ],
+   "posted": "2026-08-19",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": "2027",
+   "title": "Site Reliability Engineering University Co - Op Placement 2027",
+   "uid": "sig:11271",
+   "url": "https://careers.sig.com/jobs/11271?lang=en-us"
+  },
+  "sig:11332": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "SIG",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin, Ireland"
+   ],
+   "posted": "2026-08-21",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer 2027",
+   "title": "Quantitative Strategy Developer Internship: Summer 2027 (Dublin)",
+   "uid": "sig:11332",
+   "url": "https://careers.sig.com/jobs/11332?lang=en-us"
+  },
+  "sig:11333": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "SIG",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-08-21",
+   "remote": false,
+   "role": "Quant Research",
+   "season": "Summer 2027",
+   "title": "Quantitative Strategy Developer Internship: Summer 2027 (London)",
+   "uid": "sig:11333",
+   "url": "https://careers.sig.com/jobs/11333?lang=en-us"
+  },
+  "snowflake:36706ca8-ea03-4bfb-91dc-c5fa1f0dc17e": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Berlin"
+   ],
+   "company": "Snowflake",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Berlin, Germany"
+   ],
+   "posted": "2026-09-29",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineer Intern - Berlin (2027)",
+   "uid": "snowflake:36706ca8-ea03-4bfb-91dc-c5fa1f0dc17e",
+   "url": "https://careers.snowflake.com/us/en/job/36706ca8-ea03-4bfb-91dc-c5fa1f0dc17e"
+  },
+  "snowflake:e11c70eb-0800-4363-b609-264610878dce": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "Snowflake",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Warsaw, Poland"
+   ],
+   "posted": "2026-10-12",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "2027",
+   "title": "Software Engineer Intern AI/ML - Warsaw (2027)",
+   "uid": "snowflake:e11c70eb-0800-4363-b609-264610878dce",
+   "url": "https://careers.snowflake.com/us/en/job/e11c70eb-0800-4363-b609-264610878dce"
+  },
+  "squarepoint-capital:7231006": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Squarepoint Capital",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2025-09-05",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Intern Software Developer - London - 2027",
+   "uid": "squarepoint-capital:7231006",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=7231006&gh_jid=7231006"
+  },
+  "squarepoint-capital:8045124": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "Squarepoint Capital",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Warsaw"
+   ],
+   "posted": "2026-10-06",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Intern Software Developer - Warsaw 2027",
+   "uid": "squarepoint-capital:8045124",
+   "url": "https://www.squarepoint-capital.com/open-opportunities?id=8045124&gh_jid=8045124"
+  },
+  "stripe:8097801": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Dublin"
+   ],
+   "company": "Stripe",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Dublin"
+   ],
+   "posted": "2026-08-17",
+   "remote": false,
+   "role": "Software",
+   "season": "Summer",
+   "title": "Software Engineer, Intern (Summer or Winter)",
+   "uid": "stripe:8097801",
+   "url": "https://stripe.com/jobs/search?gh_jid=8097801"
+  },
+  "stripe:8130807": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Bucharest"
+   ],
+   "company": "Stripe",
+   "countries": [
+    "RO"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Bucharest"
+   ],
+   "posted": "2026-08-31",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineer, Intern",
+   "uid": "stripe:8130807",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130807"
+  },
+  "stripe:8130867": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Stripe",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-08-31",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineer, Intern",
+   "uid": "stripe:8130867",
+   "url": "https://stripe.com/jobs/search?gh_jid=8130867"
+  },
+  "tower-research-capital:7011493": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "Paris"
+   ],
+   "company": "Tower Research Capital",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Paris"
+   ],
+   "posted": "2025-06-25",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Quantitative Developer Intern",
+   "uid": "tower-research-capital:7011493",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=7011493"
+  },
+  "tower-research-capital:8037860": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Tower Research Capital",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-09-01",
+   "remote": false,
+   "role": "Quant Trading",
+   "season": "Summer 2027",
+   "title": "Quantitative Trader/Researcher Summer Internship 2027",
+   "uid": "tower-research-capital:8037860",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8037860"
+  },
+  "tower-research-capital:8113986": {
+   "active": true,
+   "category": "quant",
+   "cities": [
+    "London"
+   ],
+   "company": "Tower Research Capital",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London"
+   ],
+   "posted": "2026-08-12",
+   "remote": false,
+   "role": "Quant Research",
+   "season": null,
+   "title": "Quantitative Research Internship - 6 Months, Central Execution Research",
+   "uid": "tower-research-capital:8113986",
+   "url": "https://www.tower-research.com/open-positions/?gh_jid=8113986"
+  },
+  "waymo:8205680": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Waymo",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "MS",
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, England, United Kingdom"
+   ],
+   "posted": "2026-09-18",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "2027 Summer Intern, MS/PhD, Sim-Realism ML Infrastructure",
+   "uid": "waymo:8205680",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8205680"
+  },
+  "waymo:8208465": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Waymo",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "MS",
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, England, United Kingdom"
+   ],
+   "posted": "2026-09-17",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Simulation Realism",
+   "uid": "waymo:8208465",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8208465"
+  },
+  "waymo:8214729": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "Waymo",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [
+    "BS",
+    "MS"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "Warsaw, Poland"
+   ],
+   "posted": "2026-09-18",
+   "remote": false,
+   "role": "Software",
+   "season": "Summer 2027",
+   "title": "2027 Summer Intern, BS/MS, Software Engineer, RO Performance team, Release Evaluation (Simulation)",
+   "uid": "waymo:8214729",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8214729"
+  },
+  "waymo:8265868": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "London"
+   ],
+   "company": "Waymo",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-07",
+   "kind": "Internship",
+   "last_seen": "2026-11-07",
+   "locations": [
+    "London, England, United Kingdom"
+   ],
+   "posted": "2026-10-13",
+   "remote": false,
+   "role": "AI/ML",
+   "season": "Summer 2027",
+   "title": "2027 Summer Intern, PhD, Machine Learning, Simulation Realism",
+   "uid": "waymo:8265868",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
+  }
+ },
+ "updated_at": "2026-11-07T14:39:48Z"
+}

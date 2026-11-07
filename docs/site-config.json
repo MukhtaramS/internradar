@@ -1,0 +1,21 @@
+{
+  "repo": "https://github.com/MukhtaramS/internradar",
+  "telegram": [
+    {
+      "label": "All internships",
+      "url": ""
+    },
+    {
+      "label": "Switzerland",
+      "url": ""
+    },
+    {
+      "label": "London",
+      "url": ""
+    },
+    {
+      "label": "Quant & Trading",
+      "url": ""
+    }
+  ]
+}
