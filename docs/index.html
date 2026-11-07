@@ -34,7 +34,10 @@
 <main>
   <!-- ======================== Internships ======================== -->
   <section id="view-jobs" class="view">
-    <div class="hero">
+    <div class="band">
+    <div class="radar" aria-hidden="true"><i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i><i class="ring r4"></i><i class="sweep"></i><i class="blip b1"></i><i class="blip b2"></i><i class="blip b3"></i></div>
+    <div class="wrap hero">
+      <p class="readout" id="readout">Scanning careers sites…</p>
       <h1>Tech &amp; quant internships in Europe</h1>
       <p id="hero-line" class="hero-line">Loading listings…</p>
       <div class="search-row">
@@ -50,8 +53,9 @@
       </div>
       <div class="presets" id="presets" aria-label="Quick filters"></div>
     </div>
+    </div>
 
-    <div class="board">
+    <div class="wrap board">
       <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false">Filters <span id="fcount" class="pill" hidden></span></button>
       <aside id="sidebar" class="sidebar" aria-label="Filters">
         <div class="fgroup" data-group="cat"><h2>Company type</h2><div class="opts" id="f-cat"></div></div>
@@ -90,24 +94,28 @@
 
   <!-- ========================= Companies ========================= -->
   <section id="view-companies" class="view" hidden>
-    <div class="page-head">
+    <div class="band band-small"><div class="wrap page-head">
+      <p class="readout">Coverage</p>
       <h1>Companies we track</h1>
       <p>Every company is read straight from its own careers site several times a day. <b>Typical days open</b> is how long a listing usually stays up before it closes, and <b>Peak month</b> is when we saw the most new listings, so you know when to watch.</p>
+    </div></div>
+    <div class="wrap page-body">
+      <div class="co-filters" id="co-cats"></div>
+      <div class="table-wrap"><table class="co-table">
+        <thead><tr><th>Company</th><th>Type</th><th>European hubs</th><th class="n">Open now</th><th class="n">Seen so far</th><th class="n">Typical days open</th><th>Peak month</th><th>Status</th></tr></thead>
+        <tbody id="co-body"></tbody>
+      </table></div>
     </div>
-    <div class="co-filters" id="co-cats"></div>
-    <div class="table-wrap"><table class="co-table">
-      <thead><tr><th>Company</th><th>Type</th><th>European hubs</th><th class="n">Open now</th><th class="n">Seen so far</th><th class="n">Typical days open</th><th>Peak month</th><th>Status</th></tr></thead>
-      <tbody id="co-body"></tbody>
-    </table></div>
   </section>
 
   <!-- ========================== Alerts =========================== -->
   <section id="view-alerts" class="view" hidden>
-    <div class="page-head">
+    <div class="band band-small"><div class="wrap page-head">
+      <p class="readout">Alerts</p>
       <h1>Get new internships as they appear</h1>
       <p>Pick whichever suits you. Nothing here needs an account with us.</p>
-    </div>
-    <div class="alert-grid">
+    </div></div>
+    <div class="wrap page-body alert-grid">
       <article class="alert-card">
         <h2>Telegram</h2>
         <p>Instant posts for every new listing. Join the channel that matches what you want.</p>

@@ -31,6 +31,7 @@
   var DEGREES = [["BS", "Bachelor's"], ["MS", "Master's"], ["PhD", "PhD"]];
   var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   var GROUPS = ["cat", "country", "city", "role", "degree", "kind", "company"];
+  var PIN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>';
 
   var data = null, jobs = [], shown = PAGE, updatedAt = null;
   var state = freshState();
@@ -247,11 +248,11 @@
     return '<li class="job">' + logo(j.company) +
       '<div class="job-main"><a class="job-title" href="' + esc(j.url) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
       '<div class="job-co"><b>' + esc(j.company) + '</b><span class="cat cat-' + esc(j.category) + '">' + esc(catLabel(j.category)) +
-      "</span><span>" + esc(where(j)) + "</span></div>" +
+      '</span><span class="place">' + PIN + esc(where(j)) + "</span></div>" +
       '<div class="job-meta">' + tags.join("") + "</div></div>" +
-      '<div class="job-side"><a class="apply" href="' + esc(j.url) + '" target="_blank" rel="noopener">Apply</a>' +
+      '<div class="job-side"><div class="side-row"><a class="apply" href="' + esc(j.url) + '" target="_blank" rel="noopener">Apply</a>' +
       '<button type="button" class="save' + (saved[j.url] ? " on" : "") + '" data-url="' + esc(j.url) +
-      '" title="' + (saved[j.url] ? "Remove from saved" : "Save") + '" aria-label="Save">' + (saved[j.url] ? "★" : "☆") + "</button>" +
+      '" title="' + (saved[j.url] ? "Remove from saved" : "Save") + '" aria-label="Save">' + (saved[j.url] ? "★" : "☆") + "</button></div>" +
       '<span class="when">' + esc(when) + "</span></div></li>";
   }
   function renderChips() {
@@ -460,6 +461,10 @@
       $("hero-line").innerHTML = "<b>" + jobs.length + " open internships</b> at " + keys(companies).length +
         " top companies across Europe. Updated " + esc(ago(data.updated_at.slice(0, 10)) === "today" ? "today" : ago(data.updated_at.slice(0, 10))) +
         " from official careers sites.";
+      var live = data.companies.filter(function (c) { return c.status === "ok"; }).length;
+      var mins = Math.max(0, Math.round((Date.now() - updatedAt) / 6e4));
+      var since = mins < 60 ? mins + " min ago" : mins < 48 * 60 ? Math.round(mins / 60) + " h ago" : Math.round(mins / 1440) + " days ago";
+      $("readout").textContent = "Scanning " + live + " careers sites · last sweep " + since;
       $("updated").textContent = "Last update: " + new Date(data.updated_at).toUTCString().replace(":00 GMT", " UTC") + ".";
       renderAlerts(res[1]);
       renderCompanies();
