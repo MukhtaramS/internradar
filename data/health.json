@@ -8,25 +8,25 @@
  "Amazon": {
   "fetched": 733,
   "kept": 32,
-  "seconds": 10.6,
+  "seconds": 11.6,
   "status": "ok"
  },
  "Anthropic": {
   "fetched": 675,
   "kept": 0,
-  "seconds": 0.1,
+  "seconds": 0.5,
   "status": "ok"
  },
  "Apple": {
   "fetched": 179,
   "kept": 33,
-  "seconds": 5.3,
+  "seconds": 5.5,
   "status": "ok"
  },
  "Bloomberg": {
   "fetched": 180,
   "kept": 0,
-  "seconds": 28.9,
+  "seconds": 28.3,
   "status": "ok"
  },
  "Citadel": {
@@ -66,13 +66,13 @@
   "status": "ok"
  },
  "Databricks": {
-  "fetched": 922,
+  "fetched": 920,
   "kept": 5,
   "seconds": 0.1,
   "status": "ok"
  },
  "Datadog": {
-  "fetched": 400,
+  "fetched": 401,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -86,7 +86,7 @@
  "Flow Traders": {
   "fetched": 42,
   "kept": 1,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "G-Research": {
@@ -102,7 +102,7 @@
  "Google": {
   "fetched": 90,
   "kept": 12,
-  "seconds": 4.3,
+  "seconds": 4.2,
   "status": "ok"
  },
  "Hudson River Trading": {
@@ -138,37 +138,37 @@
   "status": "not_covered"
  },
  "Meta": {
-  "fetched": 623,
+  "fetched": 622,
   "kept": 21,
-  "seconds": 1.4,
+  "seconds": 1.8,
   "status": "ok"
  },
  "Microsoft": {
-  "fetched": 130,
+  "fetched": 129,
   "kept": 5,
-  "seconds": 16.9,
+  "seconds": 17.4,
   "status": "ok"
  },
  "Millennium": {
   "fetched": 229,
   "kept": 0,
-  "seconds": 16.2,
+  "seconds": 16.3,
   "status": "ok"
  },
  "NVIDIA": {
   "fetched": 1133,
   "kept": 16,
-  "seconds": 119.7,
+  "seconds": 111.9,
   "status": "ok"
  },
  "Netflix": {
   "fetched": 6,
   "kept": 0,
-  "seconds": 4.3,
+  "seconds": 0.3,
   "status": "ok"
  },
  "OpenAI": {
-  "fetched": 819,
+  "fetched": 818,
   "kept": 0,
   "seconds": 0.5,
   "status": "ok"
@@ -176,7 +176,7 @@
  "Optiver": {
   "fetched": 160,
   "kept": 4,
-  "seconds": 6.5,
+  "seconds": 6.9,
   "status": "ok"
  },
  "Palantir": {
@@ -200,7 +200,7 @@
  "SIG": {
   "fetched": 88,
   "kept": 9,
-  "seconds": 1.1,
+  "seconds": 0.7,
   "status": "ok"
  },
  "Scale AI": {
@@ -212,13 +212,13 @@
  "Snowflake": {
   "fetched": 9,
   "kept": 2,
-  "seconds": 0.3,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Spotify": {
   "fetched": 85,
   "kept": 0,
-  "seconds": 0.1,
+  "seconds": 0.3,
   "status": "ok"
  },
  "Squarepoint Capital": {
@@ -256,7 +256,7 @@
   "status": "not_covered"
  },
  "Waymo": {
-  "fetched": 371,
+  "fetched": 370,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"
@@ -264,7 +264,7 @@
  "XTX Markets": {
   "fetched": 7,
   "kept": 0,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  }
 }
