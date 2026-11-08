@@ -138,10 +138,12 @@ code { font-family: var(--mono); font-size: .85em; background: var(--surface-2);
 .search span { color: var(--band-muted); font-size: 20px; }
 .search input { border: 0; outline: 0; background: none; height: 48px; width: 100%; min-width: 0; color: var(--band-fg); }
 .search input::placeholder { color: var(--band-muted); }
-#sort {
+.band-select {
   height: 50px; border-radius: 12px; border: 1px solid var(--band-line); background: rgba(255, 255, 255, .07);
-  color: var(--band-fg); padding: 0 12px; color-scheme: dark;
+  color: var(--band-fg); padding: 0 12px; color-scheme: dark; cursor: pointer;
 }
+.band-select:hover { border-color: var(--radar); }
+.band-select.active { border-color: var(--radar); background: rgba(242, 179, 61, .16); color: #ffd98a; }
 .presets { display: flex; flex-wrap: wrap; gap: 8px; max-width: 900px; }
 .preset {
   border: 1px solid var(--band-line); background: rgba(255, 255, 255, .05); color: var(--band-fg);

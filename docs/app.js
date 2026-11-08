@@ -33,7 +33,7 @@
   var GROUPS = ["cat", "country", "city", "role", "degree", "kind", "company"];
   var PIN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>';
 
-  var data = null, jobs = [], shown = PAGE, updatedAt = null;
+  var data = null, jobs = [], shown = PAGE, updatedAt = null, todayTs = 0, seedTs = 0;
   var state = freshState();
   var saved = {};
   try { saved = JSON.parse(localStorage.getItem("saved-jobs") || "{}"); } catch (e) { saved = {}; }
@@ -129,10 +129,30 @@
       if (!have.some(function (v) { return state[g][v]; })) return false;
     }
     if (state.q && j.search.indexOf(state.q) === -1) return false;
-    if (state.age && (updatedAt - (j.postedTs || j.foundTs)) > Number(state.age) * 864e5) return false;
+    if (state.age && skip !== "age" && !ageOk(j, state.age)) return false;
     if (state.savedOnly && !saved[j.url]) return false;
     if (state.newOnly && !j.isNew) return false;
     return true;
+  }
+  /* Date posted, like LinkedIn. Sites give dates without times, so whole days are compared:
+     "Past 24 hours" = posted today or yesterday. A job with no posting date uses the day we
+     first found it, except jobs from the very first scrape, whose real age is unknown. */
+  var AGE_LABEL = { "": "Any time", "1": "Past 24 hours", "7": "Past week", "30": "Past month" };
+  var AGE_ORDER = ["", "1", "7", "30"]; // same order as the <option>s; object key order would put "" last
+  function ageOk(j, age) {
+    return !age || (j.ageTs > 0 && j.ageTs >= todayTs - Number(age) * 864e5);
+  }
+  function renderAge() {
+    var base = jobs.filter(function (j) { return passes(j, "age"); });
+    var sel = $("age-select");
+    AGE_ORDER.forEach(function (v, i) {
+      var n = base.filter(function (j) { return ageOk(j, v); }).length;
+      sel.options[i].textContent = AGE_LABEL[v] + " (" + n + ")";
+      var em = document.querySelector('#f-age em[data-age="' + v + '"]');
+      if (em) em.textContent = n;
+    });
+    sel.value = state.age;
+    sel.classList.toggle("active", !!state.age);
   }
   function facetCounts(g) {
     var c = {};
@@ -233,9 +253,9 @@
   function sorted(rows) {
     var by = state.sort;
     return rows.sort(function (a, b) {
-      if (by === "company") return a.company < b.company ? -1 : a.company > b.company ? 1 : b.postedTs - a.postedTs;
-      if (by === "added") return b.foundTs - a.foundTs || b.postedTs - a.postedTs;
-      return (b.postedTs || b.foundTs) - (a.postedTs || a.foundTs);
+      if (by === "company") return a.company < b.company ? -1 : a.company > b.company ? 1 : b.ageTs - a.ageTs;
+      if (by === "added") return b.foundTs - a.foundTs || b.ageTs - a.ageTs;
+      return b.ageTs - a.ageTs;
     });
   }
   function card(j) {
@@ -244,7 +264,7 @@
     if (j.kind !== "Internship") tags.push('<span class="tag">' + esc(j.kind) + "</span>");
     if (j.degrees.length) tags.push('<span class="tag">' + esc(j.degrees.join(" / ")) + "</span>");
     if (j.season) tags.push('<span class="tag">' + esc(j.season) + "</span>");
-    var when = j.posted ? "Posted " + ago(j.posted) : "Found " + ago(j.first_seen);
+    var when = j.posted ? "Posted " + ago(j.posted) : j.ageTs ? "Found " + ago(j.first_seen) : "No posting date";
     return '<li class="job">' + logo(j.company) +
       '<div class="job-main"><a class="job-title" href="' + esc(j.url) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
       '<div class="job-co"><b>' + esc(j.company) + '</b><span class="cat cat-' + esc(j.category) + '">' + esc(catLabel(j.category)) +
@@ -263,7 +283,7 @@
         chips.push('<button type="button" class="chip" data-g="' + g + '" data-v="' + esc(v) + '">' + esc(label) + "</button>");
       });
     });
-    if (state.age) chips.push('<button type="button" class="chip" data-g="age">Last ' + esc(state.age) + " days</button>");
+    if (state.age) chips.push('<button type="button" class="chip" data-g="age">' + esc(AGE_LABEL[state.age] || "") + "</button>");
     if (state.newOnly) chips.push('<button type="button" class="chip" data-g="new">New this week</button>');
     if (state.savedOnly) chips.push('<button type="button" class="chip" data-g="saved">Saved</button>');
     if (state.q) chips.push('<button type="button" class="chip" data-g="q">“' + esc(state.q) + "”</button>");
@@ -282,6 +302,7 @@
     writeHash();
     renderPresets();
     renderSidebar();
+    renderAge();
     renderChips();
     renderList();
   }
@@ -378,6 +399,7 @@
     $("reset").addEventListener("click", function () { var v = state.view; state = freshState(); state.view = v; $("q").value = ""; refresh(); });
     $("q").addEventListener("input", function () { state.q = this.value.trim().toLowerCase(); refresh(); });
     $("sort").addEventListener("change", function () { state.sort = this.value; refresh(); });
+    $("age-select").addEventListener("change", function () { state.age = this.value; refresh(); });
     $("more").addEventListener("click", function () { shown += PAGE; renderList(); });
     $("presets").addEventListener("click", function (e) {
       var b = e.target.closest(".preset");
@@ -445,9 +467,13 @@
       data = res[0];
       updatedAt = new Date(data.updated_at).getTime();
       var weekAgo = updatedAt - 7 * 864e5;
+      todayTs = day(data.updated_at.slice(0, 10));
+      // the first scrape's date: jobs first seen then may be much older than that
+      seedTs = Math.min.apply(null, data.jobs.map(function (j) { return day(j.first_seen); }));
       jobs = data.jobs.map(function (j) {
         j.postedTs = day(j.posted);
         j.foundTs = day(j.first_seen);
+        j.ageTs = j.postedTs || (j.foundTs > seedTs ? j.foundTs : 0);
         j.isNew = j.foundTs >= weekAgo;
         j.search = [j.title, j.company, j.role, j.kind, j.season || "", catLabel(j.category)]
           .concat(j.cities, j.locations, j.countries.map(cname)).join(" ").toLowerCase();

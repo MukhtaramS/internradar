@@ -45,7 +45,13 @@
           <span aria-hidden="true">⌕</span>
           <input id="q" type="search" placeholder="Search title, company or city   ( / )" autocomplete="off">
         </label>
-        <select id="sort" aria-label="Sort">
+        <select id="age-select" class="band-select" aria-label="Date posted">
+          <option value="">Any time</option>
+          <option value="1">Past 24 hours</option>
+          <option value="7">Past week</option>
+          <option value="30">Past month</option>
+        </select>
+        <select id="sort" class="band-select" aria-label="Sort">
           <option value="posted">Newest posted</option>
           <option value="added">Newest found</option>
           <option value="company">Company A–Z</option>
@@ -65,12 +71,12 @@
         <div class="fgroup" data-group="degree"><h2>Degree</h2><p class="hint">Listings that name no degree are open to all, so they always show.</p><div class="opts" id="f-degree"></div></div>
         <div class="fgroup" data-group="kind"><h2>Type</h2><div class="opts" id="f-kind"></div></div>
         <div class="fgroup">
-          <h2>Posted</h2>
+          <h2>Date posted</h2>
           <div class="opts" id="f-age">
-            <label class="opt"><input type="radio" name="age" value="" checked><span>Any time</span></label>
-            <label class="opt"><input type="radio" name="age" value="1"><span>Last 24 hours</span></label>
-            <label class="opt"><input type="radio" name="age" value="7"><span>Last 7 days</span></label>
-            <label class="opt"><input type="radio" name="age" value="30"><span>Last 30 days</span></label>
+            <label class="opt"><input type="radio" name="age" value="" checked><span>Any time</span><em data-age=""></em></label>
+            <label class="opt"><input type="radio" name="age" value="1"><span>Past 24 hours</span><em data-age="1"></em></label>
+            <label class="opt"><input type="radio" name="age" value="7"><span>Past week</span><em data-age="7"></em></label>
+            <label class="opt"><input type="radio" name="age" value="30"><span>Past month</span><em data-age="30"></em></label>
           </div>
         </div>
         <div class="fgroup">
