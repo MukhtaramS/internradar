@@ -143,7 +143,6 @@ code { font-family: var(--mono); font-size: .85em; background: var(--surface-2);
   color: var(--band-fg); padding: 0 12px; color-scheme: dark; cursor: pointer;
 }
 .band-select:hover { border-color: var(--radar); }
-.band-select.active { border-color: var(--radar); background: rgba(242, 179, 61, .16); color: #ffd98a; }
 .presets { display: flex; flex-wrap: wrap; gap: 8px; max-width: 900px; }
 .preset {
   border: 1px solid var(--band-line); background: rgba(255, 255, 255, .05); color: var(--band-fg);

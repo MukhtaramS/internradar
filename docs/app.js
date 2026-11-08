@@ -138,21 +138,16 @@
      "Past 24 hours" = posted today or yesterday. A job with no posting date uses the day we
      first found it, except jobs from the very first scrape, whose real age is unknown. */
   var AGE_LABEL = { "": "Any time", "1": "Past 24 hours", "7": "Past week", "30": "Past month" };
-  var AGE_ORDER = ["", "1", "7", "30"]; // same order as the <option>s; object key order would put "" last
+  var AGE_ORDER = ["", "1", "7", "30"]; // object key order would put "" last
   function ageOk(j, age) {
     return !age || (j.ageTs > 0 && j.ageTs >= todayTs - Number(age) * 864e5);
   }
   function renderAge() {
     var base = jobs.filter(function (j) { return passes(j, "age"); });
-    var sel = $("age-select");
-    AGE_ORDER.forEach(function (v, i) {
-      var n = base.filter(function (j) { return ageOk(j, v); }).length;
-      sel.options[i].textContent = AGE_LABEL[v] + " (" + n + ")";
+    AGE_ORDER.forEach(function (v) {
       var em = document.querySelector('#f-age em[data-age="' + v + '"]');
-      if (em) em.textContent = n;
+      if (em) em.textContent = base.filter(function (j) { return ageOk(j, v); }).length;
     });
-    sel.value = state.age;
-    sel.classList.toggle("active", !!state.age);
   }
   function facetCounts(g) {
     var c = {};
@@ -398,9 +393,7 @@
     $("co-search").addEventListener("input", renderSidebar);
     $("reset").addEventListener("click", function () { var v = state.view; state = freshState(); state.view = v; $("q").value = ""; refresh(); });
     $("q").addEventListener("input", function () { state.q = this.value.trim().toLowerCase(); refresh(); });
-    $("sort").addEventListener("change", function () { state.sort = this.value; refresh(); });
-    $("age-select").addEventListener("change", function () { state.age = this.value; refresh(); });
-    $("more").addEventListener("click", function () { shown += PAGE; renderList(); });
+    $("sort").addEventListener("change", function () { state.sort = this.value; refresh(); });    $("more").addEventListener("click", function () { shown += PAGE; renderList(); });
     $("presets").addEventListener("click", function (e) {
       var b = e.target.closest(".preset");
       if (!b) return;

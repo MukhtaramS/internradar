@@ -45,12 +45,6 @@
           <span aria-hidden="true">⌕</span>
           <input id="q" type="search" placeholder="Search title, company or city   ( / )" autocomplete="off">
         </label>
-        <select id="age-select" class="band-select" aria-label="Date posted">
-          <option value="">Any time</option>
-          <option value="1">Past 24 hours</option>
-          <option value="7">Past week</option>
-          <option value="30">Past month</option>
-        </select>
         <select id="sort" class="band-select" aria-label="Sort">
           <option value="posted">Newest posted</option>
           <option value="added">Newest found</option>
@@ -64,12 +58,6 @@
     <div class="wrap board">
       <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false">Filters <span id="fcount" class="pill" hidden></span></button>
       <aside id="sidebar" class="sidebar" aria-label="Filters">
-        <div class="fgroup" data-group="cat"><h2>Company type</h2><div class="opts" id="f-cat"></div></div>
-        <div class="fgroup" data-group="country"><h2>Country</h2><div class="opts" id="f-country"></div></div>
-        <div class="fgroup" data-group="city"><h2>City</h2><div class="opts" id="f-city"></div></div>
-        <div class="fgroup" data-group="role"><h2>Role</h2><div class="opts" id="f-role"></div></div>
-        <div class="fgroup" data-group="degree"><h2>Degree</h2><p class="hint">Listings that name no degree are open to all, so they always show.</p><div class="opts" id="f-degree"></div></div>
-        <div class="fgroup" data-group="kind"><h2>Type</h2><div class="opts" id="f-kind"></div></div>
         <div class="fgroup">
           <h2>Date posted</h2>
           <div class="opts" id="f-age">
@@ -79,6 +67,12 @@
             <label class="opt"><input type="radio" name="age" value="30"><span>Past month</span><em data-age="30"></em></label>
           </div>
         </div>
+        <div class="fgroup" data-group="cat"><h2>Company type</h2><div class="opts" id="f-cat"></div></div>
+        <div class="fgroup" data-group="country"><h2>Country</h2><div class="opts" id="f-country"></div></div>
+        <div class="fgroup" data-group="city"><h2>City</h2><div class="opts" id="f-city"></div></div>
+        <div class="fgroup" data-group="role"><h2>Role</h2><div class="opts" id="f-role"></div></div>
+        <div class="fgroup" data-group="degree"><h2>Degree</h2><p class="hint">Listings that name no degree are open to all, so they always show.</p><div class="opts" id="f-degree"></div></div>
+        <div class="fgroup" data-group="kind"><h2>Type</h2><div class="opts" id="f-kind"></div></div>
         <div class="fgroup">
           <h2>Mine</h2>
           <div class="opts"><label class="opt"><input type="checkbox" id="f-saved"><span>Saved only</span><em id="n-saved"></em></label></div>
