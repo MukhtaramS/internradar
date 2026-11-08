@@ -293,3 +293,8 @@ code { font-family: var(--mono); font-size: .85em; background: var(--surface-2);
   .sweep, .blip { animation: none; }
   .job, .preset { transition: none; }
 }
+.see-all {
+  justify-self: start; background: none; border: 0; padding: 4px 6px; margin-top: 2px; cursor: pointer;
+  color: var(--link); font-weight: 600; font-size: 13px; border-radius: 6px;
+}
+.see-all:hover { background: var(--surface-2); }

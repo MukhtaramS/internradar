@@ -165,42 +165,52 @@
     return '<label class="opt"><input type="checkbox" data-g="' + group + '" value="' + esc(value) + '"' +
       checked + ">" + dot + "<span>" + label + "</span><em>" + (count || 0) + "</em></label>";
   }
+  /* Long groups show their top SHOW options plus "See all". Ticked options always stay visible. */
+  var SHOW = 5;
+  var expanded = {};
+  function byCount(c) { return function (a, b) { return c[b] - c[a] || (a < b ? -1 : 1); }; }
+  function fill(group, items, showEverything) {
+    var long = !showEverything && items.length > SHOW + 1; // never hide just one option
+    var shown = !long || expanded[group] ? items :
+      items.filter(function (it, i) { return i < SHOW || state[group][it[0]]; });
+    var html = shown.map(function (it) { return option(group, it[0], it[1], it[2], it[3]); }).join("");
+    if (long) {
+      html += '<button type="button" class="see-all" data-more="' + group + '" aria-expanded="' + !!expanded[group] + '">' +
+        (expanded[group] ? "Show less" : "See all (" + items.length + ")") + "</button>";
+    }
+    $("f-" + group).innerHTML = html;
+  }
   function renderSidebar() {
     var c;
     c = facetCounts("cat");
-    $("f-cat").innerHTML = keys(data.categories).filter(function (k) {
+    fill("cat", keys(data.categories).filter(function (k) {
       return c[k] || state.cat[k] || data.companies.some(function (co) { return co.category === k; });
-    }).map(function (k) {
-      return option("cat", k, esc(catLabel(k)), c[k], "--cat-" + k);
-    }).join("");
+    }).map(function (k) { return [k, esc(catLabel(k)), c[k], "--cat-" + k]; }));
 
     c = facetCounts("country");
-    $("f-country").innerHTML = keys(c).sort(function (a, b) { return c[b] - c[a]; }).map(function (k) {
-      return option("country", k, k === "EU" ? "🇪🇺 Europe-wide / remote" : flag(k) + " " + esc(cname(k)), c[k]);
-    }).join("");
+    fill("country", keys(c).sort(byCount(c)).map(function (k) {
+      return [k, k === "EU" ? "🇪🇺 Europe-wide / remote" : flag(k) + " " + esc(cname(k)), c[k]];
+    }));
 
     c = facetCounts("city");
-    var cities = keys(c).sort(function (a, b) { return c[b] - c[a] || (a < b ? -1 : 1); });
-    var top = cities.slice(0, 14);
-    keys(state.city).forEach(function (k) { if (top.indexOf(k) === -1) top.push(k); });
-    $("f-city").innerHTML = top.map(function (k) { return option("city", k, esc(k), c[k]); }).join("");
+    keys(state.city).forEach(function (k) { c[k] = c[k] || 0; });
+    fill("city", keys(c).sort(byCount(c)).map(function (k) { return [k, esc(k), c[k]]; }));
 
     c = facetCounts("role");
-    $("f-role").innerHTML = ROLE_ORDER.filter(function (r) { return c[r] || state.role[r]; })
-      .map(function (r) { return option("role", r, esc(r), c[r]); }).join("");
+    fill("role", ROLE_ORDER.filter(function (r) { return c[r] || state.role[r]; })
+      .sort(byCount(c)).map(function (r) { return [r, esc(r), c[r]]; }));
 
     c = facetCounts("degree");
-    $("f-degree").innerHTML = DEGREES.map(function (d) { return option("degree", d[0], d[1], c[d[0]]); }).join("");
+    fill("degree", DEGREES.map(function (d) { return [d[0], d[1], c[d[0]]]; }));
 
     c = facetCounts("kind");
-    $("f-kind").innerHTML = keys(c).sort(function (a, b) { return c[b] - c[a]; })
-      .map(function (k) { return option("kind", k, esc(k), c[k]); }).join("");
+    fill("kind", keys(c).sort(byCount(c)).map(function (k) { return [k, esc(k), c[k]]; }));
 
     c = facetCounts("company");
     var find = $("co-search").value.trim().toLowerCase();
-    $("f-company").innerHTML = keys(c).sort(function (a, b) { return c[b] - c[a] || (a < b ? -1 : 1); })
+    fill("company", keys(c).sort(byCount(c))
       .filter(function (k) { return !find || k.toLowerCase().indexOf(find) !== -1 || state.company[k]; })
-      .map(function (k) { return option("company", k, esc(k), c[k]); }).join("");
+      .map(function (k) { return [k, esc(k), c[k]]; }), !!find);
 
     $("n-saved").textContent = keys(saved).length;
     $("f-saved").checked = state.savedOnly;
@@ -389,6 +399,13 @@
       else if (t.name === "age") state.age = t.value;
       else if (t.id === "f-saved") state.savedOnly = t.checked;
       refresh();
+    });
+    $("sidebar").addEventListener("click", function (e) {
+      var b = e.target.closest(".see-all");
+      if (!b) return;
+      var g = b.getAttribute("data-more");
+      expanded[g] = !expanded[g];
+      renderSidebar();
     });
     $("co-search").addEventListener("input", renderSidebar);
     $("reset").addEventListener("click", function () { var v = state.view; state = freshState(); state.view = v; $("q").value = ""; refresh(); });
