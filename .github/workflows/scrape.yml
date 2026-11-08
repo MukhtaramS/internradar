@@ -2,8 +2,9 @@ name: Scrape internships
 
 on:
   schedule:
-    # Every 3 hours at :23. GitHub often starts scheduled runs late, so expect 5-8 runs a day.
-    - cron: "23 */3 * * *"
+    # Every hour at :41. GitHub starts scheduled runs late and skips some when busy (most of
+    # all at :00 and :30), so asking hourly still gives a check every hour or two.
+    - cron: "41 * * * *"
   workflow_dispatch: {}
 
 permissions:

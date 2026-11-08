@@ -37,7 +37,7 @@ Not scraped yet (marked `research`, `unknown` or `headless` in the config): Uber
 ## How it works
 
 ```
-GitHub Actions, every 3 hours
+GitHub Actions, every hour
   python -m radar.main
     for each company in config/companies.yaml:
       fetch jobs with the adapter for its careers platform   radar/adapters/
