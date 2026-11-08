@@ -137,8 +137,8 @@
   /* Date posted, like LinkedIn. Sites give dates without times, so whole days are compared:
      "Past 24 hours" = posted today or yesterday. A job with no posting date uses the day we
      first found it, except jobs from the very first scrape, whose real age is unknown. */
-  var AGE_LABEL = { "": "Any time", "1": "Past 24 hours", "7": "Past week", "30": "Past month" };
-  var AGE_ORDER = ["", "1", "7", "30"]; // object key order would put "" last
+  var AGE_LABEL = { "": "Any time", "1": "Past 24 hours", "3": "Past 3 days", "7": "Past week", "30": "Past month" };
+  var AGE_ORDER = ["", "1", "3", "7", "30"]; // object key order would put "" last
   function ageOk(j, age) {
     return !age || (j.ageTs > 0 && j.ageTs >= todayTs - Number(age) * 864e5);
   }
