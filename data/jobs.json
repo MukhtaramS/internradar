@@ -986,11 +986,12 @@
    "url": "https://jobs.apple.com/en-us/details/200682404/circuit-design-intern-m-f-d"
   },
   "apple:200682664": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-09",
    "company": "Apple",
    "countries": [
     "DE"
@@ -1318,11 +1319,12 @@
    "url": "https://jobs.apple.com/en-us/details/200689039/rf-system-validation-internship"
   },
   "apple:200689695": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Paris"
    ],
+   "closed": "2026-11-09",
    "company": "Apple",
    "countries": [
     "FR"
@@ -3956,7 +3958,7 @@
    "active": true,
    "category": "faang",
    "cities": [
-    "Espoo"
+    "Tampere"
    ],
    "company": "Microsoft",
    "countries": [
@@ -3968,7 +3970,7 @@
    "kind": "Internship",
    "last_seen": "2026-11-09",
    "locations": [
-    "Finland, Uusimaa, Espoo"
+    "Finland, Satakunta, Tampere"
    ],
    "posted": "2026-11-09",
    "remote": false,
@@ -5552,5 +5554,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-09T10:20:33Z"
+ "updated_at": "2026-11-09T21:06:15Z"
 }
