@@ -793,11 +793,12 @@
    "url": "https://www.amazon.jobs/en/jobs/10596377/2027-applied-scientist-internship-masters-amazon-university-talent-acquisition"
   },
   "amazon:3130528": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Dresden"
    ],
+   "closed": "2026-11-09",
    "company": "Amazon",
    "countries": [
     "DE"
@@ -819,11 +820,12 @@
    "url": "https://www.amazon.jobs/en/jobs/3130528/software-dev-engineer-internship-embedded-development-linux"
   },
   "amazon:3134271": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Berlin"
    ],
+   "closed": "2026-11-09",
    "company": "Amazon",
    "countries": [
     "DE"
@@ -3950,6 +3952,32 @@
    "uid": "microsoft:1970393557050102",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557050102"
   },
+  "microsoft:1970393557053762": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Espoo"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "FI"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-09",
+   "kind": "Internship",
+   "last_seen": "2026-11-09",
+   "locations": [
+    "Finland, Uusimaa, Espoo"
+   ],
+   "posted": "2026-11-09",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "Silicon Engineering INTERN",
+   "uid": "microsoft:1970393557053762",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557053762"
+  },
   "nvidia:JR2024606": {
    "active": true,
    "category": "faang_plus",
@@ -3996,7 +4024,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4025,7 +4053,7 @@
     "Germany, Berlin",
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4054,7 +4082,7 @@
     "Germany, Munich",
     "Germany, Wuerselen"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4080,7 +4108,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-21",
+   "posted": "2026-10-20",
    "remote": false,
    "role": "Hardware",
    "season": null,
@@ -4162,7 +4190,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Infrastructure",
    "season": "2027",
@@ -4188,7 +4216,7 @@
     "France, Remote",
     "Germany, Remote"
    ],
-   "posted": "2026-11-03",
+   "posted": "2026-11-02",
    "remote": true,
    "role": "Data",
    "season": "2027",
@@ -4217,7 +4245,7 @@
     "Switzerland, Zurich",
     "UK, Bristol"
    ],
-   "posted": "2026-10-15",
+   "posted": "2026-10-14",
    "remote": false,
    "role": "Data",
    "season": "2027",
@@ -4246,7 +4274,7 @@
     "Switzerland, Zurich",
     "UK, Bristol"
    ],
-   "posted": "2026-10-16",
+   "posted": "2026-10-15",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4275,7 +4303,7 @@
     "Germany, Munich",
     "Germany, Wuerselen"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4301,7 +4329,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-27",
+   "posted": "2026-10-26",
    "remote": false,
    "role": "AI/ML",
    "season": null,
@@ -4327,7 +4355,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-06",
+   "posted": "2026-11-05",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -4353,7 +4381,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-04",
+   "posted": "2026-11-03",
    "remote": false,
    "role": "AI/ML",
    "season": "Summer 2027",
@@ -4379,7 +4407,7 @@
    "locations": [
     "Germany, Munich"
    ],
-   "posted": "2026-11-05",
+   "posted": "2026-11-04",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -4440,11 +4468,12 @@
    "url": "https://www.optiver.com/join-us/jobs/quantitative-research-and-machine-learning/amsterdam/quantitative-research-internship-2027-start/"
   },
   "optiver:quantitative-trading-internship-2027-start": {
-   "active": true,
+   "active": false,
    "category": "quant",
    "cities": [
     "Amsterdam"
    ],
+   "closed": "2026-11-09",
    "company": "Optiver",
    "countries": [
     "NL"
@@ -5523,5 +5552,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-09T02:00:31Z"
+ "updated_at": "2026-11-09T10:20:33Z"
 }
