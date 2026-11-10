@@ -26,6 +26,32 @@
    "uid": "amazon:10418355",
    "url": "https://www.amazon.jobs/en/jobs/10418355/2027-software-dev-engineer-intern"
   },
+  "amazon:10489527": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Luxembourg"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "LU"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-10",
+   "kind": "Internship",
+   "last_seen": "2026-11-10",
+   "locations": [
+    "Luxembourg, LUX"
+   ],
+   "posted": "2026-11-10",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Dev Intern",
+   "uid": "amazon:10489527",
+   "url": "https://www.amazon.jobs/en/jobs/10489527/software-dev-intern"
+  },
   "amazon:10554586": {
    "active": true,
    "category": "faang",
@@ -931,11 +957,12 @@
    "url": "https://jobs.apple.com/en-us/details/200679652/gpu-design-verification-internship"
   },
   "apple:200682229": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-10",
    "company": "Apple",
    "countries": [
     "DE"
@@ -1714,7 +1741,7 @@
    "active": true,
    "category": "faang",
    "cities": [
-    "Zurich"
+    "Lausanne"
    ],
    "company": "Apple",
    "countries": [
@@ -1726,7 +1753,7 @@
    "kind": "Internship",
    "last_seen": "2026-11-10",
    "locations": [
-    "Zurich, Switzerland"
+    "Lausanne, Switzerland"
    ],
    "posted": "2026-11-06",
    "remote": false,
@@ -1735,6 +1762,32 @@
    "title": "Internship - Reasoning and agentic capabilities of LLMs",
    "uid": "apple:200693685",
    "url": "https://jobs.apple.com/en-us/details/200693685/internship-reasoning-and-agentic-capabilities-of-llms"
+  },
+  "apple:200694316": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-10",
+   "kind": "Internship",
+   "last_seen": "2026-11-10",
+   "locations": [
+    "London, United Kingdom"
+   ],
+   "posted": "2026-11-10",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Virtualisation Software Engineering Internship, CoreOS",
+   "uid": "apple:200694316",
+   "url": "https://jobs.apple.com/en-us/details/200694316/virtualisation-software-engineering-internship-coreos"
   },
   "da-vinci:4196845101": {
    "active": true,
@@ -2075,11 +2128,12 @@
    "url": "https://job-boards.greenhouse.io/drweng/jobs/8020364"
   },
   "drw:8070392": {
-   "active": true,
+   "active": false,
    "category": "quant",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-10",
    "company": "DRW",
    "countries": [
     "GB"
@@ -2547,7 +2601,7 @@
    "season": null,
    "title": "Software Developer - Intern",
    "uid": "gsa-capital:8570668002",
-   "url": "https://www.gsacapital.com/careers/gh/?gh_jid=8570668002"
+   "url": "https://job-boards.greenhouse.io/gsacapital/jobs/8570668002"
   },
   "hudson-river-trading:7964062": {
    "active": true,
@@ -4118,11 +4172,12 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Poland-Warsaw/Image-and-Data-Processing-Libraries-Intern_JR2026569"
   },
   "nvidia:JR2026775": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-10",
    "company": "NVIDIA",
    "countries": [
     "DE",
@@ -5608,5 +5663,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-10T13:00:18Z"
+ "updated_at": "2026-11-10T20:40:04Z"
 }
