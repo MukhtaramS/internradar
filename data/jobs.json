@@ -792,6 +792,32 @@
    "uid": "amazon:10596377",
    "url": "https://www.amazon.jobs/en/jobs/10596377/2027-applied-scientist-internship-masters-amazon-university-talent-acquisition"
   },
+  "amazon:10600919": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-10",
+   "kind": "Internship",
+   "last_seen": "2026-11-10",
+   "locations": [
+    "Zurich, CHE"
+   ],
+   "posted": "2026-11-10",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Applied Scientist Intern - VLA and DATA, RIVR",
+   "uid": "amazon:10600919",
+   "url": "https://www.amazon.jobs/en/jobs/10600919/applied-scientist-intern-vla-and-data-rivr"
+  },
   "amazon:3130528": {
    "active": false,
    "category": "faang",
@@ -1037,11 +1063,12 @@
    "url": "https://jobs.apple.com/en-us/details/200683293/pmu-design-verification-intern"
   },
   "apple:200683768": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Paris"
    ],
+   "closed": "2026-11-10",
    "company": "Apple",
    "countries": [
     "FR"
@@ -3903,6 +3930,32 @@
    "uid": "microsoft:1970393557043468",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557043468"
   },
+  "microsoft:1970393557044053": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Tampere"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "FI"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-10",
+   "kind": "Internship",
+   "last_seen": "2026-11-10",
+   "locations": [
+    "Finland, Satakunta, Tampere"
+   ],
+   "posted": "2026-11-10",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineering INTERN",
+   "uid": "microsoft:1970393557044053",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044053"
+  },
   "microsoft:1970393557050083": {
    "active": true,
    "category": "faang",
@@ -4027,7 +4080,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4056,7 +4109,7 @@
     "Germany, Berlin",
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4085,7 +4138,7 @@
     "Germany, Munich",
     "Germany, Wuerselen"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4111,7 +4164,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-21",
+   "posted": "2026-10-20",
    "remote": false,
    "role": "Hardware",
    "season": null,
@@ -4193,7 +4246,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Infrastructure",
    "season": "2027",
@@ -4219,7 +4272,7 @@
     "France, Remote",
     "Germany, Remote"
    ],
-   "posted": "2026-11-03",
+   "posted": "2026-11-02",
    "remote": true,
    "role": "Data",
    "season": "2027",
@@ -4248,7 +4301,7 @@
     "Switzerland, Zurich",
     "UK, Bristol"
    ],
-   "posted": "2026-10-15",
+   "posted": "2026-10-14",
    "remote": false,
    "role": "Data",
    "season": "2027",
@@ -4277,7 +4330,7 @@
     "Switzerland, Zurich",
     "UK, Bristol"
    ],
-   "posted": "2026-10-16",
+   "posted": "2026-10-15",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4306,7 +4359,7 @@
     "Germany, Munich",
     "Germany, Wuerselen"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4332,7 +4385,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-27",
+   "posted": "2026-10-26",
    "remote": false,
    "role": "AI/ML",
    "season": null,
@@ -4358,7 +4411,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-06",
+   "posted": "2026-11-05",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -4384,7 +4437,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-04",
+   "posted": "2026-11-03",
    "remote": false,
    "role": "AI/ML",
    "season": "Summer 2027",
@@ -4410,7 +4463,7 @@
    "locations": [
     "Germany, Munich"
    ],
-   "posted": "2026-11-05",
+   "posted": "2026-11-04",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -5555,5 +5608,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-10T03:51:29Z"
+ "updated_at": "2026-11-10T13:00:18Z"
 }
