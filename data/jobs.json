@@ -27,11 +27,12 @@
    "url": "https://www.amazon.jobs/en/jobs/10418355/2027-software-dev-engineer-intern"
   },
   "amazon:10489527": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Luxembourg"
    ],
+   "closed": "2026-11-11",
    "company": "Amazon",
    "countries": [
     "LU"
@@ -844,6 +845,58 @@
    "uid": "amazon:10600919",
    "url": "https://www.amazon.jobs/en/jobs/10600919/applied-scientist-intern-vla-and-data-rivr"
   },
+  "amazon:10602204": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Luxembourg"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "LU"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "Luxembourg, LUX"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Data Engineer Internship",
+   "uid": "amazon:10602204",
+   "url": "https://www.amazon.jobs/en/jobs/10602204/data-engineer-internship"
+  },
+  "amazon:10602219": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "London, GBR"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Data Engineer Internship",
+   "uid": "amazon:10602219",
+   "url": "https://www.amazon.jobs/en/jobs/10602219/data-engineer-internship"
+  },
   "amazon:3130528": {
    "active": false,
    "category": "faang",
@@ -1373,12 +1426,11 @@
    "url": "https://jobs.apple.com/en-us/details/200689039/rf-system-validation-internship"
   },
   "apple:200689695": {
-   "active": false,
+   "active": true,
    "category": "faang",
    "cities": [
     "Paris"
    ],
-   "closed": "2026-11-09",
    "company": "Apple",
    "countries": [
     "FR"
@@ -1387,11 +1439,11 @@
    "europe_wide": false,
    "first_seen": "2026-11-07",
    "kind": "Internship",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-11",
    "locations": [
     "Paris, France"
    ],
-   "posted": "2026-10-17",
+   "posted": "2026-11-11",
    "remote": false,
    "role": "Security",
    "season": null,
@@ -1711,6 +1763,30 @@
    "uid": "apple:200692892",
    "url": "https://jobs.apple.com/en-us/details/200692892/internship-research-intern-speech-language-processing"
   },
+  "apple:200693133": {
+   "active": true,
+   "category": "faang",
+   "cities": [],
+   "company": "Apple",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "Swindon, United Kingdom"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "CAD Virtuoso Engineering Intern",
+   "uid": "apple:200693133",
+   "url": "https://jobs.apple.com/en-us/details/200693133/cad-virtuoso-engineering-intern"
+  },
   "apple:200693660": {
    "active": true,
    "category": "faang",
@@ -1811,9 +1887,9 @@
    "remote": false,
    "role": "Software",
    "season": null,
-   "title": "Virtualisation Software Engineering Internship, CoreOS",
+   "title": "Virtualization Software Engineering Internship, CoreOS",
    "uid": "apple:200694316",
-   "url": "https://jobs.apple.com/en-us/details/200694316/virtualisation-software-engineering-internship-coreos"
+   "url": "https://jobs.apple.com/en-us/details/200694316/virtualization-software-engineering-internship-coreos"
   },
   "da-vinci:4196845101": {
    "active": true,
@@ -2645,7 +2721,7 @@
    "kind": "Internship",
    "last_seen": "2026-11-11",
    "locations": [
-    "London, United Kingdom; New York, NY, United States; Singapore"
+    "London, United Kingdom; Singapore"
    ],
    "posted": "2026-07-13",
    "remote": false,
@@ -4114,6 +4190,32 @@
    "uid": "microsoft:1970393557053762",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557053762"
   },
+  "microsoft:1970393557070382": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "company": "Microsoft",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "United Kingdom, Cambridgeshire, Cambridge"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Security",
+   "season": null,
+   "title": "Cambridge Internship Program: MSRC AI Security Research",
+   "uid": "microsoft:1970393557070382",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557070382"
+  },
   "nvidia:JR2024606": {
    "active": true,
    "category": "faang_plus",
@@ -4551,6 +4653,58 @@
    "title": "Software Engineering Intern - 2027",
    "uid": "nvidia:JR2029184",
    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/Software-Engineering-Intern---2027_JR2029184"
+  },
+  "nvidia:JR2029779": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "Switzerland, Zurich"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Hardware",
+   "season": null,
+   "title": "GPU Compiler Intern",
+   "uid": "nvidia:JR2029779",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/GPU-Compiler-Intern_JR2029779"
+  },
+  "nvidia:JR2029780": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Helsinki"
+   ],
+   "company": "NVIDIA",
+   "countries": [
+    "FI"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "Finland, Helsinki"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "System Software Engineering Intern - 2027",
+   "uid": "nvidia:JR2029780",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Finland-Helsinki/System-Software-Engineering-Intern---2027_JR2029780"
   },
   "optiver:fpga-internship-2027-start": {
    "active": true,
@@ -5313,6 +5467,32 @@
    "uid": "sig:11333",
    "url": "https://careers.sig.com/jobs/11333?lang=en-us"
   },
+  "snowflake:1181b78f-cef2-4078-970f-ebdf96fbeca5": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "Snowflake",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "Warsaw, Poland"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Software",
+   "season": "Summer 2027",
+   "title": "Software Engineering Intern – Developer Platform (Warsaw, Summer 2027)",
+   "uid": "snowflake:1181b78f-cef2-4078-970f-ebdf96fbeca5",
+   "url": "https://careers.snowflake.com/us/en/job/1181b78f-cef2-4078-970f-ebdf96fbeca5"
+  },
   "snowflake:36706ca8-ea03-4bfb-91dc-c5fa1f0dc17e": {
    "active": true,
    "category": "faang_plus",
@@ -5364,6 +5544,32 @@
    "title": "Software Engineer Intern AI/ML - Warsaw (2027)",
    "uid": "snowflake:e11c70eb-0800-4363-b609-264610878dce",
    "url": "https://careers.snowflake.com/us/en/job/e11c70eb-0800-4363-b609-264610878dce"
+  },
+  "snowflake:e8e69bfe-22b4-4abe-b2cb-f60a73f190d5": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Warsaw"
+   ],
+   "company": "Snowflake",
+   "countries": [
+    "PL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-11",
+   "kind": "Internship",
+   "last_seen": "2026-11-11",
+   "locations": [
+    "Warsaw, Poland"
+   ],
+   "posted": "2026-11-11",
+   "remote": false,
+   "role": "Data",
+   "season": "Summer 2027",
+   "title": "Software Engineering Intern – Data Ingestion & Platform Infrastructure (Warsaw, Summer 2027)",
+   "uid": "snowflake:e8e69bfe-22b4-4abe-b2cb-f60a73f190d5",
+   "url": "https://careers.snowflake.com/us/en/job/e8e69bfe-22b4-4abe-b2cb-f60a73f190d5"
   },
   "squarepoint-capital:7231006": {
    "active": true,
@@ -5689,5 +5895,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-11T08:24:54Z"
+ "updated_at": "2026-11-11T16:37:32Z"
 }
