@@ -6,27 +6,27 @@
   "status": "ok"
  },
  "Amazon": {
-  "fetched": 732,
+  "fetched": 733,
   "kept": 32,
-  "seconds": 10.9,
+  "seconds": 11.8,
   "status": "ok"
  },
  "Anthropic": {
-  "fetched": 676,
+  "fetched": 679,
   "kept": 0,
-  "seconds": 0.1,
+  "seconds": 0.3,
   "status": "ok"
  },
  "Apple": {
-  "fetched": 178,
-  "kept": 30,
-  "seconds": 5.6,
+  "fetched": 179,
+  "kept": 31,
+  "seconds": 5.8,
   "status": "ok"
  },
  "Bloomberg": {
-  "fetched": 188,
+  "fetched": 190,
   "kept": 0,
-  "seconds": 33.9,
+  "seconds": 30.4,
   "status": "ok"
  },
  "Citadel": {
@@ -38,13 +38,13 @@
   "status": "not_covered"
  },
  "Cloudflare": {
-  "fetched": 468,
+  "fetched": 473,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
  },
  "Coinbase": {
-  "fetched": 285,
+  "fetched": 286,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
@@ -54,7 +54,7 @@
   "status": "not_covered"
  },
  "DRW": {
-  "fetched": 162,
+  "fetched": 161,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"
@@ -62,23 +62,23 @@
  "Da Vinci": {
   "fetched": 16,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Databricks": {
-  "fetched": 914,
+  "fetched": 920,
   "kept": 5,
   "seconds": 0.1,
   "status": "ok"
  },
  "Datadog": {
-  "fetched": 395,
+  "fetched": 394,
   "kept": 3,
-  "seconds": 0.1,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Figma": {
-  "fetched": 143,
+  "fetched": 144,
   "kept": 1,
   "seconds": 0.1,
   "status": "ok"
@@ -96,13 +96,13 @@
  "GSA Capital": {
   "fetched": 13,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Google": {
   "fetched": 90,
   "kept": 12,
-  "seconds": 4.4,
+  "seconds": 4.3,
   "status": "ok"
  },
  "Hudson River Trading": {
@@ -120,7 +120,7 @@
  "Jane Street": {
   "fetched": 220,
   "kept": 11,
-  "seconds": 0.4,
+  "seconds": 0.5,
   "status": "ok"
  },
  "Jump Trading": {
@@ -138,55 +138,53 @@
   "status": "not_covered"
  },
  "Meta": {
-  "fetched": 630,
-  "kept": 21,
-  "seconds": 1.6,
-  "status": "ok"
+  "error": "Meta GraphQL answered without jobs; the doc_id has probably changed",
+  "status": "failed"
  },
  "Microsoft": {
-  "fetched": 129,
+  "fetched": 128,
   "kept": 7,
-  "seconds": 17.6,
+  "seconds": 21.3,
   "status": "ok"
  },
  "Millennium": {
-  "fetched": 225,
+  "fetched": 224,
   "kept": 0,
-  "seconds": 17.6,
+  "seconds": 21.3,
   "status": "ok"
  },
  "NVIDIA": {
-  "fetched": 1134,
+  "fetched": 1086,
   "kept": 15,
-  "seconds": 131.0,
+  "seconds": 124.4,
   "status": "ok"
  },
  "Netflix": {
   "fetched": 5,
   "kept": 0,
-  "seconds": 0.2,
+  "seconds": 0.4,
   "status": "ok"
  },
  "OpenAI": {
-  "fetched": 831,
+  "fetched": 827,
   "kept": 0,
-  "seconds": 0.7,
+  "seconds": 0.6,
   "status": "ok"
  },
  "Optiver": {
   "fetched": 152,
   "kept": 3,
-  "seconds": 7.0,
+  "seconds": 7.1,
   "status": "ok"
  },
  "Palantir": {
   "fetched": 304,
   "kept": 6,
-  "seconds": 0.4,
+  "seconds": 0.6,
   "status": "ok"
  },
  "Perplexity AI": {
-  "fetched": 137,
+  "fetched": 135,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"
@@ -212,11 +210,11 @@
  "Snowflake": {
   "fetched": 8,
   "kept": 2,
-  "seconds": 0.2,
+  "seconds": 0.3,
   "status": "ok"
  },
  "Spotify": {
-  "fetched": 84,
+  "fetched": 86,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
@@ -228,7 +226,7 @@
   "status": "ok"
  },
  "Stripe": {
-  "fetched": 775,
+  "fetched": 778,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -242,7 +240,7 @@
   "status": "not_covered"
  },
  "Tower Research Capital": {
-  "fetched": 92,
+  "fetched": 93,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -264,7 +262,7 @@
  "XTX Markets": {
   "fetched": 7,
   "kept": 0,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  }
 }
