@@ -556,11 +556,12 @@
    "url": "https://www.amazon.jobs/en/jobs/10574996/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
   },
   "amazon:10579683": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Istanbul"
    ],
+   "closed": "2026-11-12",
    "company": "Amazon",
    "countries": [
     "TR"
@@ -896,6 +897,32 @@
    "title": "Data Engineer Internship",
    "uid": "amazon:10602219",
    "url": "https://www.amazon.jobs/en/jobs/10602219/data-engineer-internship"
+  },
+  "amazon:10603649": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Tampere"
+   ],
+   "company": "Amazon",
+   "countries": [
+    "FI"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-12",
+   "kind": "Internship",
+   "last_seen": "2026-11-12",
+   "locations": [
+    "Tampere, FIN"
+   ],
+   "posted": "2026-11-12",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "2027 Software Dev Engineer Intern - Finland",
+   "uid": "amazon:10603649",
+   "url": "https://www.amazon.jobs/en/jobs/10603649/2027-software-dev-engineer-intern-finland"
   },
   "amazon:3130528": {
    "active": false,
@@ -1274,11 +1301,12 @@
    "url": "https://jobs.apple.com/en-us/details/200686742/ams-lab-validation-intern"
   },
   "apple:200687209": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-12",
    "company": "Apple",
    "countries": [
     "DE"
@@ -1374,11 +1402,12 @@
    "url": "https://jobs.apple.com/en-us/details/200687727/pmu-digital-design-verification-intern-m-f-d"
   },
   "apple:200688136": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-12",
    "company": "Apple",
    "countries": [
     "DE"
@@ -1478,11 +1507,12 @@
    "url": "https://jobs.apple.com/en-us/details/200689711/internship-software-engineering-ai-assisted-baseband-debugging-evaluation-wte"
   },
   "apple:200689729": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-12",
    "company": "Apple",
    "countries": [
     "DE"
@@ -1530,11 +1560,12 @@
    "url": "https://jobs.apple.com/en-us/details/200690125/internship-machine-learning-research-speech-to-speech-translation"
   },
   "apple:200690139": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-12",
    "company": "Apple",
    "countries": [
     "DE"
@@ -4248,11 +4279,12 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557043468"
   },
   "microsoft:1970393557044053": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Tampere"
    ],
+   "closed": "2026-11-12",
    "company": "Microsoft",
    "countries": [
     "FI"
@@ -4274,11 +4306,12 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557044053"
   },
   "microsoft:1970393557050083": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Cambridge"
    ],
+   "closed": "2026-11-12",
    "company": "Microsoft",
    "countries": [
     "GB"
@@ -4792,11 +4825,12 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/AI-Compiler-Intern--CUDA-Tile-IR---Summer-2027_JR2029069"
   },
   "nvidia:JR2029184": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-12",
    "company": "NVIDIA",
    "countries": [
     "DE"
@@ -6058,5 +6092,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-12T13:16:40Z"
+ "updated_at": "2026-11-12T21:08:44Z"
 }
