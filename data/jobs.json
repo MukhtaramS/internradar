@@ -1608,11 +1608,12 @@
    "url": "https://jobs.apple.com/en-us/details/200690378/cellular-baseband-design-verification-intern"
   },
   "apple:200691892": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-12",
    "company": "Apple",
    "countries": [
     "GB"
@@ -3612,6 +3613,34 @@
    "uid": "meta:1165781989214784",
    "url": "https://www.metacareers.com/jobs/1165781989214784"
   },
+  "meta:1382697917119311": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-12",
+   "kind": "Internship",
+   "last_seen": "2026-11-12",
+   "locations": [
+    "Cambridge, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Audio, Machine Learning and Computer Vision (PhD)",
+   "uid": "meta:1382697917119311",
+   "url": "https://www.metacareers.com/jobs/1382697917119311"
+  },
   "meta:1414858330673000": {
    "active": true,
    "category": "faang",
@@ -4394,7 +4423,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4423,7 +4452,7 @@
     "Germany, Berlin",
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4479,7 +4508,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-21",
+   "posted": "2026-10-20",
    "remote": false,
    "role": "Hardware",
    "season": null,
@@ -4561,7 +4590,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Infrastructure",
    "season": "2027",
@@ -4587,7 +4616,7 @@
     "France, Remote",
     "Germany, Remote"
    ],
-   "posted": "2026-11-03",
+   "posted": "2026-11-02",
    "remote": true,
    "role": "Data",
    "season": "2027",
@@ -4596,12 +4625,13 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Remote/Relational-Foundation-Model-Intern--Modern-Data-Stack---2027_JR2027829"
   },
   "nvidia:JR2027948": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "Bristol",
     "Zurich"
    ],
+   "closed": "2026-11-12",
    "company": "NVIDIA",
    "countries": [
     "CH",
@@ -4625,12 +4655,13 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/UK-Bristol/Data-Processing-Developer-Technology-Intern---2027_JR2027948"
   },
   "nvidia:JR2027949": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "Bristol",
     "Zurich"
    ],
+   "closed": "2026-11-12",
    "company": "NVIDIA",
    "countries": [
     "CH",
@@ -4674,7 +4705,7 @@
     "Germany, Munich",
     "Germany, Wuerselen"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4700,7 +4731,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-27",
+   "posted": "2026-10-26",
    "remote": false,
    "role": "AI/ML",
    "season": null,
@@ -4726,7 +4757,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-06",
+   "posted": "2026-11-05",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -4752,7 +4783,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-04",
+   "posted": "2026-11-03",
    "remote": false,
    "role": "AI/ML",
    "season": "Summer 2027",
@@ -4778,7 +4809,7 @@
    "locations": [
     "Germany, Munich"
    ],
-   "posted": "2026-11-05",
+   "posted": "2026-11-04",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -4804,7 +4835,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-12",
+   "posted": "2026-11-11",
    "remote": false,
    "role": "Hardware",
    "season": null,
@@ -4830,7 +4861,7 @@
    "locations": [
     "Finland, Helsinki"
    ],
-   "posted": "2026-11-12",
+   "posted": "2026-11-11",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -6027,5 +6058,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-12T04:12:50Z"
+ "updated_at": "2026-11-12T13:16:40Z"
 }
