@@ -1,32 +1,32 @@
 {
  "Airbnb": {
-  "fetched": 216,
+  "fetched": 215,
   "kept": 0,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Amazon": {
   "fetched": 730,
   "kept": 33,
-  "seconds": 12.1,
+  "seconds": 9.9,
   "status": "ok"
  },
  "Anthropic": {
-  "fetched": 672,
+  "fetched": 670,
   "kept": 0,
   "seconds": 0.2,
   "status": "ok"
  },
  "Apple": {
-  "fetched": 179,
+  "fetched": 181,
   "kept": 30,
-  "seconds": 5.4,
+  "seconds": 6.5,
   "status": "ok"
  },
  "Bloomberg": {
-  "fetched": 190,
+  "fetched": 191,
   "kept": 0,
-  "seconds": 31.9,
+  "seconds": 30.3,
   "status": "ok"
  },
  "Citadel": {
@@ -38,13 +38,13 @@
   "status": "not_covered"
  },
  "Cloudflare": {
-  "fetched": 477,
+  "fetched": 479,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
  },
  "Coinbase": {
-  "fetched": 266,
+  "fetched": 265,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
@@ -66,27 +66,27 @@
   "status": "ok"
  },
  "Databricks": {
-  "fetched": 906,
+  "fetched": 893,
   "kept": 5,
   "seconds": 0.1,
   "status": "ok"
  },
  "Datadog": {
-  "fetched": 385,
+  "fetched": 384,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
  },
  "Figma": {
-  "fetched": 144,
+  "fetched": 139,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Flow Traders": {
   "fetched": 44,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.3,
   "status": "ok"
  },
  "G-Research": {
@@ -102,25 +102,25 @@
  "Google": {
   "fetched": 93,
   "kept": 12,
-  "seconds": 4.1,
+  "seconds": 4.3,
   "status": "ok"
  },
  "Hudson River Trading": {
-  "fetched": 82,
+  "fetched": 83,
   "kept": 4,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "IMC": {
   "fetched": 156,
   "kept": 5,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Jane Street": {
   "fetched": 217,
   "kept": 11,
-  "seconds": 0.3,
+  "seconds": 0.6,
   "status": "ok"
  },
  "Jump Trading": {
@@ -138,56 +138,54 @@
   "status": "not_covered"
  },
  "Meta": {
-  "fetched": 636,
+  "fetched": 634,
   "kept": 23,
-  "seconds": 1.5,
+  "seconds": 1.7,
   "status": "ok"
  },
  "Microsoft": {
-  "fetched": 136,
+  "fetched": 140,
   "kept": 6,
-  "seconds": 19.8,
+  "seconds": 22.4,
   "status": "ok"
  },
  "Millennium": {
-  "fetched": 229,
+  "fetched": 231,
   "kept": 0,
-  "seconds": 19.9,
+  "seconds": 16.4,
   "status": "ok"
  },
  "NVIDIA": {
-  "fetched": 1084,
-  "kept": 14,
-  "seconds": 177.2,
-  "status": "ok"
+  "error": "POST https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs failed after 3 tries: 521 Server Error: <none> for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+  "status": "failed"
  },
  "Netflix": {
   "fetched": 6,
   "kept": 0,
-  "seconds": 4.6,
+  "seconds": 0.3,
   "status": "ok"
  },
  "OpenAI": {
-  "fetched": 831,
+  "fetched": 837,
   "kept": 0,
-  "seconds": 0.7,
+  "seconds": 0.5,
   "status": "ok"
  },
  "Optiver": {
   "fetched": 152,
   "kept": 3,
-  "seconds": 5.9,
+  "seconds": 7.2,
   "status": "ok"
  },
  "Palantir": {
   "fetched": 301,
   "kept": 6,
-  "seconds": 1.5,
+  "seconds": 0.4,
   "status": "ok"
  },
  "Perplexity AI": {
-  "fetched": 143,
-  "kept": 4,
+  "fetched": 141,
+  "kept": 3,
   "seconds": 0.1,
   "status": "ok"
  },
@@ -198,37 +196,37 @@
   "status": "ok"
  },
  "SIG": {
-  "fetched": 84,
+  "fetched": 85,
   "kept": 9,
-  "seconds": 0.3,
+  "seconds": 0.7,
   "status": "ok"
  },
  "Scale AI": {
-  "fetched": 171,
+  "fetched": 170,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Snowflake": {
   "fetched": 10,
   "kept": 5,
-  "seconds": 0.2,
+  "seconds": 0.5,
   "status": "ok"
  },
  "Spotify": {
   "fetched": 85,
   "kept": 0,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "Squarepoint Capital": {
   "fetched": 90,
   "kept": 2,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Stripe": {
-  "fetched": 785,
+  "fetched": 786,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -242,9 +240,9 @@
   "status": "not_covered"
  },
  "Tower Research Capital": {
-  "fetched": 93,
+  "fetched": 92,
   "kept": 3,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Two Sigma": {
@@ -256,7 +254,7 @@
   "status": "not_covered"
  },
  "Waymo": {
-  "fetched": 378,
+  "fetched": 376,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"

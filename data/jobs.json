@@ -5222,11 +5222,12 @@
    "url": "https://jobs.ashbyhq.com/Perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2"
   },
   "perplexity-ai:b9e1ff15-d52a-46d5-abf0-26460f2a116c": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "Berlin"
    ],
+   "closed": "2026-11-13",
    "company": "Perplexity AI",
    "countries": [
     "DE"
@@ -6120,5 +6121,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-13T18:06:54Z"
+ "updated_at": "2026-11-13T23:52:28Z"
 }
