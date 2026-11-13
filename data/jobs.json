@@ -1275,11 +1275,12 @@
    "url": "https://jobs.apple.com/en-us/details/200686117/analog-design-automation-and-functional-verification-intern"
   },
   "apple:200686742": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-13",
    "company": "Apple",
    "countries": [
     "DE"
@@ -1692,11 +1693,12 @@
    "url": "https://jobs.apple.com/en-us/details/200692236/internship-machine-learning-research-speech-to-speech-translation"
   },
   "apple:200692619": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-13",
    "company": "Apple",
    "countries": [
     "GB"
@@ -5716,6 +5718,32 @@
    "uid": "snowflake:36706ca8-ea03-4bfb-91dc-c5fa1f0dc17e",
    "url": "https://careers.snowflake.com/us/en/job/36706ca8-ea03-4bfb-91dc-c5fa1f0dc17e"
   },
+  "snowflake:a92a900c-56c2-4cf6-8c2e-fcd183a84e58": {
+   "active": true,
+   "category": "faang_plus",
+   "cities": [
+    "Zurich"
+   ],
+   "company": "Snowflake",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-13",
+   "kind": "Internship",
+   "last_seen": "2026-11-13",
+   "locations": [
+    "Zurich, Switzerland"
+   ],
+   "posted": "2026-11-13",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "Software Engineer Intern - Zurich (2027)",
+   "uid": "snowflake:a92a900c-56c2-4cf6-8c2e-fcd183a84e58",
+   "url": "https://careers.snowflake.com/us/en/job/a92a900c-56c2-4cf6-8c2e-fcd183a84e58"
+  },
   "snowflake:e11c70eb-0800-4363-b609-264610878dce": {
    "active": true,
    "category": "faang_plus",
@@ -6092,5 +6120,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-13T09:59:59Z"
+ "updated_at": "2026-11-13T18:06:54Z"
 }
