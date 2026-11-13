@@ -4456,7 +4456,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4485,7 +4485,7 @@
     "Germany, Berlin",
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Data",
    "season": null,
@@ -4541,7 +4541,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-21",
+   "posted": "2026-10-20",
    "remote": false,
    "role": "Hardware",
    "season": null,
@@ -4623,7 +4623,7 @@
    "locations": [
     "Poland, Warsaw"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Infrastructure",
    "season": "2027",
@@ -4649,7 +4649,7 @@
     "France, Remote",
     "Germany, Remote"
    ],
-   "posted": "2026-11-03",
+   "posted": "2026-11-02",
    "remote": true,
    "role": "Data",
    "season": "2027",
@@ -4738,7 +4738,7 @@
     "Germany, Munich",
     "Germany, Wuerselen"
    ],
-   "posted": "2026-11-01",
+   "posted": "2026-10-31",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -4764,7 +4764,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-10-27",
+   "posted": "2026-10-26",
    "remote": false,
    "role": "AI/ML",
    "season": null,
@@ -4790,7 +4790,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-06",
+   "posted": "2026-11-05",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -4816,7 +4816,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-04",
+   "posted": "2026-11-03",
    "remote": false,
    "role": "AI/ML",
    "season": "Summer 2027",
@@ -4869,7 +4869,7 @@
    "locations": [
     "Switzerland, Zurich"
    ],
-   "posted": "2026-11-12",
+   "posted": "2026-11-11",
    "remote": false,
    "role": "Hardware",
    "season": null,
@@ -4895,7 +4895,7 @@
    "locations": [
     "Finland, Helsinki"
    ],
-   "posted": "2026-11-12",
+   "posted": "2026-11-11",
    "remote": false,
    "role": "Software",
    "season": "2027",
@@ -6092,5 +6092,5 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "updated_at": "2026-11-13T02:10:26Z"
+ "updated_at": "2026-11-13T09:59:59Z"
 }
