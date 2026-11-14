@@ -8,7 +8,7 @@
  "Amazon": {
   "fetched": 730,
   "kept": 33,
-  "seconds": 10.5,
+  "seconds": 12.3,
   "status": "ok"
  },
  "Anthropic": {
@@ -20,13 +20,13 @@
  "Apple": {
   "fetched": 181,
   "kept": 30,
-  "seconds": 6.0,
+  "seconds": 40.0,
   "status": "ok"
  },
  "Bloomberg": {
   "fetched": 190,
   "kept": 0,
-  "seconds": 29.0,
+  "seconds": 27.8,
   "status": "ok"
  },
  "Citadel": {
@@ -80,13 +80,13 @@
  "Figma": {
   "fetched": 139,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Flow Traders": {
   "fetched": 44,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "G-Research": {
@@ -102,13 +102,13 @@
  "Google": {
   "fetched": 93,
   "kept": 12,
-  "seconds": 4.2,
+  "seconds": 4.1,
   "status": "ok"
  },
  "Hudson River Trading": {
   "fetched": 83,
   "kept": 4,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "IMC": {
@@ -120,7 +120,7 @@
  "Jane Street": {
   "fetched": 217,
   "kept": 11,
-  "seconds": 0.1,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Jump Trading": {
@@ -138,49 +138,51 @@
   "status": "not_covered"
  },
  "Meta": {
-  "fetched": 630,
+  "fetched": 627,
   "kept": 23,
-  "seconds": 2.6,
+  "seconds": 1.3,
   "status": "ok"
  },
  "Microsoft": {
   "fetched": 138,
   "kept": 6,
-  "seconds": 20.8,
+  "seconds": 20.3,
   "status": "ok"
  },
  "Millennium": {
-  "fetched": 231,
+  "fetched": 230,
   "kept": 0,
-  "seconds": 22.1,
+  "seconds": 19.7,
   "status": "ok"
  },
  "NVIDIA": {
-  "error": "POST https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs failed after 3 tries: Expecting value: line 1 column 1 (char 0)",
-  "status": "failed"
+  "fetched": 1088,
+  "kept": 14,
+  "seconds": 114.0,
+  "status": "ok"
  },
  "Netflix": {
   "fetched": 6,
   "kept": 0,
-  "seconds": 0.4,
+  "seconds": 0.3,
   "status": "ok"
  },
  "OpenAI": {
-  "fetched": 838,
+  "fetched": 839,
   "kept": 0,
-  "seconds": 0.4,
+  "seconds": 0.5,
   "status": "ok"
  },
  "Optiver": {
   "fetched": 153,
   "kept": 3,
-  "seconds": 6.2,
+  "seconds": 6.1,
   "status": "ok"
  },
  "Palantir": {
   "fetched": 302,
   "kept": 6,
-  "seconds": 1.0,
+  "seconds": 28.7,
   "status": "ok"
  },
  "Perplexity AI": {
@@ -198,19 +200,19 @@
  "SIG": {
   "fetched": 85,
   "kept": 9,
-  "seconds": 0.5,
+  "seconds": 0.3,
   "status": "ok"
  },
  "Scale AI": {
   "fetched": 170,
   "kept": 1,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Snowflake": {
   "fetched": 10,
   "kept": 5,
-  "seconds": 0.3,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Spotify": {
@@ -222,7 +224,7 @@
  "Squarepoint Capital": {
   "fetched": 90,
   "kept": 2,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Stripe": {
