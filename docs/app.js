@@ -35,11 +35,23 @@
 
   var data = null, jobs = [], shown = PAGE, updatedAt = null, todayTs = 0, seedTs = 0;
   var state = freshState();
+  /* My jobs: saved[url] = { t: added, s: status, st: status changed, title, company, category, where, posted }.
+     The job details are kept so an application stays listed after the posting closes.
+     Older versions stored only a timestamp per url. */
+  var STATUSES = [["saved", "Saved"], ["applied", "Applied"], ["oa", "Online assessment"],
+                  ["interview", "Interview"], ["offer", "Offer"], ["rejected", "Rejected"]];
+  var STATUS_LABEL = {};
+  STATUSES.forEach(function (x) { STATUS_LABEL[x[0]] = x[1]; });
   var saved = {};
-  try { saved = JSON.parse(localStorage.getItem("saved-jobs") || "{}"); } catch (e) { saved = {}; }
+  try { saved = JSON.parse(localStorage.getItem("saved-jobs") || "{}") || {}; } catch (e) { saved = {}; }
+  Object.keys(saved).forEach(function (u) {
+    if (typeof saved[u] === "number") saved[u] = { t: saved[u], s: "saved", st: saved[u] };
+    if (!saved[u] || typeof saved[u] !== "object") delete saved[u];
+    else if (!STATUS_LABEL[saved[u].s]) saved[u].s = "saved";
+  });
 
   function freshState() {
-    var s = { view: "jobs", q: "", age: "", savedOnly: false, newOnly: false, sort: "posted" };
+    var s = { view: "jobs", q: "", age: "", savedOnly: false, hideApplied: false, newOnly: false, sort: "posted" };
     GROUPS.forEach(function (g) { s[g] = {}; });
     return s;
   }
@@ -80,6 +92,15 @@
     return "🇪🇺 Europe-wide";
   }
   function persistSaved() { try { localStorage.setItem("saved-jobs", JSON.stringify(saved)); } catch (e) {} }
+  function applied(url) { return !!saved[url] && saved[url].s !== "saved"; }
+  function plainWhere(j) {
+    if (j.cities.length) return j.cities.join(", ") + (j.countries.length === 1 ? ", " + cname(j.countries[0]) : "");
+    if (j.countries.length) return j.countries.map(cname).join(", ");
+    return "Europe";
+  }
+  function snapshot(j) {
+    return { title: j.title, company: j.company, category: j.category, where: where(j), plain: plainWhere(j), posted: j.posted };
+  }
 
   /* ---------------- URL hash <-> state ---------------- */
   function readHash() {
@@ -90,6 +111,7 @@
     s.age = p.get("age") || "";
     s.sort = p.get("sort") || "posted";
     s.newOnly = p.get("new") === "1";
+    s.hideApplied = p.get("hide") === "1";
     GROUPS.forEach(function (g) {
       (p.get(g) || "").split("|").filter(Boolean).forEach(function (v) { s[g][v] = true; });
     });
@@ -102,6 +124,7 @@
     if (state.age) p.set("age", state.age);
     if (state.sort !== "posted") p.set("sort", state.sort);
     if (state.newOnly) p.set("new", "1");
+    if (state.hideApplied) p.set("hide", "1");
     GROUPS.forEach(function (g) { if (keys(state[g]).length) p.set(g, keys(state[g]).join("|")); });
     var h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -131,6 +154,7 @@
     if (state.q && j.search.indexOf(state.q) === -1) return false;
     if (state.age && skip !== "age" && !ageOk(j, state.age)) return false;
     if (state.savedOnly && !saved[j.url]) return false;
+    if (state.hideApplied && applied(j.url)) return false;
     if (state.newOnly && !j.isNew) return false;
     return true;
   }
@@ -212,13 +236,16 @@
       .filter(function (k) { return !find || k.toLowerCase().indexOf(find) !== -1 || state.company[k]; })
       .map(function (k) { return [k, esc(k), c[k]]; }), !!find);
 
-    $("n-saved").textContent = keys(saved).length;
+    var open = jobs.filter(function (j) { return saved[j.url]; });
+    $("n-saved").textContent = open.length;
+    $("n-applied").textContent = open.filter(function (j) { return applied(j.url); }).length;
     $("f-saved").checked = state.savedOnly;
+    $("f-hide").checked = state.hideApplied;
     Array.prototype.forEach.call(document.querySelectorAll('input[name="age"]'), function (r) {
       r.checked = r.value === state.age;
     });
     var n = GROUPS.reduce(function (a, g) { return a + keys(state[g]).length; }, 0) +
-      (state.age ? 1 : 0) + (state.savedOnly ? 1 : 0) + (state.newOnly ? 1 : 0);
+      (state.age ? 1 : 0) + (state.savedOnly ? 1 : 0) + (state.hideApplied ? 1 : 0) + (state.newOnly ? 1 : 0);
     $("fcount").hidden = !n;
     $("fcount").textContent = n;
   }
@@ -266,6 +293,7 @@
   function card(j) {
     var tags = ['<span class="tag">' + esc(j.role) + "</span>"];
     if (j.isNew) tags.unshift('<span class="tag new">New</span>');
+    if (applied(j.url)) tags.unshift('<span class="tag st st-' + saved[j.url].s + '">' + esc(STATUS_LABEL[saved[j.url].s]) + "</span>");
     if (j.kind !== "Internship") tags.push('<span class="tag">' + esc(j.kind) + "</span>");
     if (j.degrees.length) tags.push('<span class="tag">' + esc(j.degrees.join(" / ")) + "</span>");
     if (j.season) tags.push('<span class="tag">' + esc(j.season) + "</span>");
@@ -277,7 +305,8 @@
       '<div class="job-meta">' + tags.join("") + "</div></div>" +
       '<div class="job-side"><div class="side-row"><a class="apply" href="' + esc(j.url) + '" target="_blank" rel="noopener">Apply</a>' +
       '<button type="button" class="save' + (saved[j.url] ? " on" : "") + '" data-url="' + esc(j.url) +
-      '" title="' + (saved[j.url] ? "Remove from saved" : "Save") + '" aria-label="Save">' + (saved[j.url] ? "★" : "☆") + "</button></div>" +
+      '" title="' + (saved[j.url] ? "Remove from My jobs" : "Add to My jobs") + '" aria-label="' + (saved[j.url] ? "Remove from My jobs" : "Add to My jobs") +
+      '" aria-pressed="' + !!saved[j.url] + '">' + (saved[j.url] ? "★" : "☆") + "</button></div>" +
       '<span class="when">' + esc(when) + "</span></div></li>";
   }
   function renderChips() {
@@ -290,7 +319,8 @@
     });
     if (state.age) chips.push('<button type="button" class="chip" data-g="age">' + esc(AGE_LABEL[state.age] || "") + "</button>");
     if (state.newOnly) chips.push('<button type="button" class="chip" data-g="new">New this week</button>');
-    if (state.savedOnly) chips.push('<button type="button" class="chip" data-g="saved">Saved</button>');
+    if (state.savedOnly) chips.push('<button type="button" class="chip" data-g="saved">My jobs</button>');
+    if (state.hideApplied) chips.push('<button type="button" class="chip" data-g="hide">Hiding applied</button>');
     if (state.q) chips.push('<button type="button" class="chip" data-g="q">“' + esc(state.q) + "”</button>");
     $("chips").innerHTML = chips.join("");
   }
@@ -310,6 +340,7 @@
     renderAge();
     renderChips();
     renderList();
+    renderMine();
   }
 
   /* ---------------- companies view ---------------- */
@@ -335,6 +366,112 @@
           "<td>" + (c.busiest_month ? MONTHS[Number(c.busiest_month) - 1] : "–") + "</td>" +
           '<td><span class="status ' + esc(c.status) + '">' + (label[c.status] || esc(c.status)) + "</span></td></tr>";
       }).join("");
+  }
+
+  /* ---------------- My jobs view ---------------- */
+  var mineFilter = "";
+  var byUrl = {};
+  function mineRows() {
+    return keys(saved).map(function (u) {
+      var live = byUrl[u];
+      var info = live ? snapshot(live) : saved[u];
+      return { url: u, rec: saved[u], info: info, live: !!live };
+    }).sort(function (a, b) { return (b.rec.st || b.rec.t) - (a.rec.st || a.rec.t); });
+  }
+  function since(ts) {
+    if (!ts) return "";
+    var d = Math.floor((Date.now() - ts) / 864e5);
+    return d <= 0 ? "today" : d === 1 ? "yesterday" : d < 30 ? d + " days ago" : Math.round(d / 30) + " mo ago";
+  }
+  function renderMine() {
+    var rows = mineRows();
+    var counts = {};
+    rows.forEach(function (r) { counts[r.rec.s] = (counts[r.rec.s] || 0) + 1; });
+    $("mine-count").hidden = !rows.length;
+    $("mine-count").textContent = rows.length;
+    if (mineFilter && !counts[mineFilter]) mineFilter = "";
+    $("mine-filters").innerHTML = ['<button type="button" class="preset' + (mineFilter ? "" : " on") + '" data-st="">All <em>' + rows.length + "</em></button>"]
+      .concat(STATUSES.filter(function (x) { return counts[x[0]]; }).map(function (x) {
+        return '<button type="button" class="preset' + (mineFilter === x[0] ? " on" : "") + '" data-st="' + x[0] + '">' + esc(x[1]) + " <em>" + counts[x[0]] + "</em></button>";
+      })).join("");
+    var toApply = rows.filter(function (r) { return r.rec.s === "saved" && r.live; }).length;
+    $("export-jobs").disabled = !rows.length;
+    $("copy-links").disabled = !toApply;
+    $("export-jobs").title = toApply + " to apply to, the rest marked done";
+    var shownRows = rows.filter(function (r) { return !mineFilter || r.rec.s === mineFilter; });
+    if (!rows.length) {
+      $("mine-list").innerHTML = '<li class="empty">Nothing here yet. Star ☆ a listing on the Internships tab to add it.</li>';
+      return;
+    }
+    $("mine-list").innerHTML = shownRows.map(function (r) {
+      var i = r.info;
+      var select = '<select class="st-select st-' + r.rec.s + '" data-url="' + esc(r.url) + '" aria-label="Status">' +
+        STATUSES.map(function (x) {
+          return '<option value="' + x[0] + '"' + (x[0] === r.rec.s ? " selected" : "") + ">" + esc(x[1]) + "</option>";
+        }).join("") + "</select>";
+      var note = (r.rec.s === "saved" ? "Saved " : STATUS_LABEL[r.rec.s] + " · ") + since(r.rec.st || r.rec.t);
+      return '<li class="mine-row">' + logo(i.company || "?") +
+        '<div class="job-main"><a class="job-title" href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(i.title || r.url) + "</a>" +
+        '<div class="job-co"><b>' + esc(i.company || "") + "</b>" +
+        (i.category ? '<span class="cat cat-' + esc(i.category) + '">' + esc(catLabel(i.category)) + "</span>" : "") +
+        (i.where ? '<span class="place">' + PIN + esc(i.where) + "</span>" : "") +
+        (r.live ? "" : '<span class="tag closed">Listing closed</span>') + "</div></div>" +
+        '<div class="mine-side">' + select + '<span class="when">' + esc(note) + "</span></div>" +
+        '<button type="button" class="remove" data-url="' + esc(r.url) + '" title="Remove from My jobs" aria-label="Remove">×</button></li>';
+    }).join("");
+  }
+  function setStatus(url, s) {
+    if (!saved[url]) return;
+    saved[url].s = s;
+    saved[url].st = Date.now();
+    persistSaved();
+  }
+  function removeSaved(url) {
+    if (!saved[url]) return true;
+    var r = saved[url];
+    if (r.s !== "saved" && !confirm("Remove " + (r.title || "this job") + " from My jobs? Its status (" + STATUS_LABEL[r.s] + ") will be lost.")) return false;
+    delete saved[url];
+    persistSaved();
+    return true;
+  }
+  function addSaved(j) {
+    var now = Date.now();
+    saved[j.url] = Object.assign({ t: now, s: "saved", st: now }, snapshot(j));
+    persistSaved();
+  }
+  /* jobs.txt in the format AutoInternship's skill reads: one link per line, a note after "#"
+     starting with the company, and finished links below a "# done" line. */
+  function clean(s) { return String(s || "").replace(/[#|\n\r]+/g, " ").replace(/\s+/g, " ").trim(); }
+  function exportText() {
+    var rows = mineRows();
+    var line = function (r, extra) {
+      var i = r.info;
+      return r.url + "  # " + [clean(i.company), clean(i.title), clean(i.plain || "")].concat(extra).filter(Boolean).join(" | ");
+    };
+    var todo = rows.filter(function (r) { return r.rec.s === "saved" && r.live; })
+      .sort(function (a, b) { return (b.info.posted || "") < (a.info.posted || "") ? -1 : 1; })
+      .map(function (r) { return line(r, [r.info.posted ? "posted " + r.info.posted : "", "fame 1"]); });
+    var done = rows.filter(function (r) { return r.rec.s !== "saved"; })
+      .map(function (r) { return line(r, [STATUS_LABEL[r.rec.s].toLowerCase() + " " + new Date(r.rec.st || r.rec.t).toISOString().slice(0, 10)]); });
+    var closed = rows.filter(function (r) { return r.rec.s === "saved" && !r.live; })
+      .map(function (r) { return line(r, ["listing closed"]); });
+    return ["# InternRadar export, " + new Date().toISOString().slice(0, 10),
+            '# Jobs to apply to come first. Ones you applied to, and closed listings, are below "# done".',
+            ""].concat(todo, ["", "# done"], done, closed).join("\n") + "\n";
+  }
+  function download(name, text) {
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([text], { type: "text/plain" }));
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 0);
+  }
+  function flash(btn, text) {
+    var old = btn.getAttribute("data-label") || btn.textContent;
+    btn.setAttribute("data-label", old);
+    btn.textContent = text;
+    setTimeout(function () { btn.textContent = old; }, 1600);
   }
 
   /* ---------------- alerts view ---------------- */
@@ -363,8 +500,8 @@
 
   /* ---------------- views ---------------- */
   function showView(v) {
-    state.view = ["jobs", "companies", "alerts"].indexOf(v) === -1 ? "jobs" : v;
-    ["jobs", "companies", "alerts"].forEach(function (name) {
+    state.view = ["jobs", "companies", "mine", "alerts"].indexOf(v) === -1 ? "jobs" : v;
+    ["jobs", "companies", "mine", "alerts"].forEach(function (name) {
       $("view-" + name).hidden = name !== state.view;
       $("tab-" + name).classList.toggle("active", name === state.view);
     });
@@ -398,6 +535,7 @@
       if (g) { if (t.checked) state[g][t.value] = true; else delete state[g][t.value]; }
       else if (t.name === "age") state.age = t.value;
       else if (t.id === "f-saved") state.savedOnly = t.checked;
+      else if (t.id === "f-hide") state.hideApplied = t.checked;
       refresh();
     });
     $("sidebar").addEventListener("click", function (e) {
@@ -427,6 +565,7 @@
       if (g === "age") state.age = "";
       else if (g === "new") state.newOnly = false;
       else if (g === "saved") state.savedOnly = false;
+      else if (g === "hide") state.hideApplied = false;
       else if (g === "q") { state.q = ""; $("q").value = ""; }
       else delete state[g][b.getAttribute("data-v")];
       refresh();
@@ -435,9 +574,35 @@
       var b = e.target.closest(".save");
       if (!b) return;
       var url = b.getAttribute("data-url");
-      if (saved[url]) delete saved[url]; else saved[url] = Date.now();
-      persistSaved();
+      if (saved[url]) { if (!removeSaved(url)) return; } else addSaved(byUrl[url]);
       refresh(true);
+    });
+    $("mine-filters").addEventListener("click", function (e) {
+      var b = e.target.closest(".preset");
+      if (!b) return;
+      mineFilter = b.getAttribute("data-st");
+      renderMine();
+    });
+    $("mine-list").addEventListener("change", function (e) {
+      var sel = e.target.closest(".st-select");
+      if (!sel) return;
+      setStatus(sel.getAttribute("data-url"), sel.value);
+      refresh(true);
+    });
+    $("mine-list").addEventListener("click", function (e) {
+      var b = e.target.closest(".remove");
+      if (b && removeSaved(b.getAttribute("data-url"))) refresh(true);
+    });
+    $("export-jobs").addEventListener("click", function () {
+      download("jobs.txt", exportText());
+      flash(this, "Downloaded");
+    });
+    $("copy-links").addEventListener("click", function () {
+      var btn = this;
+      var links = mineRows().filter(function (r) { return r.rec.s === "saved" && r.live; })
+        .map(function (r) { return r.url; }).join("\n");
+      navigator.clipboard.writeText(links + "\n").then(function () { flash(btn, "Copied"); },
+        function () { flash(btn, "Copy failed"); });
     });
     $("co-cats").addEventListener("click", function (e) {
       var b = e.target.closest(".preset");
@@ -489,6 +654,11 @@
           .concat(j.cities, j.locations, j.countries.map(cname)).join(" ").toLowerCase();
         return j;
       });
+      jobs.forEach(function (j) {
+        byUrl[j.url] = j;
+        if (saved[j.url]) Object.assign(saved[j.url], snapshot(j));
+      });
+      persistSaved();
       readHash();
       $("q").value = state.q;
       $("sort").value = state.sort;

@@ -9,9 +9,11 @@ It runs entirely on GitHub: Actions does the scraping, the data lives in the rep
 ## What you get
 
 **Website** (`docs/`, served by GitHub Pages)
-- Filters: company type (FAANG, FAANG+, Quant & Trading, Top European Tech), country, city, role, degree, student role type, posted date, company, saved jobs
+- Filters: company type (FAANG, FAANG+, Quant & Trading, Top European Tech), country, city, role, degree, student role type, posted date, company, your own jobs, hide ones you applied to
 - One-click presets: 🇨🇭 Switzerland, 🇬🇧 London, Quant & Trading, FAANG, FAANG+, AI/ML, Germany, Netherlands, Ireland, New this week
 - Shareable links (filters live in the URL), saved jobs, light and dark theme, works on phones
+- **My jobs:** star listings and track each application (Saved, Applied, Online assessment, Interview, Offer, Rejected). Closed listings stay on the list. Stored in the browser only
+- **Export for applying:** download your starred jobs as `jobs.txt`, the queue format of [AutoInternship](https://github.com/pqthangv/AutoInternshipClaude), whose Chrome extension and Claude skills fill the applications for you. Jobs you already applied to go below `# done`
 - Companies page with open listings, how long listings usually stay open, the month most listings appear, and whether each scraper is live
 - Alerts page listing every Telegram channel and feed
 

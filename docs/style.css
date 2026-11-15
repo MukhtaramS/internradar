@@ -81,7 +81,9 @@ code { font-family: var(--mono); font-size: .85em; background: var(--surface-2);
 .brand-bg { fill: var(--band-2); }
 .brand-ring { stroke: var(--radar); }
 .brand-hand { stroke: #fff; }
-.tabs { display: flex; gap: 2px; }
+.tabs { display: flex; gap: 2px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab .short { display: none; }
 .tab { background: none; border: 0; padding: 7px 12px; border-radius: 8px; cursor: pointer; color: var(--band-muted); font-weight: 600; white-space: nowrap; }
 .tab:hover { color: var(--band-fg); background: rgba(255, 255, 255, .06); }
 .tab.active { color: var(--band-fg); background: rgba(255, 255, 255, .1); }
@@ -285,8 +287,65 @@ code { font-family: var(--mono); font-size: .85em; background: var(--surface-2);
   .logo { width: 36px; height: 36px; }
   .logo img { inset: 6px; width: 22px; height: 22px; }
   .job-side { grid-column: 2; grid-auto-flow: column; justify-content: start; align-items: center; justify-items: start; }
-  .tab { padding: 6px 8px; font-size: 14px; }
+  .tab { padding: 6px 7px; font-size: 14px; }
+  .tab .long { display: none; }
+  .tab .short { display: inline; }
+  .topbar-inner { gap: 8px; }
+  .icon-btn { flex: none; }
   .icon-link { display: none; }
+}
+/* ---------- My jobs ---------- */
+.tab .pill { margin-left: 4px; font-size: 11px; vertical-align: 1px; }
+.mine-body { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+.mine-main { display: grid; gap: 14px; min-width: 0; }
+.mine-head { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; }
+.mine-head .co-filters { margin: 0; }
+.mine-actions { display: flex; gap: 8px; }
+.btn {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 9px; padding: 7px 14px;
+  font-weight: 600; font-size: 14px; cursor: pointer; white-space: nowrap;
+}
+.btn:hover:not(:disabled) { border-color: #d18b12; }
+.btn.primary { background: var(--radar); border-color: #d99a26; color: var(--radar-ink); }
+.btn.primary:hover:not(:disabled) { background: #ffc451; }
+.btn:disabled { opacity: .5; cursor: default; }
+.mine-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.mine-row {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow);
+  display: grid; grid-template-columns: 44px minmax(0, 1fr) auto auto; gap: 14px; align-items: center;
+}
+.mine-side { display: grid; gap: 6px; justify-items: end; }
+.st-select {
+  height: 34px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); padding: 0 8px;
+  font-weight: 600; font-size: 14px; cursor: pointer;
+}
+.remove { background: none; border: 0; color: var(--muted); font-size: 22px; line-height: 1; cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+.remove:hover { color: var(--bad); background: var(--surface-2); }
+/* status colours, shared by the select and the tag on job cards */
+.st-applied { --st: var(--link); }
+.st-oa { --st: var(--cat-faang_plus); }
+.st-interview { --st: var(--cat-quant); }
+.st-offer { --st: var(--ok); }
+.st-rejected { --st: var(--muted); }
+.st-select[class*="st-"]:not(.st-saved) { color: var(--st); border-color: color-mix(in srgb, var(--st) 45%, var(--line)); }
+.tag.st { color: var(--st); border-color: color-mix(in srgb, var(--st) 45%, transparent); font-weight: 700; }
+.tag.closed { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 40%, transparent); }
+.mine-help { position: sticky; top: 78px; }
+.mine-help .steps { margin: 0; padding-left: 20px; display: grid; gap: 8px; color: var(--muted); font-size: 14px; }
+.mine-help .steps b, .mine-help p b { color: var(--fg); }
+.mine-help .small { font-size: 13px; }
+@media (max-width: 960px) {
+  .mine-body { grid-template-columns: minmax(0, 1fr); }
+  .mine-help { position: static; }
+}
+@media (max-width: 560px) {
+  .mine-row { grid-template-columns: 36px minmax(0, 1fr) auto; gap: 10px 12px; padding: 12px; }
+  .mine-row .logo { width: 36px; height: 36px; }
+  .mine-row .logo img { inset: 6px; width: 22px; height: 22px; }
+  .mine-side { grid-column: 2 / 4; grid-row: 2; justify-items: start; }
+  .mine-row .remove { grid-column: 3; grid-row: 1; align-self: start; }
+  .mine-actions { width: 100%; }
+  .mine-actions .btn { flex: 1; }
 }
 .pill { background: var(--radar); color: var(--radar-ink); border-radius: 999px; padding: 0 7px; font-size: 12px; font-weight: 700; }
 @media (prefers-reduced-motion: reduce) {

@@ -20,9 +20,10 @@
       <span>InternRadar</span>
     </a>
     <nav class="tabs" aria-label="Sections">
-      <button type="button" class="tab active" data-view="jobs" id="tab-jobs">Internships</button>
+      <button type="button" class="tab active" data-view="jobs" id="tab-jobs"><span class="long">Internships</span><span class="short">Jobs</span></button>
       <button type="button" class="tab" data-view="companies" id="tab-companies">Companies</button>
-      <button type="button" class="tab" data-view="alerts" id="tab-alerts">Get alerts</button>
+      <button type="button" class="tab" data-view="mine" id="tab-mine"><span class="long">My jobs</span><span class="short">Mine</span> <span id="mine-count" class="pill" hidden></span></button>
+      <button type="button" class="tab" data-view="alerts" id="tab-alerts"><span class="long">Get alerts</span><span class="short">Alerts</span></button>
     </nav>
     <div class="top-actions">
       <a id="repo-link" class="icon-link" href="#" target="_blank" rel="noopener" hidden>GitHub</a>
@@ -76,7 +77,10 @@
         <div class="fgroup" data-group="kind"><h2>Type</h2><div class="opts" id="f-kind"></div></div>
         <div class="fgroup">
           <h2>Mine</h2>
-          <div class="opts"><label class="opt"><input type="checkbox" id="f-saved"><span>Saved only</span><em id="n-saved"></em></label></div>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" id="f-saved"><span>Only my jobs</span><em id="n-saved"></em></label>
+            <label class="opt"><input type="checkbox" id="f-hide"><span>Hide ones I applied to</span><em id="n-applied"></em></label>
+          </div>
         </div>
         <div class="fgroup" data-group="company"><h2>Company</h2><input id="co-search" class="mini-search" type="search" placeholder="Find a company" autocomplete="off"><div class="opts" id="f-company"></div></div>
         <button type="button" class="reset" id="reset">Clear all filters</button>
@@ -106,6 +110,39 @@
         <thead><tr><th>Company</th><th>Type</th><th>European hubs</th><th class="n">Open now</th><th class="n">Seen so far</th><th class="n">Typical days open</th><th>Peak month</th><th>Status</th></tr></thead>
         <tbody id="co-body"></tbody>
       </table></div>
+    </div>
+  </section>
+
+  <!-- ========================== My jobs ========================== -->
+  <section id="view-mine" class="view" hidden>
+    <div class="band band-small"><div class="wrap page-head">
+      <p class="readout">Applications</p>
+      <h1>My jobs</h1>
+      <p>Star <b>☆</b> a listing to add it here, then track where each application stands. Everything stays in this browser.</p>
+    </div></div>
+    <div class="wrap page-body mine-body">
+      <div class="mine-main">
+        <div class="mine-head">
+          <div class="co-filters" id="mine-filters"></div>
+          <div class="mine-actions">
+            <button type="button" class="btn" id="copy-links">Copy links</button>
+            <button type="button" class="btn primary" id="export-jobs">Download jobs.txt</button>
+          </div>
+        </div>
+        <ol id="mine-list" class="mine-list"></ol>
+      </div>
+      <aside class="alert-card mine-help">
+        <h2>Fill applications automatically</h2>
+        <p><b>jobs.txt</b> holds the jobs you starred but haven't applied to yet. The free <a href="https://github.com/pqthangv/AutoInternshipClaude" target="_blank" rel="noopener">AutoInternship</a> tools can work through it for you.</p>
+        <ol class="steps">
+          <li>Install the <a href="https://chromewebstore.google.com/detail/autointernship/cdfkbdkmandhnmaejaknimdhepipbpin" target="_blank" rel="noopener">AutoInternship extension</a> and fill in your profile once. Its Fill button then completes the standard fields on any application form, without using Claude.</li>
+          <li>For the rest, add its two skills to Claude (needs a paid Claude plan). See the <a href="https://github.com/pqthangv/AutoInternshipClaude#install-about-10-minutes" target="_blank" rel="noopener">setup guide</a>.</li>
+          <li>Make a job-search folder with your CV in <code>resume/</code> and put <b>jobs.txt</b> beside it.</li>
+          <li>In Claude, open that folder and ask: <code>Apply to 6 jobs fill all</code>. It tailors a CV for each job, fills the forms and stops before Submit so you can check them.</li>
+          <li>When you submit one, set it to <b>Applied</b> here.</li>
+        </ol>
+        <p class="small">Some sites (Google, Apple, Amazon, Meta, Workday) ask you to sign in first. Sign in yourself; the tools never type passwords.</p>
+      </aside>
     </div>
   </section>
 
