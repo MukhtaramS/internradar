@@ -1,7 +1,39 @@
-# Applier: apply from Telegram
+# Applier: apply from the site or Telegram
 
-InternRadar sends new internships to your own Telegram chat, each with a code. You reply
-`submit J42`, and a Claude Code session on your Mac applies for you and replies when it's done.
+Pick internships on the InternRadar site (phone or laptop) and press **Send**, or reply
+`submit J42` to a job in your Telegram chat. A Claude Code session on your Mac tailors your CV,
+fills the application and submits it, or stops for your review first. You follow every
+application's status on the site.
+
+```
+InternRadar site (any device)  ──┐                                    your Mac
+  My jobs: tick, Send            ├─▶ private GitHub repo  ◀── checks every minute ──  Claude Code + Chrome
+  Profile & CV                   │   profile.json, resume/,                            tailors, fills, submits
+Telegram: "submit J42"  ─────────┘   applications.json      ◀── statuses, review files ─┘
+```
+
+Your profile, CV and applications live in a **private** GitHub repo (`internradar-private`),
+which only you can see. The site reads and writes it with a token you create; your Mac's job
+folder is a clone of it.
+
+## On the site
+
+- **Profile & CV** (the person icon at the top): connect your private repo once per device, fill
+  in your details and upload your CV (Word `.docx` or Overleaf `.zip`; a PDF works but can't be
+  tailored). It's saved as `profile.json` in the AutoInternship format, so the skill and the
+  AutoInternship extension read it as is. You can import an extension backup too.
+- **My jobs**: tick jobs, choose **Submit directly** or **Let me review first**, press **Send**.
+  Each row then shows Queued → Working on it → Submitted, Ready for review, or Needs you (with the
+  reason). Ready for review opens the tailored CV and every answer entered, with **Submit** and
+  **Cancel**.
+- Starred jobs and statuses are shared between your devices through the same repo.
+
+**The token:** on GitHub, create a fine-grained token with access to only the private repo and
+**Contents: Read and write**. Paste it into Profile on each device. It stays in that browser's
+storage and is only sent to GitHub. Pages under the same `<you>.github.io` address share that
+storage, so only use it there if all of those sites are yours.
+
+## From Telegram
 
 ```
 GitHub Actions, hourly (free)            your Telegram                 your Mac
@@ -15,22 +47,21 @@ GitHub Actions, hourly (free)            your Telegram                 your Mac
 - **Applying** runs in Claude Code on your Mac with your Claude plan (Pro or higher), using the
   [AutoInternship](https://github.com/pqthangv/AutoInternshipClaude) skills and the Claude in
   Chrome extension. A waiting session uses no tokens; each application does.
-- **Your Mac must be on** with the session running and Chrome open. Messages you send while it's
-  off may not arrive; send them again.
+- **Your Mac must be on** with the session running and Chrome open for the applying itself.
+  Requests from the site wait in the queue until it is; Telegram messages sent while it's off
+  may not arrive, so send them again.
 - Telegram for Claude Code ([Channels](https://code.claude.com/docs/en/channels)) is a research
   preview, so its commands may change.
-
-## Commands
 
 | Send | What happens |
 |---|---|
 | `submit J42` or `submit J42 J45 J51` | Applies and **submits**, no questions asked. You get ✅ with the confirmation and the CV used, or ⚠️ with what it needs from you. |
-| `fill J42` | Fills everything but leaves Submit to you in Chrome. |
+| `fill J42` | Fills everything and stops before Submit; review it on the site (or in Chrome). |
 | `skip J42` | Marks it skipped in your tracker. |
 | `status` | Summary of your applications. |
 
 A submitted application can't be taken back, so only send `submit` for jobs you're sure about.
-Each job gets at most two applications per company per day; extras wait for the next day.
+At most two applications per company per day; extras wait for the next day.
 
 **When it stops and asks you:** a sign-in or account, a CAPTCHA, a question your profile doesn't
 answer, or anything other than a normal application. It never types passwords. Sign in to
@@ -44,13 +75,14 @@ Workday, Google, Apple, Amazon and Meta careers in Chrome yourself once, and sta
    applier/setup.sh
    ```
 
-   It installs the AutoInternship skills and their Python packages, and creates
-   `~/InternRadar-applier` (pass another folder as the first argument if you like). It tells you if
-   Claude Code, [Bun](https://bun.sh) or git is missing.
+   It installs the AutoInternship skills and their Python packages, creates
+   `~/InternRadar-applier`, creates your private repo `internradar-private` (with the GitHub CLI)
+   and links the folder to it. It tells you if Claude Code, [Bun](https://bun.sh), git or `gh` is
+   missing.
 
-2. **Add your CV** to `~/InternRadar-applier/resume/`: a Word `.docx`, or your Overleaf project
-   (Download → Source, unzipped). It may be longer than a page; each application gets a tailored
-   one-page version.
+2. **Profile and CV:** on the site open Profile, connect the private repo with your token, fill
+   in the form and upload your CV. Your CV may be longer than a page; each application gets a
+   tailored one-page version.
 
 3. **Create your bot.** In Telegram, message [@BotFather](https://t.me/BotFather), send `/newbot`
    and copy the token. Use a new bot just for this, not the one that posts to public channels.
@@ -110,8 +142,12 @@ your own account.
 | File | What it is |
 |---|---|
 | `CLAUDE.md` | The applier's instructions (from `applier/CLAUDE.md`; edit to change its behaviour) |
-| `resume/` | Your master CV |
-| `profile.json` | Your standard answers, shared with the AutoInternship extension |
+| `resume/` | Your master CV, uploaded on the site |
+| `profile.json` | Your answers, edited on the site, shared with the AutoInternship extension |
+| `applications.json` | What you asked for on the site or in Telegram, and each one's status |
+| `myjobs.json` | Your starred jobs, shared between devices |
+| `reviews/` | Tailored CV and filled answers of applications waiting for your review |
+| `.applier/applications.py` | The queue watcher and status script the session uses |
 | `tracker.xlsx` | Every application and its status (made by the skill) |
 | `Applications/` | One folder per application: the posting, the CV sent, the cover letter, what was entered |
 | `jobs.txt` | Jobs held for later (for example the two-per-company limit) |

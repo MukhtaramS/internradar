@@ -91,7 +91,15 @@
     if (j.countries.length) return j.countries.map(function (c) { return flag(c) + " " + cname(c); }).join(", ");
     return "🇪🇺 Europe-wide";
   }
-  function persistSaved() { try { localStorage.setItem("saved-jobs", JSON.stringify(saved)); } catch (e) {} }
+  var removed = {};  // url -> when it was removed, so other devices drop it too
+  try { removed = JSON.parse(localStorage.getItem("removed-jobs") || "{}") || {}; } catch (e) { removed = {}; }
+  function persistSaved(noSync) {
+    try {
+      localStorage.setItem("saved-jobs", JSON.stringify(saved));
+      localStorage.setItem("removed-jobs", JSON.stringify(removed));
+    } catch (e) {}
+    if (!noSync) scheduleSync();
+  }
   function applied(url) { return !!saved[url] && saved[url].s !== "saved"; }
   function plainWhere(j) {
     if (j.cities.length) return j.cities.join(", ") + (j.countries.length === 1 ? ", " + cname(j.countries[0]) : "");
@@ -368,6 +376,179 @@
       }).join("");
   }
 
+  /* ---------------- applications sent to the applier on your Mac ---------------- */
+  var APP_LABEL = {
+    queued: "Queued", working: "Working on it", review: "Ready for review", approved: "Approved, submitting",
+    submitting: "Submitting", submitted: "Submitted", needs_you: "Needs you", cancel: "Cancelling",
+    cancelled: "Cancelled", skipped: "Skipped", failed: "Failed", closed: "Listing closed"
+  };
+  var APP_DONE = { cancelled: 1, skipped: 1, failed: 1, closed: 1 };  // can be sent again
+  var apps = {}, appsLoaded = false, picked = {}, profileMissing = null, pollTimer = null;
+  function connected() { return !!(window.GH && GH.connected()); }
+  function appFor(code) { return code && apps[code]; }
+  function sendable(r) {
+    var a = appFor(r.info.code);
+    return r.live && r.info.code && r.rec.s === "saved" && (!a || APP_DONE[a.status]);
+  }
+  function nowIso() { return new Date().toISOString().replace(/\.\d+Z$/, "Z"); }
+  function loadApps() {
+    if (!connected()) return Promise.resolve();
+    return GH.getJSON("applications.json", {}).then(function (got) {
+      apps = got.data || {};
+      appsLoaded = true;
+      absorbApps();
+      renderMine();
+    }).catch(function (err) { console.warn("applications.json:", err.message); });
+  }
+  /* Jobs the applier handled (from the site or Telegram) show up in My jobs; a submitted one
+     becomes Applied. */
+  function absorbApps() {
+    var changed = false;
+    keys(apps).forEach(function (code) {
+      var a = apps[code], url = a.url;
+      if (!url) return;
+      var ts = Date.parse(a.submitted || a.updated || a.requested || "") || Date.now();
+      if (!saved[url] && !(removed[url] >= ts)) {
+        var j = byUrl[url];
+        saved[url] = Object.assign({ t: ts, s: "saved", st: ts }, j ? snapshot(j) :
+          { title: a.title, company: a.company, where: a.where, plain: a.where, code: code });
+        changed = true;
+      }
+      if (a.status === "submitted" && saved[url] && saved[url].s === "saved") {
+        saved[url].s = "applied";
+        saved[url].st = ts;
+        changed = true;
+      }
+    });
+    if (changed) persistSaved();
+  }
+  function poll() {
+    clearTimeout(pollTimer);
+    if (!connected()) return;
+    pollTimer = setTimeout(function () {
+      if (document.visibilityState === "visible") loadApps().then(poll); else poll();
+    }, 30000);
+  }
+  function sendPicked() {
+    var codes = keys(picked);
+    if (!codes.length) return;
+    var mode = (document.querySelector('input[name="send-mode"]:checked') || {}).value || "submit";
+    var rows = mineRows().filter(function (r) { return picked[r.info.code]; });
+    var names = rows.map(function (r) { return "• " + r.info.code + " " + r.info.company + ": " + r.info.title; }).join("\n");
+    var warn = mode === "submit"
+      ? "Send " + rows.length + " application" + (rows.length > 1 ? "s" : "") + " in your name?\n\n" + names +
+        "\n\nThey'll be submitted without asking you again. A submitted application can't be taken back."
+      : "Prepare " + rows.length + " application" + (rows.length > 1 ? "s" : "") + " for your review?\n\n" + names +
+        "\n\nNothing is submitted until you press Submit on each one.";
+    if (profileMissing && profileMissing.length) {
+      warn += "\n\nYour profile is missing: " + profileMissing.join(", ") + ". The applier will stop and ask where it needs them.";
+    }
+    if (!confirm(warn)) return;
+    var btn = $("send-btn");
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    var when = nowIso();
+    GH.update("applications.json", {}, function (data) {
+      rows.forEach(function (r) {
+        var prev = data[r.info.code];
+        if (prev && !APP_DONE[prev.status]) return;  // already in progress (e.g. from another device)
+        data[r.info.code] = { code: r.info.code, url: r.url, company: r.info.company, title: r.info.title,
+          where: r.info.plain || "", mode: mode, status: "queued", requested: when, updated: when };
+      });
+      return data;
+    }, "Send " + codes.join(", ") + " (" + mode + ")").then(function (data) {
+      apps = data;
+      picked = {};
+      btn.disabled = false;
+      btn.textContent = "Send";
+      renderMine();
+      poll();
+    }).catch(function (err) {
+      btn.disabled = false;
+      btn.textContent = "Send";
+      alert("Couldn't send: " + err.message);
+    });
+  }
+  function setApp(code, status, message) {
+    return GH.update("applications.json", {}, function (data) {
+      if (!data[code]) return;
+      data[code].status = status;
+      data[code].updated = nowIso();
+      return data;
+    }, message).then(function (data) { apps = data; renderMine(); });
+  }
+
+  /* ---------------- review ---------------- */
+  var reviewing = null;
+  function openReview(code) {
+    var a = apps[code];
+    if (!a) return;
+    reviewing = code;
+    var dlg = $("review");
+    $("review-title").textContent = code + " · " + (a.company || "") + " · " + (a.title || "");
+    var files = a.review || {};
+    $("review-body").innerHTML =
+      (a.note ? '<p class="pf-warn">' + esc(a.note) + "</p>" : "") +
+      '<div class="review-files">' +
+      (files.cv ? '<button type="button" class="btn" data-open="' + esc(files.cv) + '">Open tailored CV</button>' : "") +
+      (files.cover ? '<button type="button" class="btn" data-open="' + esc(files.cover) + '">Open cover letter</button>' : "") +
+      '<a class="btn" href="' + esc(a.url) + '" target="_blank" rel="noopener">Posting</a></div>' +
+      "<h3>What was entered</h3>" +
+      '<pre id="review-record" class="review-record">' + (files.record ? "Loading…" : "No record was uploaded.") + "</pre>";
+    $("review-submit").disabled = $("review-cancel").disabled = a.status !== "review";
+    if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+    if (files.record) {
+      GH.getText(files.record).then(function (t) { if (reviewing === code) $("review-record").textContent = t; })
+        .catch(function (err) { $("review-record").textContent = "Couldn't load it: " + err.message; });
+    }
+  }
+  function closeReview() {
+    reviewing = null;
+    var dlg = $("review");
+    if (typeof dlg.close === "function") dlg.close(); else dlg.removeAttribute("open");
+  }
+  function openRepoFile(path) {
+    var w = window.open("", "_blank");
+    GH.getBlob(path).then(function (blob) {
+      var type = /\.pdf$/i.test(path) ? "application/pdf" : /\.md$/i.test(path) ? "text/plain;charset=utf-8" : blob.type;
+      var url = URL.createObjectURL(new Blob([blob], { type: type }));
+      if (w) w.location.href = url; else location.href = url;
+    }).catch(function (err) { if (w) w.close(); alert("Couldn't open it: " + err.message); });
+  }
+
+  /* ---------------- My jobs on every device (myjobs.json in the private repo) ---------------- */
+  var syncTimer = null, syncing = false;
+  function mergeMine(remote) {
+    var rs = (remote && remote.saved) || {}, rr = (remote && remote.removed) || {};
+    keys(rr).forEach(function (u) { if (!(removed[u] >= rr[u])) removed[u] = rr[u]; });
+    keys(rs).forEach(function (u) {
+      var mine = saved[u], theirs = rs[u];
+      if (!mine || (theirs.st || theirs.t || 0) > (mine.st || mine.t || 0)) saved[u] = theirs;
+    });
+    keys(saved).forEach(function (u) {
+      if (removed[u] >= (saved[u].st || saved[u].t || 0)) delete saved[u];
+    });
+    return { saved: saved, removed: removed };
+  }
+  function syncNow() {
+    if (!connected() || syncing) return Promise.resolve();
+    syncing = true;
+    return GH.update("myjobs.json", { saved: {}, removed: {} }, function (remote) {
+      var before = JSON.stringify(remote);
+      var merged = mergeMine(remote);
+      return JSON.stringify(merged) === before ? undefined : merged;
+    }, "My jobs updated").then(function () {
+      syncing = false;
+      persistSaved(true);
+      refresh(true);
+    }).catch(function (err) { syncing = false; console.warn("myjobs.json:", err.message); });
+  }
+  function scheduleSync() {
+    if (!connected()) return;
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(syncNow, 1500);
+  }
+
   /* ---------------- My jobs view ---------------- */
   var mineFilter = "";
   var byUrl = {};
@@ -399,6 +580,17 @@
     $("copy-links").disabled = !toApply;
     $("export-jobs").title = toApply + " to apply to, the rest marked done";
     var shownRows = rows.filter(function (r) { return !mineFilter || r.rec.s === mineFilter; });
+    var on = connected();
+    $("help-connected").hidden = !on;
+    $("help-local").hidden = on;
+    keys(picked).forEach(function (c) {
+      if (!rows.some(function (r) { return r.info.code === c && sendable(r); })) delete picked[c];
+    });
+    var n = keys(picked).length;
+    $("send-bar").hidden = !on || !n;
+    $("send-count").textContent = n + " selected";
+    $("profile-warn").textContent = profileMissing && profileMissing.length
+      ? "Your profile still needs: " + profileMissing.join(", ") + "." : "";
     if (!rows.length) {
       $("mine-list").innerHTML = '<li class="empty">Nothing here yet. Star ☆ a listing on the Internships tab to add it.</li>';
       return;
@@ -410,12 +602,26 @@
           return '<option value="' + x[0] + '"' + (x[0] === r.rec.s ? " selected" : "") + ">" + esc(x[1]) + "</option>";
         }).join("") + "</select>";
       var note = (i.code ? i.code + " · " : "") + (r.rec.s === "saved" ? "Saved " : STATUS_LABEL[r.rec.s] + " · ") + since(r.rec.st || r.rec.t);
-      return '<li class="mine-row">' + logo(i.company || "?") +
+      var a = connected() && appFor(i.code);
+      var app = "";
+      if (a) {
+        app = '<div class="app-line"><span class="app-st app-' + esc(a.status) + '">' + esc(APP_LABEL[a.status] || a.status) +
+          (a.mode === "review" && a.status === "queued" ? " (review first)" : "") + "</span>" +
+          (a.note ? '<span class="app-note">' + esc(a.note) + "</span>" : "") +
+          (a.confirmation ? '<span class="app-note">' + esc(a.confirmation) + "</span>" : "") +
+          (a.status === "review" ? '<button type="button" class="btn small primary" data-review="' + esc(i.code) + '">Review</button>' : "") +
+          (a.status === "queued" || a.status === "review" ? '<button type="button" class="link-btn danger" data-cancel="' + esc(i.code) + '">Cancel</button>' : "") +
+          "</div>";
+      }
+      var pick = connected() && sendable(r)
+        ? '<label class="pick" title="Select to send"><input type="checkbox" data-pick="' + esc(i.code) + '"' + (picked[i.code] ? " checked" : "") + '><span class="sr">Select</span></label>'
+        : '<span class="pick"></span>';
+      return '<li class="mine-row' + (connected() ? " with-pick" : "") + (picked[i.code] ? " picked" : "") + '">' + (connected() ? pick : "") + logo(i.company || "?") +
         '<div class="job-main"><a class="job-title" href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(i.title || r.url) + "</a>" +
         '<div class="job-co"><b>' + esc(i.company || "") + "</b>" +
         (i.category ? '<span class="cat cat-' + esc(i.category) + '">' + esc(catLabel(i.category)) + "</span>" : "") +
         (i.where ? '<span class="place">' + PIN + esc(i.where) + "</span>" : "") +
-        (r.live ? "" : '<span class="tag closed">Listing closed</span>') + "</div></div>" +
+        (r.live ? "" : '<span class="tag closed">Listing closed</span>') + "</div>" + app + "</div>" +
         '<div class="mine-side">' + select + '<span class="when">' + esc(note) + "</span></div>" +
         '<button type="button" class="remove" data-url="' + esc(r.url) + '" title="Remove from My jobs" aria-label="Remove">×</button></li>';
     }).join("");
@@ -431,6 +637,7 @@
     var r = saved[url];
     if (r.s !== "saved" && !confirm("Remove " + (r.title || "this job") + " from My jobs? Its status (" + STATUS_LABEL[r.s] + ") will be lost.")) return false;
     delete saved[url];
+    removed[url] = Date.now();
     persistSaved();
     return true;
   }
@@ -500,11 +707,15 @@
 
   /* ---------------- views ---------------- */
   function showView(v) {
-    state.view = ["jobs", "companies", "mine", "alerts"].indexOf(v) === -1 ? "jobs" : v;
-    ["jobs", "companies", "mine", "alerts"].forEach(function (name) {
+    var VIEWS = ["jobs", "companies", "mine", "profile", "alerts"];
+    state.view = VIEWS.indexOf(v) === -1 ? "jobs" : v;
+    VIEWS.forEach(function (name) {
       $("view-" + name).hidden = name !== state.view;
-      $("tab-" + name).classList.toggle("active", name === state.view);
+      if ($("tab-" + name)) $("tab-" + name).classList.toggle("active", name === state.view);
     });
+    $("profile-btn").classList.toggle("active", state.view === "profile");
+    if (state.view === "profile" && window.Profile) Profile.show();
+    if (state.view === "mine" && connected()) loadApps();
     writeHash();
   }
 
@@ -591,8 +802,50 @@
     });
     $("mine-list").addEventListener("click", function (e) {
       var b = e.target.closest(".remove");
-      if (b && removeSaved(b.getAttribute("data-url"))) refresh(true);
+      if (b && removeSaved(b.getAttribute("data-url"))) { refresh(true); return; }
+      var rv = e.target.closest("[data-review]");
+      if (rv) { openReview(rv.getAttribute("data-review")); return; }
+      var c = e.target.closest("[data-cancel]");
+      if (c && confirm("Cancel " + c.getAttribute("data-cancel") + "? It won't be submitted.")) {
+        setApp(c.getAttribute("data-cancel"), "cancel", "Cancel " + c.getAttribute("data-cancel"))
+          .catch(function (err) { alert("Couldn't cancel: " + err.message); });
+      }
     });
+    $("mine-list").addEventListener("change", function (e) {
+      var p = e.target.closest("[data-pick]");
+      if (!p) return;
+      if (p.checked) picked[p.getAttribute("data-pick")] = true; else delete picked[p.getAttribute("data-pick")];
+      renderMine();
+    });
+    $("send-btn").addEventListener("click", sendPicked);
+    $("review-submit").addEventListener("click", function () {
+      var code = reviewing;
+      if (!code || !confirm("Submit " + code + " now, in your name? It can't be taken back.")) return;
+      setApp(code, "approved", "Approve " + code).then(closeReview)
+        .catch(function (err) { alert("Couldn't send: " + err.message); });
+    });
+    $("review-cancel").addEventListener("click", function () {
+      var code = reviewing;
+      if (!code || !confirm("Cancel " + code + "? It won't be submitted.")) return;
+      setApp(code, "cancel", "Cancel " + code).then(closeReview)
+        .catch(function (err) { alert("Couldn't cancel: " + err.message); });
+    });
+    $("review-body").addEventListener("click", function (e) {
+      var o = e.target.closest("[data-open]");
+      if (o) openRepoFile(o.getAttribute("data-open"));
+    });
+    document.addEventListener("click", function (e) {
+      var v = e.target.closest("[data-view]");
+      if (!v || v.classList.contains("tab")) return;
+      e.preventDefault();
+      showView(v.getAttribute("data-view"));
+      window.scrollTo(0, 0);
+    });
+    document.addEventListener("gh-connection", function () {
+      apps = {}; picked = {};
+      if (connected()) { loadApps(); syncNow(); poll(); } else renderMine();
+    });
+    document.addEventListener("profile-state", function (e) { profileMissing = e.detail.missing; renderMine(); });
     $("export-jobs").addEventListener("click", function () {
       download("jobs.txt", exportText());
       flash(this, "Downloaded");
@@ -677,6 +930,7 @@
       bind();
       showView(state.view);
       refresh();
+      if (connected()) { loadApps(); syncNow(); poll(); if (window.Profile) Profile.reload(); }
     })
     .catch(function (err) {
       $("list").innerHTML = '<li class="empty">Could not load the listings (' + esc(err.message) + "). Try reloading the page.</li>";

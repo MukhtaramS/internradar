@@ -26,6 +26,7 @@
       <button type="button" class="tab" data-view="alerts" id="tab-alerts"><span class="long">Get alerts</span><span class="short">Alerts</span></button>
     </nav>
     <div class="top-actions">
+      <button type="button" id="profile-btn" class="icon-btn" data-view="profile" title="Your profile and CV" aria-label="Your profile and CV"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       <a id="repo-link" class="icon-link" href="#" target="_blank" rel="noopener" hidden>GitHub</a>
       <button type="button" id="theme-btn" class="icon-btn" title="Switch light / dark theme" aria-label="Switch theme">◐</button>
     </div>
@@ -118,21 +119,42 @@
     <div class="band band-small"><div class="wrap page-head">
       <p class="readout">Applications</p>
       <h1>My jobs</h1>
-      <p>Star <b>☆</b> a listing to add it here, then track where each application stands. Everything stays in this browser.</p>
+      <p>Star <b>☆</b> listings to collect them here, send applications to the applier on your Mac, and follow where each one stands.</p>
     </div></div>
     <div class="wrap page-body mine-body">
       <div class="mine-main">
         <div class="mine-head">
           <div class="co-filters" id="mine-filters"></div>
           <div class="mine-actions">
+            <button type="button" class="btn" data-view="profile">Profile &amp; CV</button>
             <button type="button" class="btn" id="copy-links">Copy links</button>
             <button type="button" class="btn primary" id="export-jobs">Download jobs.txt</button>
           </div>
         </div>
         <ol id="mine-list" class="mine-list"></ol>
+        <div id="send-bar" class="send-bar" hidden>
+          <span id="send-count"></span>
+          <div class="seg" role="radiogroup" aria-label="How to send">
+            <label><input type="radio" name="send-mode" value="submit" checked><span>Submit directly</span></label>
+            <label><input type="radio" name="send-mode" value="review"><span>Let me review first</span></label>
+          </div>
+          <button type="button" class="btn primary" id="send-btn">Send</button>
+        </div>
       </div>
-      <aside class="alert-card mine-help">
-        <h2>Fill applications automatically</h2>
+      <aside class="alert-card mine-help" id="help-connected" hidden>
+        <h2>Send applications</h2>
+        <ol class="steps">
+          <li>Tick the jobs you want and choose <b>Submit directly</b> or <b>Let me review first</b>, then <b>Send</b>.</li>
+          <li>The applier on your Mac picks them up within a minute, tailors your CV, fills the form and submits it, or stops for your review.</li>
+          <li>Statuses update here by themselves: Queued, Working, Ready for review, Submitted, or Needs you with the reason.</li>
+        </ol>
+        <p class="small">Your Mac has to be on with <code>applier/start.sh</code> running. Until then requests wait as <b>Queued</b>. Applying uses your Claude plan.</p>
+        <p class="small"><span id="profile-warn"></span></p>
+      </aside>
+      <aside class="alert-card mine-help" id="help-local">
+        <h2>Apply from this site</h2>
+        <p>Connect your private repo in <a href="#view=profile" data-view="profile">Profile &amp; CV</a>, add your details and CV, and you can send applications from here, on your phone too. The applier on your Mac does the rest. See <code>applier/README.md</code>.</p>
+        <h2>Or fill applications yourself</h2>
         <p><b>jobs.txt</b> holds the jobs you starred but haven't applied to yet. The free <a href="https://github.com/pqthangv/AutoInternshipClaude" target="_blank" rel="noopener">AutoInternship</a> tools can work through it for you.</p>
         <ol class="steps">
           <li>Install the <a href="https://chromewebstore.google.com/detail/autointernship/cdfkbdkmandhnmaejaknimdhepipbpin" target="_blank" rel="noopener">AutoInternship extension</a> and fill in your profile once. Its Fill button then completes the standard fields on any application form, without using Claude.</li>
@@ -145,6 +167,25 @@
       </aside>
     </div>
   </section>
+
+  <!-- ========================== Profile ========================== -->
+  <section id="view-profile" class="view" hidden>
+    <div class="band band-small"><div class="wrap page-head">
+      <p class="readout">Profile</p>
+      <h1>Your profile &amp; CV</h1>
+      <p>What the applier puts into application forms. Stored in your <b>private</b> GitHub repo, not on this site.</p>
+    </div></div>
+    <div class="wrap page-body" id="profile-root"></div>
+  </section>
+
+  <dialog id="review" class="review">
+    <form method="dialog" class="review-head"><h2 id="review-title">Review</h2><button class="remove" aria-label="Close">×</button></form>
+    <div id="review-body" class="review-body"></div>
+    <div class="review-actions">
+      <button type="button" class="btn" id="review-cancel">Cancel application</button>
+      <button type="button" class="btn primary" id="review-submit">Submit application</button>
+    </div>
+  </dialog>
 
   <!-- ========================== Alerts =========================== -->
   <section id="view-alerts" class="view" hidden>
@@ -181,6 +222,8 @@
   <p>Listings come from each company's official careers site and link to the real application page. Saved jobs stay in your browser only. <span id="updated"></span></p>
 </footer>
 
+<script src="gh.js"></script>
+<script src="profile.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

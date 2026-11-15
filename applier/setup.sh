@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
 # One-time setup for the InternRadar applier on a Mac.
 #
-#   applier/setup.sh [job-search folder]      (default: ~/InternRadar-applier)
+#   applier/setup.sh [job-search folder] [owner/private-repo]
+#       folder default: ~/InternRadar-applier
+#       repo default:   <your GitHub user>/internradar-private (created private if missing)
 #
 # It installs the AutoInternship skills for Claude Code, the Python packages they use, and makes
-# the job-search folder with this applier's instructions. It never overwrites your files.
+# the job-search folder with this applier's instructions. The folder is a clone of a private
+# GitHub repo, which the InternRadar site uses for your profile, CV and application requests.
+# It never overwrites your files.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
 FOLDER="${1:-$HOME/InternRadar-applier}"
+REPO="${2:-}"
 SKILLS="$HOME/.claude/skills"
 SRC="$HOME/.claude/autointernship-src"
 missing=0
@@ -28,6 +33,7 @@ need claude "Install Claude Code: https://code.claude.com/docs/en/quickstart"
 need bun "The Telegram channel needs it. Install: curl -fsSL https://bun.sh/install | bash"
 need git "Install the Xcode command line tools: xcode-select --install"
 need python3 "Install Python 3: https://www.python.org/downloads/"
+need gh "The GitHub CLI, for the private repo: brew install gh, then gh auth login"
 if [ "$missing" = 1 ]; then
   echo
   echo "Install what's missing above, then run this again."
@@ -72,7 +78,39 @@ else
   echo "  ✓ CLAUDE.md (the applier's instructions)"
 fi
 [ -f "$FOLDER/jobs.txt" ] || printf '# Links waiting to be applied to, one per line.\n\n# done\n' > "$FOLDER/jobs.txt"
-echo "  ✓ resume/ and jobs.txt"
+[ -f "$FOLDER/applications.json" ] || printf '{}\n' > "$FOLDER/applications.json"
+[ -f "$FOLDER/.gitignore" ] || printf '.DS_Store\n*.tmp\n~$*\n' > "$FOLDER/.gitignore"
+mkdir -p "$FOLDER/.applier"
+cp "$HERE/applications.py" "$FOLDER/.applier/applications.py"
+echo "  ✓ resume/, jobs.txt, applications.json and the queue script"
+
+say "Connecting the folder to your private GitHub repo"
+if [ -z "$REPO" ]; then
+  REPO="$(gh api user -q .login)/internradar-private"
+fi
+if ! gh repo view "$REPO" >/dev/null 2>&1; then
+  gh repo create "$REPO" --private --description "My InternRadar profile, CV and applications (private)" >/dev/null
+  echo "  ✓ created private repo $REPO"
+else
+  echo "  ✓ $REPO exists"
+fi
+if [ "$(gh repo view "$REPO" --json visibility -q .visibility)" != "PRIVATE" ]; then
+  echo "  ✗ $REPO is not private. Your CV and answers would be public; stopping here."
+  exit 1
+fi
+URL="https://github.com/$REPO.git"
+if [ ! -d "$FOLDER/.git" ]; then
+  git -C "$FOLDER" init --quiet -b main
+  git -C "$FOLDER" remote add origin "$URL"
+fi
+if git -C "$FOLDER" ls-remote --exit-code --heads origin main >/dev/null 2>&1; then
+  git -C "$FOLDER" pull --quiet --rebase --autostash origin main || true
+fi
+git -C "$FOLDER" add -A
+git -C "$FOLDER" diff --cached --quiet || git -C "$FOLDER" commit --quiet -m "Applier setup"
+git -C "$FOLDER" push --quiet -u origin main
+git -C "$FOLDER" config pull.rebase true
+echo "  ✓ $FOLDER is linked to $REPO"
 
 if [ -z "$(ls -A "$FOLDER/resume" 2>/dev/null)" ]; then
   echo
@@ -92,11 +130,13 @@ cat <<EOF
      Send your bot any message in Telegram, it answers with a pairing code. In Claude Code run:
        /telegram:access pair <code>
        /telegram:access policy allowlist
-  4. Your numeric Telegram id: message @userinfobot.
+  4. On the InternRadar site open Profile, connect $REPO with a GitHub token
+     (the page explains how), fill in your profile and upload your CV there.
+  5. Your numeric Telegram id: message @userinfobot.
      In GitHub (internradar → Settings → Secrets and variables → Actions) add:
        TELEGRAM_ME_BOT_TOKEN = the bot token
        TELEGRAM_CHAT_ME      = your numeric id
-  5. Install the Claude in Chrome extension and sign in, and the AutoInternship extension:
+  6. Install the Claude in Chrome extension and sign in, and the AutoInternship extension:
        https://chromewebstore.google.com/detail/autointernship/cdfkbdkmandhnmaejaknimdhepipbpin
      Fill in its profile once and click "Download backup"; save the file as $FOLDER/profile.json
 

@@ -6,7 +6,7 @@ New listings can go to Telegram channels, email, Discord, Slack and Atom/RSS fee
 
 It runs entirely on GitHub: Actions does the scraping, the data lives in the repo, and GitHub Pages hosts the site. No server or database.
 
-**Apply from Telegram (optional):** every listing has a short code such as `J42`. Your own Telegram chat gets new jobs with their codes; reply `submit J42` and a Claude Code session on your Mac tailors your CV, fills the application and submits it. See [`applier/README.md`](applier/README.md).
+**Apply from the site or Telegram (optional):** keep your profile and CV in a private repo, tick jobs on the site (phone included) and press Send, or reply `submit J42` to a job in your Telegram chat. A Claude Code session on your Mac tailors your CV, fills the application and submits it, or waits for your review. See [`applier/README.md`](applier/README.md).
 
 ## What you get
 
