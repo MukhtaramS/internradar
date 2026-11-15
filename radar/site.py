@@ -12,7 +12,7 @@ from .locations import EUROPE
 SITE_DATA = os.path.join(config.ROOT, "docs", "data")
 PUBLIC_FIELDS = ("company", "category", "title", "url", "locations", "countries", "cities",
                  "europe_wide", "remote", "role", "kind", "degrees", "season", "posted",
-                 "first_seen")
+                 "first_seen", "code")
 
 
 def _days(a, b):

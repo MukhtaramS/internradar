@@ -2,6 +2,7 @@ import unittest
 
 from radar import store
 from radar.notify import matches, notify
+from radar.notify import telegram
 
 
 def rec(uid, company="Acme", **extra):
@@ -89,3 +90,44 @@ class CombineTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CodeTest(unittest.TestCase):
+    def test_codes_are_stable_and_never_reused(self):
+        state = {"jobs": {}}
+        store.merge(state, [rec("a"), rec("b")], {"Acme"}, date="2026-11-01")
+        self.assertEqual(sorted(j["code"] for j in state["jobs"].values()), ["J1", "J2"])
+        store.merge(state, [rec("a")], {"Acme"}, date="2026-11-02")          # b closes
+        store.merge(state, [rec("a"), rec("c")], {"Acme"}, date="2026-11-03")
+        self.assertEqual(state["jobs"]["a"]["code"], "J1")
+        self.assertEqual(state["jobs"]["c"]["code"], "J3")
+        self.assertEqual(store.by_code(state, "j3")["uid"], "c")
+
+    def test_backfill_keeps_existing_codes(self):
+        state = {"jobs": {"x": dict(rec("x"), first_seen="2026-11-02", code="J7"),
+                          "y": dict(rec("y"), first_seen="2026-11-01")}}
+        store.assign_codes(state)
+        self.assertEqual(state["jobs"]["x"]["code"], "J7")
+        self.assertEqual(state["jobs"]["y"]["code"], "J8")
+        self.assertEqual(state["next_code"], 9)
+
+
+class PersonalTest(unittest.TestCase):
+    def test_any_of_filter(self):
+        flt = [{"countries": ["CH"]}, {"cities": ["London"]}]
+        self.assertTrue(matches(rec("a"), flt))
+        self.assertTrue(matches(rec("b", countries=["GB"], cities=["London"]), flt))
+        self.assertFalse(matches(rec("c", countries=["DE"], cities=["Berlin"]), flt))
+
+    def test_personal_message_has_code_and_hint(self):
+        job = dict(rec("a"), code="J42", season=None)
+        text = telegram.personal_message(job)
+        self.assertIn("<b>J42</b>", text)
+        self.assertIn("<code>submit J42</code>", text)
+
+    def test_personal_list_splits_long_batches(self):
+        jobs = [dict(rec(str(i)), code="J{}".format(i), title="Intern " * 10) for i in range(60)]
+        texts = telegram.personal_list(jobs, limit=1000)
+        self.assertGreater(len(texts), 1)
+        self.assertTrue(all(len(t) <= 1000 for t in texts))
+        self.assertIn("J59", texts[-1])

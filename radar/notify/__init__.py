@@ -36,6 +36,9 @@ def expand(value):
 
 
 def matches(job, flt):
+    """flt is a dict (every key must match) or a list of dicts (any one must match)."""
+    if isinstance(flt, list):
+        return not flt or any(matches(job, f) for f in flt)
     for key, wanted in (flt or {}).items():
         field = FILTER_FIELDS.get(key)
         if field is None:

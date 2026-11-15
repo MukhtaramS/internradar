@@ -99,7 +99,7 @@
     return "Europe";
   }
   function snapshot(j) {
-    return { title: j.title, company: j.company, category: j.category, where: where(j), plain: plainWhere(j), posted: j.posted };
+    return { title: j.title, company: j.company, category: j.category, where: where(j), plain: plainWhere(j), posted: j.posted, code: j.code };
   }
 
   /* ---------------- URL hash <-> state ---------------- */
@@ -307,7 +307,7 @@
       '<button type="button" class="save' + (saved[j.url] ? " on" : "") + '" data-url="' + esc(j.url) +
       '" title="' + (saved[j.url] ? "Remove from My jobs" : "Add to My jobs") + '" aria-label="' + (saved[j.url] ? "Remove from My jobs" : "Add to My jobs") +
       '" aria-pressed="' + !!saved[j.url] + '">' + (saved[j.url] ? "★" : "☆") + "</button></div>" +
-      '<span class="when">' + esc(when) + "</span></div></li>";
+      '<span class="when">' + (j.code ? '<b class="code" title="Reply &quot;submit ' + esc(j.code) + '&quot; to your applier bot">' + esc(j.code) + "</b> · " : "") + esc(when) + "</span></div></li>";
   }
   function renderChips() {
     var chips = [];
@@ -409,7 +409,7 @@
         STATUSES.map(function (x) {
           return '<option value="' + x[0] + '"' + (x[0] === r.rec.s ? " selected" : "") + ">" + esc(x[1]) + "</option>";
         }).join("") + "</select>";
-      var note = (r.rec.s === "saved" ? "Saved " : STATUS_LABEL[r.rec.s] + " · ") + since(r.rec.st || r.rec.t);
+      var note = (i.code ? i.code + " · " : "") + (r.rec.s === "saved" ? "Saved " : STATUS_LABEL[r.rec.s] + " · ") + since(r.rec.st || r.rec.t);
       return '<li class="mine-row">' + logo(i.company || "?") +
         '<div class="job-main"><a class="job-title" href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(i.title || r.url) + "</a>" +
         '<div class="job-co"><b>' + esc(i.company || "") + "</b>" +
@@ -650,7 +650,7 @@
         j.foundTs = day(j.first_seen);
         j.ageTs = j.postedTs || (j.foundTs > seedTs ? j.foundTs : 0);
         j.isNew = j.foundTs >= weekAgo;
-        j.search = [j.title, j.company, j.role, j.kind, j.season || "", catLabel(j.category)]
+        j.search = [j.code || "", j.title, j.company, j.role, j.kind, j.season || "", catLabel(j.category)]
           .concat(j.cities, j.locations, j.countries.map(cname)).join(" ").toLowerCase();
         return j;
       });

@@ -4,6 +4,8 @@ Rules:
 - Jobs are never deleted. A job missing from a successful scrape is marked closed.
 - A closed job that reappears is reopened and keeps its first_seen date.
 - If a company's scraper failed this run, its jobs are left exactly as they were.
+- Every job gets a short code ("J42") that never changes or gets reused, so a reply like
+  "submit J42" in Telegram names exactly one job.
 """
 from __future__ import annotations
 
@@ -33,6 +35,23 @@ def save(state, path=DATA_PATH):
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(state, fh, indent=1, sort_keys=True, ensure_ascii=False)
         fh.write("\n")
+
+
+def assign_codes(state):
+    """Give every job without a code the next one, oldest first. Codes are never reused."""
+    jobs = state.setdefault("jobs", {})
+    used = [int(j["code"][1:]) for j in jobs.values() if str(j.get("code", ""))[1:].isdigit()]
+    nxt = max([state.get("next_code", 1)] + [n + 1 for n in used])
+    for uid in sorted((u for u, j in jobs.items() if not j.get("code")),
+                      key=lambda u: (jobs[u].get("first_seen") or "", u)):
+        jobs[uid]["code"] = "J{}".format(nxt)
+        nxt += 1
+    state["next_code"] = nxt
+
+
+def by_code(state, code):
+    code = code.strip().upper()
+    return next((j for j in state.get("jobs", {}).values() if j.get("code") == code), None)
 
 
 def merge(state, records, succeeded, date=None):
@@ -73,4 +92,5 @@ def merge(state, records, succeeded, date=None):
             entry["closed"] = date
             closed.append(entry)
 
+    assign_codes(state)
     return added, closed, reopened

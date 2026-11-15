@@ -17,8 +17,19 @@
 #   companies:  [Jane Street, Optiver]
 #   degrees:    BS | MS | PhD  (only jobs whose title names the degree)
 #   kinds:      Internship | Placement | Working student | Thesis
+# A list of filters matches when any one of them does, e.g. Switzerland or London:
+#   filter: [{countries: [CH]}, {cities: [London]}]
 
 channels:
+  # Your own chat with your applier bot (see applier/README.md). Each job comes with its
+  # code; reply "submit J42" and the Claude session on your Mac applies for you.
+  # Narrow it with a filter so you only get the jobs you'd apply to.
+  - name: Telegram, me (applier)
+    type: telegram
+    personal: true
+    token: ${TELEGRAM_ME_BOT_TOKEN}
+    chat: ${TELEGRAM_CHAT_ME}
+
   - name: Telegram, all internships
     type: telegram
     chat: ${TELEGRAM_CHAT_ALL}

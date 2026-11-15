@@ -50,6 +50,8 @@ jobs:
           TELEGRAM_CHAT_SWITZERLAND: ${{ secrets.TELEGRAM_CHAT_SWITZERLAND }}
           TELEGRAM_CHAT_LONDON: ${{ secrets.TELEGRAM_CHAT_LONDON }}
           TELEGRAM_CHAT_QUANT: ${{ secrets.TELEGRAM_CHAT_QUANT }}
+          TELEGRAM_ME_BOT_TOKEN: ${{ secrets.TELEGRAM_ME_BOT_TOKEN }}
+          TELEGRAM_CHAT_ME: ${{ secrets.TELEGRAM_CHAT_ME }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}

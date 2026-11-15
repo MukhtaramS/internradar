@@ -6,6 +6,8 @@ New listings can go to Telegram channels, email, Discord, Slack and Atom/RSS fee
 
 It runs entirely on GitHub: Actions does the scraping, the data lives in the repo, and GitHub Pages hosts the site. No server or database.
 
+**Apply from Telegram (optional):** every listing has a short code such as `J42`. Your own Telegram chat gets new jobs with their codes; reply `submit J42` and a Claude Code session on your Mac tailors your CV, fills the application and submits it. See [`applier/README.md`](applier/README.md).
+
 ## What you get
 
 **Website** (`docs/`, served by GitHub Pages)
@@ -69,6 +71,8 @@ The first run stores everything without sending notifications, so channels are n
 1. Message [@BotFather](https://t.me/BotFather), send `/newbot`, and copy the token.
 2. Create a public channel for each feed you want (for example all internships, Switzerland, London, Quant & Trading) and add the bot as an administrator of each one.
 3. Add repository secrets: `TELEGRAM_BOT_TOKEN`, and `TELEGRAM_CHAT_ALL`, `TELEGRAM_CHAT_SWITZERLAND`, `TELEGRAM_CHAT_LONDON`, `TELEGRAM_CHAT_QUANT` set to each channel's `@username`.
+
+For your own chat with job codes and `submit` replies, see [`applier/README.md`](applier/README.md).
 
 Channels you don't create are skipped. To add another one (say Germany), add an entry to `config/notify.yaml` with `filter: {countries: [DE]}`, a new secret name, and that secret in `.github/workflows/scrape.yml`.
 
@@ -141,4 +145,5 @@ data/jobs.json          every listing ever seen, with first/last seen and closed
 data/health.json        result of the last run for each company
 docs/                   the website, its data file and the feeds
 tests/                  unit tests for locations, classification, store and routing
+applier/                apply from Telegram: Claude Code instructions, setup and start scripts
 ```
