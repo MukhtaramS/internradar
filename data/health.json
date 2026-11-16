@@ -1,32 +1,32 @@
 {
  "Airbnb": {
-  "fetched": 209,
+  "fetched": 207,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
  },
  "Amazon": {
-  "fetched": 729,
+  "fetched": 730,
   "kept": 34,
-  "seconds": 11.1,
+  "seconds": 12.3,
   "status": "ok"
  },
  "Anthropic": {
-  "fetched": 661,
+  "fetched": 659,
   "kept": 0,
-  "seconds": 0.5,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Apple": {
-  "fetched": 179,
-  "kept": 29,
-  "seconds": 5.3,
+  "fetched": 182,
+  "kept": 30,
+  "seconds": 6.0,
   "status": "ok"
  },
  "Bloomberg": {
-  "fetched": 188,
+  "fetched": 192,
   "kept": 0,
-  "seconds": 32.7,
+  "seconds": 30.4,
   "status": "ok"
  },
  "Citadel": {
@@ -38,13 +38,13 @@
   "status": "not_covered"
  },
  "Cloudflare": {
-  "fetched": 473,
+  "fetched": 470,
   "kept": 0,
-  "seconds": 0.3,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Coinbase": {
-  "fetched": 259,
+  "fetched": 262,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
@@ -54,7 +54,7 @@
   "status": "not_covered"
  },
  "DRW": {
-  "fetched": 159,
+  "fetched": 160,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"
@@ -66,25 +66,25 @@
   "status": "ok"
  },
  "Databricks": {
-  "fetched": 893,
+  "fetched": 892,
   "kept": 5,
-  "seconds": 0.2,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Datadog": {
-  "fetched": 384,
+  "fetched": 382,
   "kept": 3,
-  "seconds": 0.4,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Figma": {
-  "fetched": 139,
+  "fetched": 140,
   "kept": 1,
-  "seconds": 0.3,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Flow Traders": {
-  "fetched": 44,
+  "fetched": 45,
   "kept": 1,
   "seconds": 0.1,
   "status": "ok"
@@ -100,31 +100,31 @@
   "status": "ok"
  },
  "Google": {
-  "fetched": 65,
+  "fetched": 69,
   "kept": 10,
-  "seconds": 3.2,
+  "seconds": 3.5,
   "status": "ok"
  },
  "Hudson River Trading": {
-  "fetched": 83,
+  "fetched": 85,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"
  },
  "IMC": {
-  "fetched": 157,
+  "fetched": 156,
   "kept": 5,
   "seconds": 0.1,
   "status": "ok"
  },
  "Jane Street": {
-  "fetched": 217,
+  "fetched": 216,
   "kept": 11,
   "seconds": 0.3,
   "status": "ok"
  },
  "Jump Trading": {
-  "fetched": 92,
+  "fetched": 91,
   "kept": 6,
   "seconds": 0.1,
   "status": "ok"
@@ -138,21 +138,21 @@
   "status": "not_covered"
  },
  "Meta": {
-  "fetched": 623,
+  "fetched": 632,
   "kept": 23,
   "seconds": 1.4,
   "status": "ok"
  },
  "Microsoft": {
-  "fetched": 135,
+  "fetched": 137,
   "kept": 6,
-  "seconds": 19.3,
+  "seconds": 23.9,
   "status": "ok"
  },
  "Millennium": {
   "fetched": 234,
   "kept": 0,
-  "seconds": 20.7,
+  "seconds": 20.6,
   "status": "ok"
  },
  "NVIDIA": {
@@ -162,29 +162,29 @@
  "Netflix": {
   "fetched": 6,
   "kept": 0,
-  "seconds": 0.6,
+  "seconds": 0.3,
   "status": "ok"
  },
  "OpenAI": {
-  "fetched": 839,
+  "fetched": 834,
   "kept": 0,
-  "seconds": 0.5,
+  "seconds": 0.6,
   "status": "ok"
  },
  "Optiver": {
-  "fetched": 152,
+  "fetched": 151,
   "kept": 3,
   "seconds": 6.5,
   "status": "ok"
  },
  "Palantir": {
-  "fetched": 302,
+  "fetched": 303,
   "kept": 6,
-  "seconds": 1.8,
+  "seconds": 1.2,
   "status": "ok"
  },
  "Perplexity AI": {
-  "fetched": 143,
+  "fetched": 144,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -198,23 +198,23 @@
  "SIG": {
   "fetched": 87,
   "kept": 9,
-  "seconds": 0.7,
+  "seconds": 0.5,
   "status": "ok"
  },
  "Scale AI": {
-  "fetched": 170,
+  "fetched": 169,
   "kept": 1,
-  "seconds": 0.4,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Snowflake": {
-  "fetched": 10,
+  "fetched": 9,
   "kept": 5,
-  "seconds": 0.3,
+  "seconds": 0.4,
   "status": "ok"
  },
  "Spotify": {
-  "fetched": 87,
+  "fetched": 88,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
@@ -226,9 +226,9 @@
   "status": "ok"
  },
  "Stripe": {
-  "fetched": 787,
+  "fetched": 790,
   "kept": 3,
-  "seconds": 0.2,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Tesla": {
@@ -254,7 +254,7 @@
   "status": "not_covered"
  },
  "Waymo": {
-  "fetched": 373,
+  "fetched": 369,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"

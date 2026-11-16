@@ -2106,6 +2106,33 @@
    "uid": "apple:200694490",
    "url": "https://jobs.apple.com/en-us/details/200694490/internship-pro-apps-machine-learning-ecosystem-engineer"
   },
+  "apple:200694900": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "code": "J230",
+   "company": "Apple",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-16",
+   "kind": "Internship",
+   "last_seen": "2026-11-16",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-11-16",
+   "remote": false,
+   "role": "Security",
+   "season": null,
+   "title": "Defensive AI Security Intern",
+   "uid": "apple:200694900",
+   "url": "https://jobs.apple.com/en-us/details/200694900/defensive-ai-security-intern"
+  },
   "da-vinci:4196845101": {
    "active": true,
    "category": "quant",
@@ -5544,7 +5571,7 @@
    "kind": "Internship",
    "last_seen": "2026-11-16",
    "locations": [
-    "London, Paris, Wrocław, Zurich, Dubai, Aarhus, Amsterdam"
+    "London, Paris, Wrocław, Zurich, Dubai, Amsterdam"
    ],
    "posted": "2026-09-08",
    "remote": false,
@@ -6379,6 +6406,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 230,
- "updated_at": "2026-11-16T12:01:47Z"
+ "next_code": 231,
+ "updated_at": "2026-11-16T22:31:19Z"
 }
