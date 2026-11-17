@@ -1,32 +1,32 @@
 {
  "Airbnb": {
-  "fetched": 207,
+  "fetched": 209,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
  },
  "Amazon": {
-  "fetched": 730,
+  "fetched": 729,
   "kept": 34,
-  "seconds": 12.3,
+  "seconds": 11.5,
   "status": "ok"
  },
  "Anthropic": {
-  "fetched": 659,
+  "fetched": 661,
   "kept": 0,
   "seconds": 0.2,
   "status": "ok"
  },
  "Apple": {
-  "fetched": 182,
-  "kept": 30,
-  "seconds": 6.0,
+  "fetched": 184,
+  "kept": 31,
+  "seconds": 6.6,
   "status": "ok"
  },
  "Bloomberg": {
   "fetched": 192,
   "kept": 0,
-  "seconds": 30.4,
+  "seconds": 27.6,
   "status": "ok"
  },
  "Citadel": {
@@ -38,13 +38,13 @@
   "status": "not_covered"
  },
  "Cloudflare": {
-  "fetched": 470,
+  "fetched": 471,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
  },
  "Coinbase": {
-  "fetched": 262,
+  "fetched": 261,
   "kept": 0,
   "seconds": 0.1,
   "status": "ok"
@@ -54,7 +54,7 @@
   "status": "not_covered"
  },
  "DRW": {
-  "fetched": 160,
+  "fetched": 159,
   "kept": 4,
   "seconds": 0.1,
   "status": "ok"
@@ -62,7 +62,7 @@
  "Da Vinci": {
   "fetched": 16,
   "kept": 1,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "Databricks": {
@@ -86,7 +86,7 @@
  "Flow Traders": {
   "fetched": 45,
   "kept": 1,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "G-Research": {
@@ -96,13 +96,13 @@
  "GSA Capital": {
   "fetched": 12,
   "kept": 1,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "Google": {
   "fetched": 69,
   "kept": 10,
-  "seconds": 3.5,
+  "seconds": 3.2,
   "status": "ok"
  },
  "Hudson River Trading": {
@@ -112,7 +112,7 @@
   "status": "ok"
  },
  "IMC": {
-  "fetched": 156,
+  "fetched": 155,
   "kept": 5,
   "seconds": 0.1,
   "status": "ok"
@@ -140,23 +140,23 @@
  "Meta": {
   "fetched": 632,
   "kept": 23,
-  "seconds": 1.4,
+  "seconds": 2.9,
   "status": "ok"
  },
  "Microsoft": {
   "fetched": 137,
   "kept": 6,
-  "seconds": 23.9,
+  "seconds": 21.0,
   "status": "ok"
  },
  "Millennium": {
   "fetched": 234,
   "kept": 0,
-  "seconds": 20.6,
+  "seconds": 21.1,
   "status": "ok"
  },
  "NVIDIA": {
-  "error": "POST https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs failed after 3 tries: HTTP 429",
+  "error": "GET https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/China-Shanghai/Reinforcement-Learning-Intern---2027_JR2029243-1 failed after 3 tries: HTTP 429",
   "status": "failed"
  },
  "Netflix": {
@@ -166,25 +166,25 @@
   "status": "ok"
  },
  "OpenAI": {
-  "fetched": 834,
+  "fetched": 841,
   "kept": 0,
-  "seconds": 0.6,
+  "seconds": 0.4,
   "status": "ok"
  },
  "Optiver": {
   "fetched": 151,
   "kept": 3,
-  "seconds": 6.5,
+  "seconds": 6.2,
   "status": "ok"
  },
  "Palantir": {
   "fetched": 303,
   "kept": 6,
-  "seconds": 1.2,
+  "seconds": 0.9,
   "status": "ok"
  },
  "Perplexity AI": {
-  "fetched": 144,
+  "fetched": 147,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -208,9 +208,9 @@
   "status": "ok"
  },
  "Snowflake": {
-  "fetched": 9,
+  "fetched": 8,
   "kept": 5,
-  "seconds": 0.4,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Spotify": {
@@ -220,7 +220,7 @@
   "status": "ok"
  },
  "Squarepoint Capital": {
-  "fetched": 90,
+  "fetched": 89,
   "kept": 2,
   "seconds": 0.1,
   "status": "ok"
@@ -262,7 +262,7 @@
  "XTX Markets": {
   "fetched": 6,
   "kept": 0,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  }
 }
