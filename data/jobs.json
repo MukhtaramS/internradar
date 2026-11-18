@@ -932,11 +932,12 @@
    "url": "https://www.amazon.jobs/en/jobs/10602219/data-engineer-internship"
   },
   "amazon:10603649": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Tampere"
    ],
+   "closed": "2026-11-18",
    "code": "J222",
    "company": "Amazon",
    "countries": [
@@ -984,6 +985,33 @@
    "title": "Ring - ASIC DV Engineer Intern",
    "uid": "amazon:10606931",
    "url": "https://www.amazon.jobs/en/jobs/10606931/ring-asic-dv-engineer-intern"
+  },
+  "amazon:10607897": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Dublin"
+   ],
+   "code": "J234",
+   "company": "Amazon",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-18",
+   "kind": "Internship",
+   "last_seen": "2026-11-18",
+   "locations": [
+    "Dublin, IRL"
+   ],
+   "posted": "2026-11-18",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Sr. Product Mgr - Tech Intern (Dublin)",
+   "uid": "amazon:10607897",
+   "url": "https://www.amazon.jobs/en/jobs/10607897/sr-product-mgr-tech-intern-dublin"
   },
   "amazon:3130528": {
    "active": false,
@@ -1538,11 +1566,12 @@
    "url": "https://jobs.apple.com/en-us/details/200689039/rf-system-validation-internship"
   },
   "apple:200689695": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Paris"
    ],
+   "closed": "2026-11-18",
    "code": "J51",
    "company": "Apple",
    "countries": [
@@ -6490,6 +6519,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 234,
- "updated_at": "2026-11-18T04:43:36Z"
+ "next_code": 235,
+ "updated_at": "2026-11-18T14:33:21Z"
 }
