@@ -1013,6 +1013,33 @@
    "uid": "amazon:10607897",
    "url": "https://www.amazon.jobs/en/jobs/10607897/sr-product-mgr-tech-intern-dublin"
   },
+  "amazon:10608081": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Amsterdam"
+   ],
+   "code": "J235",
+   "company": "Amazon",
+   "countries": [
+    "NL"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-18",
+   "kind": "Internship",
+   "last_seen": "2026-11-18",
+   "locations": [
+    "Amsterdam, NLD"
+   ],
+   "posted": "2026-11-18",
+   "remote": false,
+   "role": "Infrastructure",
+   "season": null,
+   "title": "Professional Services Cloud Consultant Intern",
+   "uid": "amazon:10608081",
+   "url": "https://www.amazon.jobs/en/jobs/10608081/professional-services-cloud-consultant-intern"
+  },
   "amazon:3130528": {
    "active": false,
    "category": "faang",
@@ -1243,9 +1270,10 @@
    "url": "https://jobs.apple.com/en-us/details/200682664/formal-verification-intern"
   },
   "apple:200683293": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [],
+   "closed": "2026-11-18",
    "code": "J39",
    "company": "Apple",
    "countries": [
@@ -2243,6 +2271,33 @@
    "title": "Cellular RF Receiver System Engineer Intern",
    "uid": "apple:200695289",
    "url": "https://jobs.apple.com/en-us/details/200695289/cellular-rf-receiver-system-engineer-intern"
+  },
+  "apple:200695667": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Dublin"
+   ],
+   "code": "J236",
+   "company": "Apple",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-18",
+   "kind": "Internship",
+   "last_seen": "2026-11-18",
+   "locations": [
+    "Dublin, Ireland"
+   ],
+   "posted": "2026-11-18",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineering Intern, Apple Services - Dublin, Ireland",
+   "uid": "apple:200695667",
+   "url": "https://jobs.apple.com/en-us/details/200695667/software-engineering-intern-apple-services-dublin-ireland"
   },
   "da-vinci:4196845101": {
    "active": true,
@@ -3833,11 +3888,12 @@
    "url": "https://www.metacareers.com/jobs/1050177734644029"
   },
   "meta:1126525590244595": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Paris"
    ],
+   "closed": "2026-11-18",
    "code": "J122",
    "company": "Meta",
    "countries": [
@@ -6519,6 +6575,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 235,
- "updated_at": "2026-11-18T14:33:21Z"
+ "next_code": 237,
+ "updated_at": "2026-11-18T22:20:49Z"
 }
