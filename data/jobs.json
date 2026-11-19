@@ -245,11 +245,12 @@
    "url": "https://www.amazon.jobs/en/jobs/10555873/2027-software-dev-engineer-intern-poland"
   },
   "amazon:10557454": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Luxembourg"
    ],
+   "closed": "2026-11-19",
    "code": "J9",
    "company": "Amazon",
    "countries": [
@@ -1039,6 +1040,33 @@
    "title": "Professional Services Cloud Consultant Intern",
    "uid": "amazon:10608081",
    "url": "https://www.amazon.jobs/en/jobs/10608081/professional-services-cloud-consultant-intern"
+  },
+  "amazon:10609138": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Luxembourg"
+   ],
+   "code": "J237",
+   "company": "Amazon",
+   "countries": [
+    "LU"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-19",
+   "kind": "Internship",
+   "last_seen": "2026-11-19",
+   "locations": [
+    "Luxembourg, LUX"
+   ],
+   "posted": "2026-11-19",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Business Intelligence Intern Luxembourg",
+   "uid": "amazon:10609138",
+   "url": "https://www.amazon.jobs/en/jobs/10609138/business-intelligence-intern-luxembourg"
   },
   "amazon:3130528": {
    "active": false,
@@ -4802,6 +4830,62 @@
    "uid": "microsoft:1970393557070382",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557070382"
   },
+  "microsoft:1970393557072640": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Zurich"
+   ],
+   "code": "J238",
+   "company": "Microsoft",
+   "countries": [
+    "CH"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-19",
+   "kind": "Internship",
+   "last_seen": "2026-11-19",
+   "locations": [
+    "Switzerland, Zürich, Zürich"
+   ],
+   "posted": "2026-11-19",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Data Science - PhD Internship Opportunities",
+   "uid": "microsoft:1970393557072640",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557072640"
+  },
+  "microsoft:1970393557075448": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "code": "J239",
+   "company": "Microsoft",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-19",
+   "kind": "Internship",
+   "last_seen": "2026-11-19",
+   "locations": [
+    "United Kingdom, Cambridgeshire, Cambridge"
+   ],
+   "posted": "2026-11-19",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Intern - Machine Learning for Biology and Healthcare",
+   "uid": "microsoft:1970393557075448",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075448"
+  },
   "nvidia:JR2024606": {
    "active": true,
    "category": "faang_plus",
@@ -6576,6 +6660,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 237,
- "updated_at": "2026-11-19T03:52:10Z"
+ "next_code": 240,
+ "updated_at": "2026-11-19T13:53:21Z"
 }
