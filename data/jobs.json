@@ -1015,11 +1015,12 @@
    "url": "https://www.amazon.jobs/en/jobs/10607897/sr-product-mgr-tech-intern-dublin"
   },
   "amazon:10608081": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Amsterdam"
    ],
+   "closed": "2026-11-19",
    "code": "J235",
    "company": "Amazon",
    "countries": [
@@ -4886,6 +4887,33 @@
    "uid": "microsoft:1970393557075448",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557075448"
   },
+  "microsoft:1970393557076037": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Stuttgart"
+   ],
+   "code": "J240",
+   "company": "Microsoft",
+   "countries": [
+    "DE"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-19",
+   "kind": "Internship",
+   "last_seen": "2026-11-19",
+   "locations": [
+    "Germany, Baden-Württemberg, Stuttgart"
+   ],
+   "posted": "2026-11-19",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Software Engineering INTERN",
+   "uid": "microsoft:1970393557076037",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557076037"
+  },
   "nvidia:JR2024606": {
    "active": true,
    "category": "faang_plus",
@@ -6571,11 +6599,12 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8205680"
   },
   "waymo:8208465": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-19",
    "code": "J203",
    "company": "Waymo",
    "countries": [
@@ -6660,6 +6689,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 240,
- "updated_at": "2026-11-19T13:53:21Z"
+ "next_code": 241,
+ "updated_at": "2026-11-19T22:27:08Z"
 }
