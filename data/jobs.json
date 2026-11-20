@@ -2166,6 +2166,33 @@
    "uid": "apple:200694477",
    "url": "https://jobs.apple.com/en-us/details/200694477/camera-software-intern"
   },
+  "apple:200694482": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Paris"
+   ],
+   "code": "J241",
+   "company": "Apple",
+   "countries": [
+    "FR"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-20",
+   "kind": "Internship",
+   "last_seen": "2026-11-20",
+   "locations": [
+    "Paris, France"
+   ],
+   "posted": "2026-11-20",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Graphics Tooling and Rendering Engineering Intern",
+   "uid": "apple:200694482",
+   "url": "https://jobs.apple.com/en-us/details/200694482/graphics-tooling-and-rendering-engineering-intern"
+  },
   "apple:200694489": {
    "active": true,
    "category": "faang",
@@ -6689,6 +6716,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 241,
- "updated_at": "2026-11-20T03:44:44Z"
+ "next_code": 242,
+ "updated_at": "2026-11-20T13:35:37Z"
 }
