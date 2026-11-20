@@ -3943,6 +3943,35 @@
    "uid": "meta:1050177734644029",
    "url": "https://www.metacareers.com/jobs/1050177734644029"
   },
+  "meta:1122232790428355": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "London"
+   ],
+   "code": "J242",
+   "company": "Meta",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-20",
+   "kind": "Internship",
+   "last_seen": "2026-11-20",
+   "locations": [
+    "London, UK"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, Photorealistic Telepresence (PhD)",
+   "uid": "meta:1122232790428355",
+   "url": "https://www.metacareers.com/jobs/1122232790428355"
+  },
   "meta:1126525590244595": {
    "active": false,
    "category": "faang",
@@ -6716,6 +6745,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 242,
- "updated_at": "2026-11-20T13:35:37Z"
+ "next_code": 243,
+ "updated_at": "2026-11-20T21:32:45Z"
 }
