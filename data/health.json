@@ -8,17 +8,17 @@
  "Amazon": {
   "fetched": 738,
   "kept": 35,
-  "seconds": 10.6,
+  "seconds": 11.1,
   "status": "ok"
  },
  "Anthropic": {
   "fetched": 635,
   "kept": 0,
-  "seconds": 0.3,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Apple": {
-  "fetched": 193,
+  "fetched": 192,
   "kept": 31,
   "seconds": 5.9,
   "status": "ok"
@@ -26,7 +26,7 @@
  "Bloomberg": {
   "fetched": 185,
   "kept": 0,
-  "seconds": 29.4,
+  "seconds": 28.1,
   "status": "ok"
  },
  "Citadel": {
@@ -46,7 +46,7 @@
  "Coinbase": {
   "fetched": 252,
   "kept": 0,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "D. E. Shaw": {
@@ -74,7 +74,7 @@
  "Datadog": {
   "fetched": 382,
   "kept": 3,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "Figma": {
@@ -102,7 +102,7 @@
  "Google": {
   "fetched": 69,
   "kept": 10,
-  "seconds": 3.3,
+  "seconds": 3.2,
   "status": "ok"
  },
  "Hudson River Trading": {
@@ -120,7 +120,7 @@
  "Jane Street": {
   "fetched": 216,
   "kept": 11,
-  "seconds": 0.5,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Jump Trading": {
@@ -140,19 +140,19 @@
  "Meta": {
   "fetched": 631,
   "kept": 22,
-  "seconds": 1.4,
+  "seconds": 1.3,
   "status": "ok"
  },
  "Microsoft": {
-  "fetched": 151,
+  "fetched": 153,
   "kept": 7,
-  "seconds": 24.6,
+  "seconds": 26.0,
   "status": "ok"
  },
  "Millennium": {
   "fetched": 240,
   "kept": 0,
-  "seconds": 15.8,
+  "seconds": 20.2,
   "status": "ok"
  },
  "NVIDIA": {
@@ -162,25 +162,25 @@
  "Netflix": {
   "fetched": 6,
   "kept": 0,
-  "seconds": 0.3,
+  "seconds": 0.2,
   "status": "ok"
  },
  "OpenAI": {
   "fetched": 852,
   "kept": 0,
-  "seconds": 0.7,
+  "seconds": 0.4,
   "status": "ok"
  },
  "Optiver": {
   "fetched": 153,
   "kept": 3,
-  "seconds": 7.0,
+  "seconds": 6.2,
   "status": "ok"
  },
  "Palantir": {
   "fetched": 308,
   "kept": 6,
-  "seconds": 0.3,
+  "seconds": 1.4,
   "status": "ok"
  },
  "Perplexity AI": {
@@ -192,17 +192,17 @@
  "Qube Research & Technologies": {
   "fetched": 205,
   "kept": 5,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "SIG": {
   "fetched": 85,
   "kept": 9,
-  "seconds": 0.7,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Scale AI": {
-  "fetched": 169,
+  "fetched": 166,
   "kept": 1,
   "seconds": 0.0,
   "status": "ok"
@@ -210,23 +210,23 @@
  "Snowflake": {
   "fetched": 13,
   "kept": 5,
-  "seconds": 0.4,
+  "seconds": 0.2,
   "status": "ok"
  },
  "Spotify": {
   "fetched": 91,
   "kept": 0,
-  "seconds": 0.0,
+  "seconds": 0.1,
   "status": "ok"
  },
  "Squarepoint Capital": {
   "fetched": 87,
   "kept": 2,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "Stripe": {
-  "fetched": 778,
+  "fetched": 777,
   "kept": 3,
   "seconds": 0.1,
   "status": "ok"
@@ -256,7 +256,7 @@
  "Waymo": {
   "fetched": 363,
   "kept": 2,
-  "seconds": 0.1,
+  "seconds": 0.0,
   "status": "ok"
  },
  "XTX Markets": {
