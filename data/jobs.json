@@ -4752,12 +4752,11 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557043468"
   },
   "microsoft:1970393557044053": {
-   "active": false,
+   "active": true,
    "category": "faang",
    "cities": [
     "Tampere"
    ],
-   "closed": "2026-11-12",
    "code": "J211",
    "company": "Microsoft",
    "countries": [
@@ -4767,11 +4766,11 @@
    "europe_wide": false,
    "first_seen": "2026-11-10",
    "kind": "Internship",
-   "last_seen": "2026-11-12",
+   "last_seen": "2026-11-22",
    "locations": [
     "Finland, Satakunta, Tampere"
    ],
-   "posted": "2026-11-10",
+   "posted": "2026-11-22",
    "remote": false,
    "role": "Software",
    "season": null,
@@ -6747,5 +6746,5 @@
   }
  },
  "next_code": 243,
- "updated_at": "2026-11-22T07:28:39Z"
+ "updated_at": "2026-11-22T15:40:36Z"
 }
