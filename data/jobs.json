@@ -2248,11 +2248,12 @@
    "url": "https://jobs.apple.com/en-us/details/200694490/internship-pro-apps-machine-learning-ecosystem-engineer"
   },
   "apple:200694900": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Paris"
    ],
+   "closed": "2026-11-23",
    "code": "J230",
    "company": "Apple",
    "countries": [
@@ -4065,6 +4066,35 @@
    "title": "Research Scientist Intern -GenAI, VLM, FlowMatching, Spatial Understanding (PhD)",
    "uid": "meta:1165781989214784",
    "url": "https://www.metacareers.com/jobs/1165781989214784"
+  },
+  "meta:1296888565955935": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cork"
+   ],
+   "code": "J243",
+   "company": "Meta",
+   "countries": [
+    "IE"
+   ],
+   "degrees": [
+    "PhD"
+   ],
+   "europe_wide": false,
+   "first_seen": "2026-11-23",
+   "kind": "Internship",
+   "last_seen": "2026-11-23",
+   "locations": [
+    "Cork, Ireland"
+   ],
+   "posted": null,
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Research Scientist Intern, uLED Display Characterization (PhD)",
+   "uid": "meta:1296888565955935",
+   "url": "https://www.metacareers.com/jobs/1296888565955935"
   },
   "meta:1382697917119311": {
    "active": true,
@@ -6006,11 +6036,12 @@
    "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8926633002"
   },
   "scale-ai:4730846005": {
-   "active": true,
+   "active": false,
    "category": "faang_plus",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-23",
    "code": "J182",
    "company": "Scale AI",
    "countries": [
@@ -6748,6 +6779,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 243,
- "updated_at": "2026-11-23T11:14:35Z"
+ "next_code": 244,
+ "updated_at": "2026-11-23T22:56:12Z"
 }
