@@ -2275,11 +2275,12 @@
    "url": "https://jobs.apple.com/en-us/details/200694900/defensive-ai-security-intern-paris-france"
   },
   "apple:200695155": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Dublin"
    ],
+   "closed": "2026-11-23",
    "code": "J233",
    "company": "Apple",
    "countries": [
@@ -2855,11 +2856,12 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/111285665542349510"
   },
   "google:112940936274551494": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-23",
    "code": "J84",
    "company": "Google",
    "countries": [
@@ -2885,13 +2887,14 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/112940936274551494"
   },
   "google:118991686201156294": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Amsterdam",
     "Hamburg",
     "Madrid"
    ],
+   "closed": "2026-11-23",
    "code": "J85",
    "company": "Google",
    "countries": [
@@ -6746,5 +6749,5 @@
   }
  },
  "next_code": 243,
- "updated_at": "2026-11-23T01:59:13Z"
+ "updated_at": "2026-11-23T11:14:35Z"
 }
