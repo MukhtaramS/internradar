@@ -1408,11 +1408,12 @@
    "url": "https://jobs.apple.com/en-us/details/200685035/internship-machine-learning-foundation-models"
   },
   "apple:200686117": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-24",
    "code": "J43",
    "company": "Apple",
    "countries": [
@@ -1491,11 +1492,12 @@
    "url": "https://jobs.apple.com/en-us/details/200687209/internship-software-engineering-ai-augmented-static-code-analysis"
   },
   "apple:200687446": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-24",
    "code": "J46",
    "company": "Apple",
    "countries": [
@@ -1651,11 +1653,12 @@
    "url": "https://jobs.apple.com/en-us/details/200689695/ai-ml-internship-self-improving-ai-agents-for-cybersecurity-sear"
   },
   "apple:200689711": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Munich"
    ],
+   "closed": "2026-11-24",
    "code": "J52",
    "company": "Apple",
    "countries": [
@@ -1862,7 +1865,7 @@
    "locations": [
     "Aachen, Germany"
    ],
-   "posted": "2026-10-29",
+   "posted": "2026-11-24",
    "remote": false,
    "role": "AI/ML",
    "season": null,
@@ -2003,6 +2006,33 @@
    "title": "CAD Virtuoso Engineering Intern",
    "uid": "apple:200693133",
    "url": "https://jobs.apple.com/en-us/details/200693133/cad-virtuoso-engineering-intern"
+  },
+  "apple:200693402": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Copenhagen"
+   ],
+   "code": "J244",
+   "company": "Apple",
+   "countries": [
+    "DK"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-24",
+   "kind": "Internship",
+   "last_seen": "2026-11-24",
+   "locations": [
+    "Copenhagen, Denmark"
+   ],
+   "posted": "2026-11-24",
+   "remote": false,
+   "role": "Software",
+   "season": null,
+   "title": "Creative Apps, Colour and Imaging Science Engineering Intern - Copenhagen, Denmark",
+   "uid": "apple:200693402",
+   "url": "https://jobs.apple.com/en-us/details/200693402/creative-apps-colour-and-imaging-science-engineering-intern-copenhagen-denmark"
   },
   "apple:200693660": {
    "active": true,
@@ -2331,11 +2361,12 @@
    "url": "https://jobs.apple.com/en-us/details/200695289/cellular-rf-receiver-system-engineer-intern"
   },
   "apple:200695667": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Dublin"
    ],
+   "closed": "2026-11-24",
    "code": "J236",
    "company": "Apple",
    "countries": [
@@ -6779,6 +6810,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 244,
- "updated_at": "2026-11-24T07:06:52Z"
+ "next_code": 245,
+ "updated_at": "2026-11-24T19:06:09Z"
 }
