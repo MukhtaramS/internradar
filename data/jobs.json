@@ -1126,12 +1126,13 @@
    "url": "https://www.amazon.jobs/en/jobs/3134271/software-dev-engineer-internship-embedded-development"
   },
   "apple:200679650": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Cambridge",
     "London"
    ],
+   "closed": "2026-11-25",
    "code": "J33",
    "company": "Apple",
    "countries": [
@@ -1214,12 +1215,13 @@
    "url": "https://jobs.apple.com/en-us/details/200682229/phy-cellular-firmware-engineer-internship"
   },
   "apple:200682357": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Cambridge",
     "London"
    ],
+   "closed": "2026-11-25",
    "code": "J36",
    "company": "Apple",
    "countries": [
@@ -6811,5 +6813,5 @@
   }
  },
  "next_code": 245,
- "updated_at": "2026-11-25T03:11:34Z"
+ "updated_at": "2026-11-25T13:29:03Z"
 }
