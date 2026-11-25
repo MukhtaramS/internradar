@@ -295,9 +295,9 @@
    "remote": false,
    "role": "Data",
    "season": null,
-   "title": "Business Intelligence Intern London",
+   "title": "12 Month - Business Intelligence Intern",
    "uid": "amazon:10567687",
-   "url": "https://www.amazon.jobs/en/jobs/10567687/business-intelligence-intern-london"
+   "url": "https://www.amazon.jobs/en/jobs/10567687/12-month-business-intelligence-intern"
   },
   "amazon:10567688": {
    "active": true,
@@ -2363,12 +2363,11 @@
    "url": "https://jobs.apple.com/en-us/details/200695289/cellular-rf-receiver-system-engineer-intern"
   },
   "apple:200695667": {
-   "active": false,
+   "active": true,
    "category": "faang",
    "cities": [
     "Dublin"
    ],
-   "closed": "2026-11-24",
    "code": "J236",
    "company": "Apple",
    "countries": [
@@ -2378,17 +2377,44 @@
    "europe_wide": false,
    "first_seen": "2026-11-18",
    "kind": "Internship",
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "locations": [
     "Dublin, Ireland"
    ],
-   "posted": "2026-11-18",
+   "posted": "2026-11-25",
    "remote": false,
    "role": "Software",
    "season": null,
    "title": "Software Engineering Intern, Apple Services - Dublin, Ireland",
    "uid": "apple:200695667",
    "url": "https://jobs.apple.com/en-us/details/200695667/software-engineering-intern-apple-services-dublin-ireland"
+  },
+  "apple:200696800": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Barcelona"
+   ],
+   "code": "J245",
+   "company": "Apple",
+   "countries": [
+    "ES"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-25",
+   "kind": "Internship",
+   "last_seen": "2026-11-25",
+   "locations": [
+    "Barcelona, Spain"
+   ],
+   "posted": "2026-11-25",
+   "remote": false,
+   "role": "Data",
+   "season": null,
+   "title": "Internship - Agentic Data Generation for High-Fidelity Personal Data, Global Siri",
+   "uid": "apple:200696800",
+   "url": "https://jobs.apple.com/en-us/details/200696800/internship-agentic-data-generation-for-high-fidelity-personal-data-global-siri"
   },
   "da-vinci:4196845101": {
    "active": true,
@@ -3780,11 +3806,12 @@
    "url": "https://www.janestreet.com/join-jane-street/position/8755768002/"
   },
   "jump-trading:7974943": {
-   "active": true,
+   "active": false,
    "category": "quant",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-25",
    "code": "J115",
    "company": "Jump Trading",
    "countries": [
@@ -3807,11 +3834,12 @@
    "url": "https://www.jumptrading.com/hr/job?gh_jid=7974943"
   },
   "jump-trading:7976964": {
-   "active": true,
+   "active": false,
    "category": "quant",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-25",
    "code": "J116",
    "company": "Jump Trading",
    "countries": [
@@ -6812,6 +6840,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 245,
- "updated_at": "2026-11-25T13:29:03Z"
+ "next_code": 246,
+ "updated_at": "2026-11-25T22:45:08Z"
 }
