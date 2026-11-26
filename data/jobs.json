@@ -55,6 +55,33 @@
    "uid": "amazon:10489527",
    "url": "https://www.amazon.jobs/en/jobs/10489527/software-dev-intern"
   },
+  "amazon:10535149": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "code": "J246",
+   "company": "Amazon",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-26",
+   "kind": "Internship",
+   "last_seen": "2026-11-26",
+   "locations": [
+    "Cambridge, GBR"
+   ],
+   "posted": "2026-11-14",
+   "remote": false,
+   "role": "Software",
+   "season": "2027",
+   "title": "System Dev Engineer Internship 2027",
+   "uid": "amazon:10535149",
+   "url": "https://www.amazon.jobs/en/jobs/10535149/system-dev-engineer-internship-2027"
+  },
   "amazon:10554586": {
    "active": true,
    "category": "faang",
@@ -2253,11 +2280,12 @@
    "url": "https://jobs.apple.com/en-us/details/200694489/internship-framebuffer-driver-engineer"
   },
   "apple:200694490": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "London"
    ],
+   "closed": "2026-11-26",
    "code": "J226",
    "company": "Apple",
    "countries": [
@@ -6840,6 +6868,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 246,
- "updated_at": "2026-11-26T05:27:26Z"
+ "next_code": 247,
+ "updated_at": "2026-11-26T15:46:20Z"
 }
