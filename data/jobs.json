@@ -2419,11 +2419,12 @@
    "url": "https://jobs.apple.com/en-us/details/200695289/cellular-rf-receiver-system-engineer-intern"
   },
   "apple:200695667": {
-   "active": true,
+   "active": false,
    "category": "faang",
    "cities": [
     "Dublin"
    ],
+   "closed": "2026-11-27",
    "code": "J236",
    "company": "Apple",
    "countries": [
@@ -6343,11 +6344,12 @@
    "url": "https://careers.sig.com/jobs/11007?lang=en-us"
   },
   "sig:11271": {
-   "active": true,
+   "active": false,
    "category": "quant",
    "cities": [
     "Dublin"
    ],
+   "closed": "2026-11-27",
    "code": "J189",
    "company": "SIG",
    "countries": [
@@ -6897,5 +6899,5 @@
   }
  },
  "next_code": 248,
- "updated_at": "2026-11-27T00:49:23Z"
+ "updated_at": "2026-11-27T10:08:22Z"
 }
