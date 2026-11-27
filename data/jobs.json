@@ -5121,6 +5121,33 @@
    "uid": "microsoft:1970393557076037",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557076037"
   },
+  "microsoft:1970393557106762": {
+   "active": true,
+   "category": "faang",
+   "cities": [
+    "Cambridge"
+   ],
+   "code": "J248",
+   "company": "Microsoft",
+   "countries": [
+    "GB"
+   ],
+   "degrees": [],
+   "europe_wide": false,
+   "first_seen": "2026-11-27",
+   "kind": "Internship",
+   "last_seen": "2026-11-27",
+   "locations": [
+    "United Kingdom, Cambridgeshire, Cambridge"
+   ],
+   "posted": "2026-11-27",
+   "remote": false,
+   "role": "AI/ML",
+   "season": null,
+   "title": "Cambridge Research Intern - Distributed AI systems for agentic workflows",
+   "uid": "microsoft:1970393557106762",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557106762"
+  },
   "nvidia:JR2024606": {
    "active": true,
    "category": "faang_plus",
@@ -6080,10 +6107,7 @@
    "countries": [
     "GB"
    ],
-   "degrees": [
-    "MS",
-    "PhD"
-   ],
+   "degrees": [],
    "europe_wide": false,
    "first_seen": "2026-11-07",
    "kind": "Internship",
@@ -6095,7 +6119,7 @@
    "remote": false,
    "role": "Infrastructure",
    "season": "2027",
-   "title": "2027 – Graduate or Internship, Infrastructure Engineer",
+   "title": "2027 – Internship, Infrastructure Engineer",
    "uid": "qube-research-technologies:8773447002",
    "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8773447002"
   },
@@ -6898,6 +6922,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8265868"
   }
  },
- "next_code": 248,
- "updated_at": "2026-11-27T10:08:22Z"
+ "next_code": 249,
+ "updated_at": "2026-11-27T19:40:06Z"
 }
